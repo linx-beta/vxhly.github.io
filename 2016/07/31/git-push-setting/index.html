@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="技术分享博客">
 <meta property="og:description" content="Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-15T13:11:57.766Z">
+<meta property="og:updated_time" content="2017-08-17T12:11:15.229Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 远程推送配置">
 <meta name="twitter:description" content="Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理">
@@ -192,6 +192,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -401,8 +457,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:11:57+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:11:15+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -455,8 +511,6 @@
             <div class="post-wordcount">
               
                 
-                  <span class="post-meta-divider">|</span>
-                
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
@@ -500,25 +554,25 @@
       
         <p>Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理 <a id="more"></a></p>
 <h1 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h1><p>如果你的系统还没有 Git，请通过以下命令安装</p>
-<pre><code class="bash">$ sudo apt-get install git
+<pre><code class="bash">sudo apt-get install git
 </code></pre>
 <h1 id="创建帐号"><a href="#创建帐号" class="headerlink" title="创建帐号"></a>创建帐号</h1><p>创建你的 GitHub 帐号，或者 Git@OSC 帐号</p>
 <blockquote>
 <p><a href="https://github.com/" target="_blank" rel="external">GitHub</a> 链接<br><br><a href="http://git.oschina.net/" target="_blank" rel="external">Git@OSC</a> 链接</p>
 </blockquote>
-<h1 id="liunx-创建-SSH-密钥"><a href="#liunx-创建-SSH-密钥" class="headerlink" title="liunx 创建 SSH 密钥"></a>liunx 创建 SSH 密钥</h1><pre><code class="bash">$ ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;
+<h1 id="liunx-创建-SSH-密钥"><a href="#liunx-创建-SSH-密钥" class="headerlink" title="liunx 创建 SSH 密钥"></a>liunx 创建 SSH 密钥</h1><pre><code class="bash">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;
 </code></pre>
 <h2 id="添加-public-key"><a href="#添加-public-key" class="headerlink" title="添加 public key"></a>添加 public key</h2><p>查看你的 public key，并把它添加到您的账户中</p>
 <blockquote>
 <p>如 <a href="https://github.com/settings/keys" target="_blank" rel="external">GitHub key</a> 如 <a href="http://git.oschina.net/profile/sshkeys" target="_blank" rel="external">Git@OSC key</a></p>
 </blockquote>
 <p>使用以下命令查看</p>
-<pre><code class="bash">$ cat /home/youname/.ssh/id_rsa.pub
+<pre><code class="bash">cat /home/youname/.ssh/id_rsa.pub
 </code></pre>
-<h2 id="测试验证是否成功"><a href="#测试验证是否成功" class="headerlink" title="测试验证是否成功"></a>测试验证是否成功</h2><pre><code class="bash">$ ssh -T git@github.com
+<h2 id="测试验证是否成功"><a href="#测试验证是否成功" class="headerlink" title="测试验证是否成功"></a>测试验证是否成功</h2><pre><code class="bash">ssh -T git@github.com
 </code></pre>
 <p>或</p>
-<pre><code class="bash">$ ssh -T git@git.oschina.net
+<pre><code class="bash">ssh -T git@git.oschina.net
 </code></pre>
 <p>返回你在 <code>GitHub</code> 或 <code>Git@OSC</code> 上注册的用户名代表成功。</p>
 <h1 id="GitHub-或-Git-OSC-上创建项目"><a href="#GitHub-或-Git-OSC-上创建项目" class="headerlink" title="GitHub 或 Git@OSC 上创建项目"></a>GitHub 或 Git@OSC 上创建项目</h1><blockquote>
@@ -527,25 +581,25 @@
 <h1 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h1><blockquote>
 <p>请尽量保持你的名字和你的邮箱和 GitHub 或 Git@OSC 的注册一致。</p>
 </blockquote>
-<pre><code class="bash">$ git config --global user.name &quot;your name&quot;
-$ git config --global user.email &quot;your email&quot;
+<pre><code class="bash">git config --global user.name &quot;your name&quot;
+git config --global user.email &quot;your email&quot;
 </code></pre>
-<h2 id="进入项目目录，初始化"><a href="#进入项目目录，初始化" class="headerlink" title="进入项目目录，初始化"></a>进入项目目录，初始化</h2><pre><code class="bash">$ git init
+<h2 id="进入项目目录，初始化"><a href="#进入项目目录，初始化" class="headerlink" title="进入项目目录，初始化"></a>进入项目目录，初始化</h2><pre><code class="bash">git init
 </code></pre>
-<h2 id="添加项目至本地仓库"><a href="#添加项目至本地仓库" class="headerlink" title="添加项目至本地仓库"></a>添加项目至本地仓库</h2><pre><code class="bash">$ git add .
+<h2 id="添加项目至本地仓库"><a href="#添加项目至本地仓库" class="headerlink" title="添加项目至本地仓库"></a>添加项目至本地仓库</h2><pre><code class="bash">git add .
 </code></pre>
-<h2 id="提交并备注"><a href="#提交并备注" class="headerlink" title="提交并备注"></a>提交并备注</h2><pre><code class="bash">$ git commit -m &quot;first commit&quot;
-$ git remote add origin git@github.com:[youName]/[appName].git
-$ git push -u origin master
+<h2 id="提交并备注"><a href="#提交并备注" class="headerlink" title="提交并备注"></a>提交并备注</h2><pre><code class="bash">git commit -m &quot;first commit&quot;
+git remote add origin git@github.com:[youName]/[appName].git
+git push -u origin master
 </code></pre>
-<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><pre><code class="bash">$ git pull origin master
+<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><pre><code class="bash">git pull origin master
 </code></pre>
-<h2 id="强制覆盖本地代码（更新本地源）"><a href="#强制覆盖本地代码（更新本地源）" class="headerlink" title="强制覆盖本地代码（更新本地源）"></a>强制覆盖本地代码（更新本地源）</h2><pre><code class="bash">$ git fetch --all
+<h2 id="强制覆盖本地代码（更新本地源）"><a href="#强制覆盖本地代码（更新本地源）" class="headerlink" title="强制覆盖本地代码（更新本地源）"></a>强制覆盖本地代码（更新本地源）</h2><pre><code class="bash">git fetch --all
 </code></pre>
-<h2 id="创建一个新的标签并提交"><a href="#创建一个新的标签并提交" class="headerlink" title="创建一个新的标签并提交"></a>创建一个新的标签并提交</h2><pre><code class="bash">$ git tag -a v1.0.0 -m &quot;test@1.0.0&quot;
-$ git push origin --tags
+<h2 id="创建一个新的标签并提交"><a href="#创建一个新的标签并提交" class="headerlink" title="创建一个新的标签并提交"></a>创建一个新的标签并提交</h2><pre><code class="bash">git tag -a v1.0.0 -m &quot;test@1.0.0&quot;
+git push origin --tags
 </code></pre>
-<h2 id="查看本地标签"><a href="#查看本地标签" class="headerlink" title="查看本地标签"></a>查看本地标签</h2><pre><code class="bash">$ git tag
+<h2 id="查看本地标签"><a href="#查看本地标签" class="headerlink" title="查看本地标签"></a>查看本地标签</h2><pre><code class="bash">git tag
 </code></pre>
 <h1 id="git-中配置-autocrlf"><a href="#git-中配置-autocrlf" class="headerlink" title="git 中配置 autocrlf"></a>git 中配置 autocrlf</h1><h2 id="换行符"><a href="#换行符" class="headerlink" title="换行符"></a>换行符</h2><h3 id="源文件中是换行符是-LF"><a href="#源文件中是换行符是-LF" class="headerlink" title="源文件中是换行符是 LF"></a>源文件中是换行符是 LF</h3><p>如果你的源文件中是换行符是 LF，而 <code>autocrlf=true</code>， 此时 <code>Git add .</code> 就会遇到 <code>fatal: LF would be replaced by CRLF</code> 的错误。有两个解决办法：</p>
 <ol>
@@ -705,7 +759,7 @@ $ git push origin --tags
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1488,8 +1542,17 @@ $ git push origin --tags
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

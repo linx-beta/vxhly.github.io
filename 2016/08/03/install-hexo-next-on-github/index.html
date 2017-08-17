@@ -102,7 +102,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Liunx,Git,Node.js," />
+  <meta name="keywords" content="Liunx,Node.js,Git," />
 
 
 
@@ -121,14 +121,14 @@
 
 
 <meta name="description" content="Hexo 是一个快速，简单而高效的静态博客框架，本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客">
-<meta name="keywords" content="Liunx,Git,Node.js">
+<meta name="keywords" content="Liunx,Node.js,Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Hexo+NexT 在 Github 上搭建静态博客">
 <meta property="og:url" content="https://vxhly.github.io/2016/08/03/install-hexo-next-on-github/index.html">
 <meta property="og:site_name" content="技术分享博客">
 <meta property="og:description" content="Hexo 是一个快速，简单而高效的静态博客框架，本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-15T13:12:54.253Z">
+<meta property="og:updated_time" content="2017-08-17T12:12:26.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Hexo+NexT 在 Github 上搭建静态博客">
 <meta name="twitter:description" content="Hexo 是一个快速，简单而高效的静态博客框架，本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客">
@@ -192,6 +192,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -401,8 +457,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:12:54+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:12:26+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -455,8 +511,6 @@
             <div class="post-wordcount">
               
                 
-                  <span class="post-meta-divider">|</span>
-                
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
@@ -505,28 +559,28 @@
 <h2 id="Node-js-环境"><a href="#Node-js-环境" class="headerlink" title="Node.js 环境"></a>Node.js 环境</h2><blockquote>
 <p>需安装 nvm，任何版本皆可</p>
 </blockquote>
-<pre><code class="bash">$ nvm 5
-$ nvm alias defaults 5
+<pre><code class="bash">nvm 5
+nvm alias defaults 5
 </code></pre>
 <h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><blockquote>
 <p>如果你的系统没有 git，则必装</p>
 </blockquote>
-<pre><code class="bash">$ sudo apt-get install git
+<pre><code class="bash">sudo apt-get install git
 </code></pre>
 <h1 id="Hexo-初始化博客框架"><a href="#Hexo-初始化博客框架" class="headerlink" title="Hexo 初始化博客框架"></a>Hexo 初始化博客框架</h1><blockquote>
 <p>参考链接<br><br><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo 官网</a><br><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo 配置文档</a><br><br><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">Hexo 相关指令</a><br><br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo 主题</a></p>
 </blockquote>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><pre><code class="bash">$ npm install -g hexo-cli
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><pre><code class="bash">npm install -g hexo-cli
 </code></pre>
-<h2 id="初始化框架"><a href="#初始化框架" class="headerlink" title="初始化框架"></a>初始化框架</h2><pre><code class="bash">$ hexo init [yourFolder]
-$ cd [folderName]
-$ npm install
+<h2 id="初始化框架"><a href="#初始化框架" class="headerlink" title="初始化框架"></a>初始化框架</h2><pre><code class="bash">hexo init [yourFolder]
+cd [folderName]
+npm install
 </code></pre>
-<h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><pre><code class="bash">$ hexo new &quot;Hello World&quot;
+<h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><pre><code class="bash">hexo new &quot;Hello World&quot;
 </code></pre>
 <p>在 <code>./source/_post</code> 里添加 <code>hello-world.md</code> 文件，之后新建的文章都将存放在此目录下。</p>
-<h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><pre><code class="bash">$ hexo new page tags
-$ hexo new page categories
+<h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><pre><code class="bash">hexo new page tags
+hexo new page categories
 </code></pre>
 <p>在 <code>./source/</code> 里添加 <code>tags</code> 和 <code>categories</code> 目录，即标签页和分类页</p>
 <h3 id="取消标签页和分类页的评论功能"><a href="#取消标签页和分类页的评论功能" class="headerlink" title="取消标签页和分类页的评论功能"></a>取消标签页和分类页的评论功能</h3><p>标签页 <code>./source/categories/index.md</code></p>
@@ -545,7 +599,7 @@ type: &quot;tags&quot;
 comments: false
 ---
 </code></pre>
-<h3 id="建议修改默认的文章模板"><a href="#建议修改默认的文章模板" class="headerlink" title="建议修改默认的文章模板"></a>建议修改默认的文章模板</h3><pre><code class="bash">$ vim ./scaffolds/post.md
+<h3 id="建议修改默认的文章模板"><a href="#建议修改默认的文章模板" class="headerlink" title="建议修改默认的文章模板"></a>建议修改默认的文章模板</h3><pre><code class="bash">vim ./scaffolds/post.md
 </code></pre>
 <p>修改成</p>
 <pre><code class="markdown">---
@@ -556,40 +610,40 @@ categories:
 tags:
 ---
 </code></pre>
-<h2 id="生成静态网站"><a href="#生成静态网站" class="headerlink" title="生成静态网站"></a>生成静态网站</h2><pre><code class="bash">$ hexo generate
+<h2 id="生成静态网站"><a href="#生成静态网站" class="headerlink" title="生成静态网站"></a>生成静态网站</h2><pre><code class="bash">hexo generate
 </code></pre>
 <p>此时会将 <code>/source</code> 的 <code>.md</code> 文件生成 <code>html</code> 文件到 <code>/public</code> 中，形成网站的静态文件。</p>
-<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><pre><code class="bash">$ hexo server -p 3000
+<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><pre><code class="bash">hexo server -p 3000
 </code></pre>
 <p>输入 <code>http://localhost:3000</code> 即可查看网站，若无指定端口号，将采用默认端口 <code>4000</code>。 使用 <code>Ctrl + C</code> 快捷键终止该进程</p>
-<h2 id="部署网站至-github"><a href="#部署网站至-github" class="headerlink" title="部署网站至 github"></a>部署网站至 github</h2><pre><code class="bash">$ hexo deploy
+<h2 id="部署网站至-github"><a href="#部署网站至-github" class="headerlink" title="部署网站至 github"></a>部署网站至 github</h2><pre><code class="bash">hexo deploy
 </code></pre>
-<h3 id="静态化且部署简化命令"><a href="#静态化且部署简化命令" class="headerlink" title="静态化且部署简化命令"></a>静态化且部署简化命令</h3><pre><code class="bash">$ hexo g -d
+<h3 id="静态化且部署简化命令"><a href="#静态化且部署简化命令" class="headerlink" title="静态化且部署简化命令"></a>静态化且部署简化命令</h3><pre><code class="bash">hexo g -d
 </code></pre>
 <h3 id="部署网站前请配置-config-yml"><a href="#部署网站前请配置-config-yml" class="headerlink" title="部署网站前请配置 ./_config.yml"></a>部署网站前请配置 <code>./_config.yml</code></h3><pre><code class="bash">deploy:
   type: git
   repo: git@github.com:youName/youName.github.io.git
   branch: master
 </code></pre>
-<h3 id="部署前请执行"><a href="#部署前请执行" class="headerlink" title="部署前请执行"></a>部署前请执行</h3><pre><code class="bash">$ npm install hexo-deployer-git --save
-$ hexo clean
-$ hexo generate
+<h3 id="部署前请执行"><a href="#部署前请执行" class="headerlink" title="部署前请执行"></a>部署前请执行</h3><pre><code class="bash">npm install hexo-deployer-git --save
+hexo clean
+hexo generate
 </code></pre>
 <h1 id="使用-NexT-主题让站点更酷炫"><a href="#使用-NexT-主题让站点更酷炫" class="headerlink" title="使用 NexT 主题让站点更酷炫"></a>使用 NexT 主题让站点更酷炫</h1><blockquote>
 <p>参考链接<br><br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 参考文档</a><br><br><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">NexT 主题配置</a><br><br><a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="external">NexT 第三方服务</a><br><br><a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="external">更多的配置问题</a></p>
 </blockquote>
-<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><pre><code class="bash">$ cd &lt;yourFolder&gt;
-$ git clone https://github.com/iissnan/hexo-theme-next themes/next
+<h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><pre><code class="bash">cd &lt;yourFolder&gt;
+git clone https://github.com/iissnan/hexo-theme-next themes/next
 </code></pre>
-<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><pre><code class="bash">$ vim ./_config.yml
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><pre><code class="bash">vim ./_config.yml
 </code></pre>
 <p>修改</p>
 <pre><code class="bash">theme: next
 </code></pre>
-<h2 id="验证主题效果"><a href="#验证主题效果" class="headerlink" title="验证主题效果"></a>验证主题效果</h2><pre><code class="bash">$ hexo s --debug
+<h2 id="验证主题效果"><a href="#验证主题效果" class="headerlink" title="验证主题效果"></a>验证主题效果</h2><pre><code class="bash">hexo s --debug
 </code></pre>
 <p>访问 <code>http://localhost:4000</code>，确保站点正确运行</p>
-<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><h3 id="安装-hexo-generator-search"><a href="#安装-hexo-generator-search" class="headerlink" title="安装 hexo-generator-search"></a>安装 hexo-generator-search</h3><pre><code class="bash">$ npm install hexo-generator-search --save
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><h3 id="安装-hexo-generator-search"><a href="#安装-hexo-generator-search" class="headerlink" title="安装 hexo-generator-search"></a>安装 hexo-generator-search</h3><pre><code class="bash">npm install hexo-generator-search --save
 </code></pre>
 <h3 id="编辑配置文件-config-yml"><a href="#编辑配置文件-config-yml" class="headerlink" title="编辑配置文件 ./_config.yml"></a>编辑配置文件 <code>./_config.yml</code></h3><p>在任意位置添加以下内容</p>
 <pre><code class="bash">search:
@@ -761,9 +815,9 @@ duoshuo_info:
           
             <a href="/tags/Liunx/" rel="tag"># Liunx</a>
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
-          
             <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
           
         </div>
       
@@ -849,7 +903,7 @@ duoshuo_info:
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1632,8 +1686,17 @@ duoshuo_info:
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

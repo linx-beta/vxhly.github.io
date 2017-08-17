@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="技术分享博客">
 <meta property="og:description" content="翻墙，主要用于 npm 的代理。没有 vpn 服务器不要紧，肯花点小钱就可以搞定（访问 高梯子）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-15T13:16:25.605Z">
+<meta property="og:updated_time" content="2017-08-17T12:18:23.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 下科学上网">
 <meta name="twitter:description" content="翻墙，主要用于 npm 的代理。没有 vpn 服务器不要紧，肯花点小钱就可以搞定（访问 高梯子）">
@@ -192,6 +192,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -401,8 +457,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:16:25+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:18:23+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -455,8 +511,6 @@
             <div class="post-wordcount">
               
                 
-                  <span class="post-meta-divider">|</span>
-                
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
@@ -503,23 +557,23 @@
 <blockquote>
 <p><a href="https://github.com/shadowsocks/shadowsocks-libev/archive/v2.4.6.zip" target="_blank" rel="external">Source code (zip) 下载地址</a><br><br><a href="https://github.com/shadowsocks/shadowsocks-libev/archive/v2.4.6.tar.gz" target="_blank" rel="external">Source code (tar.gz) 下载地址</a></p>
 </blockquote>
-<h2 id="安装-shadowsocks-libev"><a href="#安装-shadowsocks-libev" class="headerlink" title="安装 shadowsocks-libev"></a>安装 shadowsocks-libev</h2><pre><code class="bash">$ cd shadowsocks-libev
-$ sudo apt-get install build-essential autoconf libtool libssl-dev \
+<h2 id="安装-shadowsocks-libev"><a href="#安装-shadowsocks-libev" class="headerlink" title="安装 shadowsocks-libev"></a>安装 shadowsocks-libev</h2><pre><code class="bash">cd shadowsocks-libev
+sudo apt-get install build-essential autoconf libtool libssl-dev \
     gawk debhelper dh-systemd init-system-helpers pkg-config
-$ dpkg-buildpackage -us -uc -i
-$ cd ..
-$ sudo dpkg -i shadowsocks-libev*.deb
+dpkg-buildpackage -us -uc -i
+cd ..
+sudo dpkg -i shadowsocks-libev*.deb
 </code></pre>
 <h3 id="建议安装前先更新一下软件列表"><a href="#建议安装前先更新一下软件列表" class="headerlink" title="建议安装前先更新一下软件列表"></a>建议安装前先更新一下软件列表</h3><p>如果显示 “现在没有可用的软件包” 等字样，建议先执行</p>
-<pre><code class="bash">$ sudo rm /var/lib/apt/lists/* -vf
-$ sudo apt-get update
-$ sudo apt-get upgrade
+<pre><code class="bash">sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get update
+sudo apt-get upgrade
 </code></pre>
 <h2 id="配置-config-json-文件"><a href="#配置-config-json-文件" class="headerlink" title="配置 config.json 文件"></a>配置 config.json 文件</h2><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim /etc/shadowsocks-libev/config.json
+<pre><code class="bash">sudo vim /etc/shadowsocks-libev/config.json
 </code></pre>
 <p>或者使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit /etc/shadowsocks-libev/config.json
+<pre><code class="bash">sudo gedit /etc/shadowsocks-libev/config.json
 </code></pre>
 <h3 id="修改服务器地址跟密码"><a href="#修改服务器地址跟密码" class="headerlink" title="修改服务器地址跟密码"></a>修改服务器地址跟密码</h3><pre><code class="json">{
   &quot;server&quot;: &quot;&quot;,
@@ -531,37 +585,37 @@ $ sudo apt-get upgrade
 }
 </code></pre>
 <h2 id="配置-shadowsocks-libev-文件"><a href="#配置-shadowsocks-libev-文件" class="headerlink" title="配置 shadowsocks-libev 文件"></a>配置 shadowsocks-libev 文件</h2><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim /etc/init.d/shadowsocks-libev
+<pre><code class="bash">sudo vim /etc/init.d/shadowsocks-libev
 </code></pre>
 <p>或者使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit /etc/init.d/shadowsocks-libev
+<pre><code class="bash">sudo gedit /etc/init.d/shadowsocks-libev
 </code></pre>
 <h3 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h3><pre><code class="bash">DAEMON=/usr/bin/ss-server
 </code></pre>
 <p>=&gt;</p>
 <pre><code class="bash">DAEMON=/usr/bin/ss-local
 </code></pre>
-<h2 id="启动-shadowsocks-libev"><a href="#启动-shadowsocks-libev" class="headerlink" title="启动 shadowsocks-libev"></a>启动 shadowsocks-libev</h2><pre><code class="bash">$ sudo service shadowsocks-libev restart
+<h2 id="启动-shadowsocks-libev"><a href="#启动-shadowsocks-libev" class="headerlink" title="启动 shadowsocks-libev"></a>启动 shadowsocks-libev</h2><pre><code class="bash">sudo service shadowsocks-libev restart
 </code></pre>
-<h2 id="安装-Privoxy"><a href="#安装-Privoxy" class="headerlink" title="安装 Privoxy"></a>安装 Privoxy</h2><pre><code class="bash">$ sudo apt-get install privoxy
+<h2 id="安装-Privoxy"><a href="#安装-Privoxy" class="headerlink" title="安装 Privoxy"></a>安装 Privoxy</h2><pre><code class="bash">sudo apt-get install privoxy
 </code></pre>
 <h3 id="配置-Privoxy"><a href="#配置-Privoxy" class="headerlink" title="配置 Privoxy"></a>配置 Privoxy</h3><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim /etc/privoxy/config
+<pre><code class="bash">sudo vim /etc/privoxy/config
 </code></pre>
 <p>或者使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit /etc/privoxy/config
+<pre><code class="bash">sudo gedit /etc/privoxy/config
 </code></pre>
 <p>按 <code>shift+g</code> 切到最后一行，添加</p>
 <pre><code class="bash">forward-socks5 / 127.0.0.1:1080 .
 </code></pre>
-<h2 id="配置终端-http-代理"><a href="#配置终端-http-代理" class="headerlink" title="配置终端 http 代理"></a>配置终端 http 代理</h2><pre><code class="bash">$ export http_proxy=&quot;127.0.0.1:8118&quot;
-$ export https_proxy=&quot;127.0.0.1:8118&quot;
+<h2 id="配置终端-http-代理"><a href="#配置终端-http-代理" class="headerlink" title="配置终端 http 代理"></a>配置终端 http 代理</h2><pre><code class="bash">export http_proxy=&quot;127.0.0.1:8118&quot;
+export https_proxy=&quot;127.0.0.1:8118&quot;
 </code></pre>
 <h3 id="配置终端-http-代理的启动"><a href="#配置终端-http-代理的启动" class="headerlink" title="配置终端 http 代理的启动"></a>配置终端 http 代理的启动</h3><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim ~/.bashrc
+<pre><code class="bash">sudo vim ~/.bashrc
 </code></pre>
 <p>或者使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit ~/.bashrc
+<pre><code class="bash">sudo gedit ~/.bashrc
 </code></pre>
 <p>按 <code>shift+g</code> 切到最后一行，添加</p>
 <pre><code class="bash">export http_proxy=&quot;127.0.0.1:8118&quot;
@@ -570,28 +624,28 @@ export https_proxy=&quot;127.0.0.1:8118&quot;
 <blockquote>
 <p>如果此举会影响到终端下载，建议还是不要设置为好。</p>
 </blockquote>
-<h2 id="启动-Privoxy"><a href="#启动-Privoxy" class="headerlink" title="启动 Privoxy"></a>启动 Privoxy</h2><pre><code class="bash">$ sudo service privoxy restart
+<h2 id="启动-Privoxy"><a href="#启动-Privoxy" class="headerlink" title="启动 Privoxy"></a>启动 Privoxy</h2><pre><code class="bash">sudo service privoxy restart
 </code></pre>
-<h2 id="测试代理是否成功（需安装-curl）"><a href="#测试代理是否成功（需安装-curl）" class="headerlink" title="测试代理是否成功（需安装 curl）"></a>测试代理是否成功（需安装 curl）</h2><pre><code class="bash">$ curl http://www.google.com.hk
+<h2 id="测试代理是否成功（需安装-curl）"><a href="#测试代理是否成功（需安装-curl）" class="headerlink" title="测试代理是否成功（需安装 curl）"></a>测试代理是否成功（需安装 curl）</h2><pre><code class="bash">curl http://www.google.com.hk
 </code></pre>
 <p>返回带 <code>google</code> 字样表示受理成功</p>
-<h2 id="配置-npm-代理（需安装-node、npm）"><a href="#配置-npm-代理（需安装-node、npm）" class="headerlink" title="配置 npm 代理（需安装 node、npm）"></a>配置 npm 代理（需安装 node、npm）</h2><pre><code class="bash">$ npm config set proxy http://127.0.0.1:8118
-$ npm config set https-proxy http://127.0.0.1:8118
+<h2 id="配置-npm-代理（需安装-node、npm）"><a href="#配置-npm-代理（需安装-node、npm）" class="headerlink" title="配置 npm 代理（需安装 node、npm）"></a>配置 npm 代理（需安装 node、npm）</h2><pre><code class="bash">npm config set proxy http://127.0.0.1:8118
+npm config set https-proxy http://127.0.0.1:8118
 </code></pre>
-<h3 id="清除-npm-代理"><a href="#清除-npm-代理" class="headerlink" title="清除 npm 代理"></a>清除 npm 代理</h3><pre><code class="bash">$ npm config delete proxy
-$ npm config delete https-proxy
+<h3 id="清除-npm-代理"><a href="#清除-npm-代理" class="headerlink" title="清除 npm 代理"></a>清除 npm 代理</h3><pre><code class="bash">npm config delete proxy
+npm config delete https-proxy
 </code></pre>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><h2 id="安装-shadowsocks"><a href="#安装-shadowsocks" class="headerlink" title="安装 shadowsocks"></a>安装 shadowsocks</h2><pre><code class="bash">$ sudo apt-get install python-gevent python-pip python-setuptools m2crypto
-$ sudo pip install shadowsocks
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><h2 id="安装-shadowsocks"><a href="#安装-shadowsocks" class="headerlink" title="安装 shadowsocks"></a>安装 shadowsocks</h2><pre><code class="bash">sudo apt-get install python-gevent python-pip python-setuptools m2crypto
+sudo pip install shadowsocks
 </code></pre>
-<h3 id="建议安装前先更新一下软件列表-1"><a href="#建议安装前先更新一下软件列表-1" class="headerlink" title="建议安装前先更新一下软件列表"></a>建议安装前先更新一下软件列表</h3><pre><code class="bash">$ sudo apt-get update
-$ sudo apt-get upgrade
+<h3 id="建议安装前先更新一下软件列表-1"><a href="#建议安装前先更新一下软件列表-1" class="headerlink" title="建议安装前先更新一下软件列表"></a>建议安装前先更新一下软件列表</h3><pre><code class="bash">sudo apt-get update
+sudo apt-get upgrade
 </code></pre>
 <h2 id="新建-shadowsocks-json-文件"><a href="#新建-shadowsocks-json-文件" class="headerlink" title="新建 shadowsocks.json 文件"></a>新建 shadowsocks.json 文件</h2><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim /etc/shadowsocks.json
+<pre><code class="bash">sudo vim /etc/shadowsocks.json
 </code></pre>
 <p>或使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit /etc/shadowsocks.json
+<pre><code class="bash">sudo gedit /etc/shadowsocks.json
 </code></pre>
 <h3 id="添加内容"><a href="#添加内容" class="headerlink" title="添加内容"></a>添加内容</h3><pre><code class="json">{
   &quot;server&quot;: &quot;&quot;,
@@ -602,18 +656,18 @@ $ sudo apt-get upgrade
   &quot;method&quot;: &quot;rc4-md5&quot;
 }
 </code></pre>
-<h2 id="启动-shadowsocks"><a href="#启动-shadowsocks" class="headerlink" title="启动 shadowsocks"></a>启动 shadowsocks</h2><pre><code class="bash">$ sslocal -c /etc/shadowsocks.json
+<h2 id="启动-shadowsocks"><a href="#启动-shadowsocks" class="headerlink" title="启动 shadowsocks"></a>启动 shadowsocks</h2><pre><code class="bash">sslocal -c /etc/shadowsocks.json
 </code></pre>
 <p>设置为启动时自动运行。在 <code>/etc/rc.local</code> 中添加如下命令，注意在 <code>exit 0</code> 之前。</p>
-<pre><code class="bash">$ sudo sslocal -c /etc/shadowsocks.json
+<pre><code class="bash">sudo sslocal -c /etc/shadowsocks.json
 </code></pre>
-<h2 id="安装-Privoxy-1"><a href="#安装-Privoxy-1" class="headerlink" title="安装 Privoxy"></a>安装 Privoxy</h2><pre><code class="bash">$ sudo apt-get install privoxy
+<h2 id="安装-Privoxy-1"><a href="#安装-Privoxy-1" class="headerlink" title="安装 Privoxy"></a>安装 Privoxy</h2><pre><code class="bash">sudo apt-get install privoxy
 </code></pre>
 <h3 id="配置-Privoxy-1"><a href="#配置-Privoxy-1" class="headerlink" title="配置 Privoxy"></a>配置 Privoxy</h3><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim /etc/privoxy/config
+<pre><code class="bash">sudo vim /etc/privoxy/config
 </code></pre>
 <p>或者使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit /etc/privoxy/config
+<pre><code class="bash">sudo gedit /etc/privoxy/config
 </code></pre>
 <p>修改监听地址</p>
 <pre><code class="bash">listen-address  127.0.0.1:8118
@@ -621,19 +675,19 @@ $ sudo apt-get upgrade
 <p>按 <code>shift+g</code> 切到最后一行，添加</p>
 <pre><code class="bash">forward-socks5 / 127.0.0.1:1080 .
 </code></pre>
-<h2 id="启动-Privoxy-1"><a href="#启动-Privoxy-1" class="headerlink" title="启动 Privoxy"></a>启动 Privoxy</h2><pre><code class="bash">$ sudo /etc/init.d/privoxy restart
+<h2 id="启动-Privoxy-1"><a href="#启动-Privoxy-1" class="headerlink" title="启动 Privoxy"></a>启动 Privoxy</h2><pre><code class="bash">sudo /etc/init.d/privoxy restart
 </code></pre>
-<h2 id="配置终端-http-代理-1"><a href="#配置终端-http-代理-1" class="headerlink" title="配置终端 http 代理"></a>配置终端 http 代理</h2><pre><code class="bash">$ export http_proxy=&quot;127.0.0.1:8118&quot;
-$ export https_proxy=&quot;127.0.0.1:8118&quot;
+<h2 id="配置终端-http-代理-1"><a href="#配置终端-http-代理-1" class="headerlink" title="配置终端 http 代理"></a>配置终端 http 代理</h2><pre><code class="bash">export http_proxy=&quot;127.0.0.1:8118&quot;
+export https_proxy=&quot;127.0.0.1:8118&quot;
 </code></pre>
 <p>为了方便还是在 <code>/etc/rc.local</code> 中添加如下命令，注意在 <code>exit 0</code> 之前。</p>
 <pre><code class="bash">sudo /etc/init.d/privoxy start
 </code></pre>
 <h3 id="配置终端-http-代理的启动-1"><a href="#配置终端-http-代理的启动-1" class="headerlink" title="配置终端 http 代理的启动"></a>配置终端 http 代理的启动</h3><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim ~/.bashrc
+<pre><code class="bash">sudo vim ~/.bashrc
 </code></pre>
 <p>或者使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit ~/.bashrc
+<pre><code class="bash">sudo gedit ~/.bashrc
 </code></pre>
 <p>按 <code>shift+g</code> 切到最后一行，添加</p>
 <pre><code class="bash">export http_proxy=&quot;127.0.0.1:8118&quot;
@@ -642,21 +696,21 @@ export https_proxy=&quot;127.0.0.1:8118&quot;
 <blockquote>
 <p>如果此举会影响到终端下载，建议还是不要设置为好。</p>
 </blockquote>
-<h2 id="测试代理是否成功（需安装-curl）-1"><a href="#测试代理是否成功（需安装-curl）-1" class="headerlink" title="测试代理是否成功（需安装 curl）"></a>测试代理是否成功（需安装 curl）</h2><pre><code class="bash">$ curl http://www.google.com.hk
+<h2 id="测试代理是否成功（需安装-curl）-1"><a href="#测试代理是否成功（需安装-curl）-1" class="headerlink" title="测试代理是否成功（需安装 curl）"></a>测试代理是否成功（需安装 curl）</h2><pre><code class="bash">curl http://www.google.com.hk
 </code></pre>
 <p>返回带 <code>google</code> 字样表示受理成功</p>
-<h2 id="配置-npm-代理（需安装-node、npm）-1"><a href="#配置-npm-代理（需安装-node、npm）-1" class="headerlink" title="配置 npm 代理（需安装 node、npm）"></a>配置 npm 代理（需安装 node、npm）</h2><pre><code class="bash">$ npm config set proxy http://127.0.0.1:8118
-$ npm config set https-proxy http://127.0.0.1:8118
+<h2 id="配置-npm-代理（需安装-node、npm）-1"><a href="#配置-npm-代理（需安装-node、npm）-1" class="headerlink" title="配置 npm 代理（需安装 node、npm）"></a>配置 npm 代理（需安装 node、npm）</h2><pre><code class="bash">npm config set proxy http://127.0.0.1:8118
+npm config set https-proxy http://127.0.0.1:8118
 </code></pre>
-<h3 id="清除-npm-代理-1"><a href="#清除-npm-代理-1" class="headerlink" title="清除 npm 代理"></a>清除 npm 代理</h3><pre><code class="bash">$ npm config delete proxy
-$ npm config delete https-proxy
+<h3 id="清除-npm-代理-1"><a href="#清除-npm-代理-1" class="headerlink" title="清除 npm 代理"></a>清除 npm 代理</h3><pre><code class="bash">npm config delete proxy
+npm config delete https-proxy
 </code></pre>
 <h1 id="附上-Shadowsocks-服务器搭建方法"><a href="#附上-Shadowsocks-服务器搭建方法" class="headerlink" title="附上 Shadowsocks 服务器搭建方法"></a>附上 Shadowsocks 服务器搭建方法</h1><blockquote>
 <p>首先你要有一台专属于你的服务器，<a href="http://www.hostker.com/" target="_blank" rel="external">hostker</a> 这里提供较为便宜的服务器</p>
 </blockquote>
 <h2 id="更新软件源"><a href="#更新软件源" class="headerlink" title="更新软件源"></a>更新软件源</h2><p>安装前最好先更新一下软件源</p>
-<pre><code class="bash">$ sudo apt-get update
-$ sudo apt-get upgrade
+<pre><code class="bash">sudo apt-get update
+sudo apt-get upgrade
 </code></pre>
 <h2 id="安装-Shadowsocks-服务端"><a href="#安装-Shadowsocks-服务端" class="headerlink" title="安装 Shadowsocks 服务端"></a>安装 Shadowsocks 服务端</h2><p>使用 <code>pip</code> 方式安装</p>
 <pre><code class="bash">apt-get install python-pip
@@ -845,7 +899,7 @@ Enjoy it!
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1628,8 +1682,17 @@ Enjoy it!
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

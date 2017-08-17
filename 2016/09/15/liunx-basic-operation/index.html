@@ -132,7 +132,7 @@
 <meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-2.png">
 <meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-3.png">
 <meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-4.png">
-<meta property="og:updated_time" content="2017-08-15T13:13:35.282Z">
+<meta property="og:updated_time" content="2017-08-17T12:12:55.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Liunx 学习笔记（五）：基础操作">
 <meta name="twitter:description" content="本篇是 Liunx 的学习笔记系列第五篇，这一篇将介绍 Liunx 的基础操作。很多人觉得 Liunx 非常难学，但不其然，只要掌握一些基础的命令操作，Liunx 还是非常好上手的">
@@ -197,6 +197,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -406,8 +462,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:13:35+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:12:55+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -459,8 +515,6 @@
           
             <div class="post-wordcount">
               
-                
-                  <span class="post-meta-divider">|</span>
                 
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
@@ -564,7 +618,7 @@
 </tbody>
 </table>
 <h2 id="使用通配符"><a href="#使用通配符" class="headerlink" title="使用通配符"></a>使用通配符</h2><p><code>举例:</code></p>
-<pre><code class="bash">$ touch love_{1..10}_Liunx.txt
+<pre><code class="bash">touch love_{1..10}_Liunx.txt
 </code></pre>
 <p><img src="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-1.png" alt="使用通配符"></p>
 <h2 id="shell-常用通配符"><a href="#shell-常用通配符" class="headerlink" title="shell 常用通配符"></a>shell 常用通配符</h2><table>
@@ -608,9 +662,9 @@
 <h1 id="命令手册速查"><a href="#命令手册速查" class="headerlink" title="命令手册速查"></a>命令手册速查</h1><blockquote>
 <p>Liunx 下命令成千上百，有个速查手册也是不错的，<a href="http://man.linuxde.net/" target="_blank" rel="external">Liunx 命令速查手册</a></p>
 </blockquote>
-<h1 id="Liunx-用户管理"><a href="#Liunx-用户管理" class="headerlink" title="Liunx 用户管理"></a>Liunx 用户管理</h1><h2 id="获取当前登录的用户"><a href="#获取当前登录的用户" class="headerlink" title="获取当前登录的用户"></a>获取当前登录的用户</h2><pre><code class="bash">$ who # 获取当前登录的所有用户信息（包括远程登录）
-$ whoami # 获取当前登录的用户名
-$ who am i # 获取当前登录用户的信息
+<h1 id="Liunx-用户管理"><a href="#Liunx-用户管理" class="headerlink" title="Liunx 用户管理"></a>Liunx 用户管理</h1><h2 id="获取当前登录的用户"><a href="#获取当前登录的用户" class="headerlink" title="获取当前登录的用户"></a>获取当前登录的用户</h2><pre><code class="bash">who # 获取当前登录的所有用户信息（包括远程登录）
+whoami # 获取当前登录的用户名
+who am i # 获取当前登录用户的信息
 </code></pre>
 <p><img src="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-2.png" alt="获取当前登录的用户"></p>
 <blockquote>
@@ -620,10 +674,10 @@ $ who am i # 获取当前登录用户的信息
 useradd -m [userName]         # 通过自行添加参数方式新增用户
 useradd -u 0 -o [userName]    # 添加 uid 为 0 的用户，即 root 用户的别名，拥有 root 的权限
 userdel -r [userName]         # 永久删除用户
-$ id                          # 查看用户的 uid 或 gid 等信息
-$ su -                        # 切换到 root 用户
-$ su - [userName]             # 切换某一个用户
-$ passwd                      # 为当前用户设置密码
+id                          # 查看用户的 uid 或 gid 等信息
+su -                        # 切换到 root 用户
+su - [userName]             # 切换某一个用户
+passwd                      # 为当前用户设置密码
 </code></pre>
 <blockquote>
 <p>用户信息将被保存至 /etc/passwd，用户密码将被保存至 /etc/shadow<br><br>使用 root 用户可以修改其内容，只需使用 wq!，强制保存就好</p>
@@ -655,45 +709,45 @@ usermod -U [userName]    #解锁
 </code></pre>
 <h2 id="查看当前登录的用户的环境变量"><a href="#查看当前登录的用户的环境变量" class="headerlink" title="查看当前登录的用户的环境变量"></a>查看当前登录的用户的环境变量</h2><pre><code class="bash">env
 </code></pre>
-<h1 id="Liunx-文件权限"><a href="#Liunx-文件权限" class="headerlink" title="Liunx 文件权限"></a>Liunx 文件权限</h1><h2 id="查看文件权限"><a href="#查看文件权限" class="headerlink" title="查看文件权限"></a>查看文件权限</h2><pre><code class="bash">$ ls -l       # 可以简写成 ll，注意有些版本的 Liunx 不支持
+<h1 id="Liunx-文件权限"><a href="#Liunx-文件权限" class="headerlink" title="Liunx 文件权限"></a>Liunx 文件权限</h1><h2 id="查看文件权限"><a href="#查看文件权限" class="headerlink" title="查看文件权限"></a>查看文件权限</h2><pre><code class="bash">ls -l       # 可以简写成 ll，注意有些版本的 Liunx 不支持
 </code></pre>
 <h3 id="权限介绍"><a href="#权限介绍" class="headerlink" title="权限介绍"></a>权限介绍</h3><p><img src="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-3.png" alt="权限介绍"><br><br><img src="http://oaq0p7t2g.bkt.clouddn.com/liunx-basic-4.png" alt="权限介绍"></p>
 <blockquote>
 <p>通常我们使用数字表示权限，4 为读取权限，2 为写入权限，1 为执行权限。所以权限为 777 的为最高权限</p>
 </blockquote>
-<h2 id="权限的设置"><a href="#权限的设置" class="headerlink" title="权限的设置"></a>权限的设置</h2><pre><code class="bash">$ chmod 777 text.txt    # 设置最高权限
-$ chmod o+w text.txt    # 为其他用户添加写权限
-$ chmod g-r text.txt    # 为组中的所有用户去除读权限
+<h2 id="权限的设置"><a href="#权限的设置" class="headerlink" title="权限的设置"></a>权限的设置</h2><pre><code class="bash">chmod 777 text.txt    # 设置最高权限
+chmod o+w text.txt    # 为其他用户添加写权限
+chmod g-r text.txt    # 为组中的所有用户去除读权限
 </code></pre>
 <h2 id="修改所属者和所属组"><a href="#修改所属者和所属组" class="headerlink" title="修改所属者和所属组"></a>修改所属者和所属组</h2><pre><code class="bash">chown root text.txt         # 修改所属者
 chgrp text text.txt         # 修该所属组
 chown root:text text.txt    # 修改所属者和所属组
 </code></pre>
-<h1 id="Liunx-文件的基本操作（很重要且很常用）"><a href="#Liunx-文件的基本操作（很重要且很常用）" class="headerlink" title="Liunx 文件的基本操作（很重要且很常用）"></a>Liunx 文件的基本操作（很重要且很常用）</h1><h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><pre><code class="bash">$ touch test                            # 新建一个空文件
-$ echo &quot;this is a text&quot; &gt; test.txt      # 输出内容重定向到文件，&gt; 覆盖操作
-$ echo &quot;this is a text&quot; &gt;&gt; test.txt     # 输出内容重定向到文件，&gt;&gt; 追加操作
-$ rm -f test.txt                        # 删除文件
+<h1 id="Liunx-文件的基本操作（很重要且很常用）"><a href="#Liunx-文件的基本操作（很重要且很常用）" class="headerlink" title="Liunx 文件的基本操作（很重要且很常用）"></a>Liunx 文件的基本操作（很重要且很常用）</h1><h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><pre><code class="bash">touch test                            # 新建一个空文件
+echo &quot;this is a text&quot; &gt; test.txt      # 输出内容重定向到文件，&gt; 覆盖操作
+echo &quot;this is a text&quot; &gt;&gt; test.txt     # 输出内容重定向到文件，&gt;&gt; 追加操作
+rm -f test.txt                        # 删除文件
 </code></pre>
-<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><pre><code class="bash">$ mkdir [folderName]                        # 新建目录
-$ mkdir -p [path]/[folderName]              # 若父级目录不存在，则一起创建
-$ rm -rf [path]/[folderName]                # 删除目录
+<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><pre><code class="bash">mkdir [folderName]                        # 新建目录
+mkdir -p [path]/[folderName]              # 若父级目录不存在，则一起创建
+rm -rf [path]/[folderName]                # 删除目录
 </code></pre>
-<h2 id="复制操作"><a href="#复制操作" class="headerlink" title="复制操作"></a>复制操作</h2><pre><code class="bash">$ cp test [path]/[folderName]                       # 复制文件爱内
-$ cp -r [path]/[folderName] [path]/[folderName]     # 复制目录
+<h2 id="复制操作"><a href="#复制操作" class="headerlink" title="复制操作"></a>复制操作</h2><pre><code class="bash">cp test [path]/[folderName]                       # 复制文件爱内
+cp -r [path]/[folderName] [path]/[folderName]     # 复制目录
 </code></pre>
-<h2 id="移动、重命名操作"><a href="#移动、重命名操作" class="headerlink" title="移动、重命名操作"></a>移动、重命名操作</h2><pre><code class="bash">$ mv [fileName] [path]/[folderName]           # 移动文件
-$ mv [fileName1] [fileName2]                  # 重命名
+<h2 id="移动、重命名操作"><a href="#移动、重命名操作" class="headerlink" title="移动、重命名操作"></a>移动、重命名操作</h2><pre><code class="bash">mv [fileName] [path]/[folderName]           # 移动文件
+mv [fileName1] [fileName2]                  # 重命名
 
 # 先用通配符批量创建 5 个文件
-$ touch file{1..5}.txt
+touch file{1..5}.txt
 # 批量将这 5 个后缀为 .txt 的文本文件重命名为以 .c 为后缀的文件
-$ rename &#39;s/\.txt/\.c/&#39; *.txt
+rename &#39;s/\.txt/\.c/&#39; *.txt
 # 批量将这 5 个文件，文件名改为大写
-$ rename &#39;y/a-z/A-Z/&#39; *.c
+rename &#39;y/a-z/A-Z/&#39; *.c
 </code></pre>
-<h2 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h2><pre><code class="bash">$ cat /etc/passwd
-$ tail -n 5 /etc/passwd       # 只输出文件的末尾 5 行
-$ file /bin/ls                # 可以查看文件的类型
+<h2 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h2><pre><code class="bash">cat /etc/passwd
+tail -n 5 /etc/passwd       # 只输出文件的末尾 5 行
+file /bin/ls                # 可以查看文件的类型
 </code></pre>
 <blockquote>
 <p>适用于快速查看文件，都是用来打印文件内容到标准输出（终端)，相同的命令有：cat (正序)、tac (倒序)、tail(按要求输出)和 nl 命令</p>
@@ -701,65 +755,65 @@ $ file /bin/ls                # 可以查看文件的类型
 <h1 id="搜索文件"><a href="#搜索文件" class="headerlink" title="搜索文件"></a>搜索文件</h1><h2 id="whereis"><a href="#whereis" class="headerlink" title="whereis"></a>whereis</h2><blockquote>
 <p>直接从数据库中查询简单快速</p>
 </blockquote>
-<pre><code class="bash">$ whereis ls      # 直接从数据库中查询简单快速
+<pre><code class="bash">whereis ls      # 直接从数据库中查询简单快速
 </code></pre>
 <h2 id="locate"><a href="#locate" class="headerlink" title="locate"></a>locate</h2><blockquote>
 <p>快而全</p>
 </blockquote>
 <p>通过 <code>&quot;/var/lib/mlocate/mlocate.db&quot;</code> 数据库查找，不过这个数据库也不是实时更新的，系统会使用定时任务每天自动执行 updatedb 命令更新一次，所以有时候你刚添加的文件，它可能会找不到，你就得自己执行一次 updatedb 命令（在我们的环境中必须先执行一次该命令）。它可以用来查找指定目录下的不同文件类型，</p>
 <p>如：查找 <code>/etc</code> 下所有以 sh 开头的文件</p>
-<pre><code class="bash">$ locate /etc/sh
+<pre><code class="bash">locate /etc/sh
 </code></pre>
 <p>注意,它不只是在 etc 目录下查找并会自动递归子目录进行查找 查找 <code>/usr/share/</code> 下所有 jpg 文件</p>
-<pre><code class="bash">$ locate /usr/share/*.jpg
+<pre><code class="bash">locate /usr/share/*.jpg
 </code></pre>
 <p>注意要添加 <strong>*</strong> 号前面的反斜杠转义，否则会无法找到 只统计数目可以加上 -c 参数，-i 参数忽略大小写进行查找，whereis 的 -b,-m，-s 同样适用</p>
 <h2 id="which"><a href="#which" class="headerlink" title="which"></a>which</h2><blockquote>
 <p>避免了进入程序进行测试，很有用</p>
 </blockquote>
 <p>which 本身是 shell 内建的一个命令，我们通常使用 which 来确定是否安装了某个指定的软件，因为它只从 PATH 环境变量指定的路径中去搜索命令</p>
-<pre><code class="bash">$ which man
+<pre><code class="bash">which man
 </code></pre>
 <h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><blockquote>
 <p>太精和太细，知道前面的命令就已经足够了</p>
 </blockquote>
 <p>find 应该是这几个命令中最强大的了，它不但可以通过文件类型、文件名进行查找而且可以根据文件的属性（如文件的时间戳，文件的权限等）进行搜索</p>
 <p>举个栗子：在指定目录下搜索指定文件名的文件</p>
-<pre><code class="bash">$ find /etc/ -name interfaces
+<pre><code class="bash">find /etc/ -name interfaces
 </code></pre>
 <p>注意find命令的路径是作为第一个参数的， 基本命令格式为 <code>find [path] [option] [action]</code></p>
-<h1 id="简单文件系统操作"><a href="#简单文件系统操作" class="headerlink" title="简单文件系统操作"></a>简单文件系统操作</h1><h2 id="查看磁盘和目录的容量"><a href="#查看磁盘和目录的容量" class="headerlink" title="查看磁盘和目录的容量"></a>查看磁盘和目录的容量</h2><h3 id="使用-df-命令查看磁盘的容量"><a href="#使用-df-命令查看磁盘的容量" class="headerlink" title="使用 df 命令查看磁盘的容量"></a>使用 df 命令查看磁盘的容量</h3><pre><code class="bash">$ df            # 以 blocks 的大小展示
-$ df -h         # 人性化输出，以更易读的方式展示
+<h1 id="简单文件系统操作"><a href="#简单文件系统操作" class="headerlink" title="简单文件系统操作"></a>简单文件系统操作</h1><h2 id="查看磁盘和目录的容量"><a href="#查看磁盘和目录的容量" class="headerlink" title="查看磁盘和目录的容量"></a>查看磁盘和目录的容量</h2><h3 id="使用-df-命令查看磁盘的容量"><a href="#使用-df-命令查看磁盘的容量" class="headerlink" title="使用 df 命令查看磁盘的容量"></a>使用 df 命令查看磁盘的容量</h3><pre><code class="bash">df            # 以 blocks 的大小展示
+df -h         # 人性化输出，以更易读的方式展示
 </code></pre>
 <h3 id="使用-du-命令查看目录的容量"><a href="#使用-du-命令查看目录的容量" class="headerlink" title="使用 du 命令查看目录的容量"></a>使用 du 命令查看目录的容量</h3><pre><code class="bash"># 默认同样以blocks的大小展示
-$ du
+du
 # 加上-h参数，以更易读的方式展示
-$ du -h
+du -h
 
 # 只查看1级目录的信息
-$ du -h -d 0 ~
+du -h -d 0 ~
 # 查看2级$ du -h -d 1 ~
 </code></pre>
-<h2 id="挂载光盘和卸载光盘"><a href="#挂载光盘和卸载光盘" class="headerlink" title="挂载光盘和卸载光盘"></a>挂载光盘和卸载光盘</h2><pre><code class="bash">$ mount /dev/cdrom /mnt/cdrom     # 挂载光盘
-$ umount /dev/cdrom               # 卸载光盘
+<h2 id="挂载光盘和卸载光盘"><a href="#挂载光盘和卸载光盘" class="headerlink" title="挂载光盘和卸载光盘"></a>挂载光盘和卸载光盘</h2><pre><code class="bash">mount /dev/cdrom /mnt/cdrom     # 挂载光盘
+umount /dev/cdrom               # 卸载光盘
 </code></pre>
-<h2 id="wc-命令，简单小巧的计数工具"><a href="#wc-命令，简单小巧的计数工具" class="headerlink" title="wc 命令，简单小巧的计数工具"></a>wc 命令，简单小巧的计数工具</h2><pre><code class="bash">$ wc /etc/passwd
+<h2 id="wc-命令，简单小巧的计数工具"><a href="#wc-命令，简单小巧的计数工具" class="headerlink" title="wc 命令，简单小巧的计数工具"></a>wc 命令，简单小巧的计数工具</h2><pre><code class="bash">wc /etc/passwd
 </code></pre>
 <p>分别只输出行数、单词数、字节数、字符数和输入文本中最长一行的字节数</p>
 <pre><code class="bash"># 行数
-$ wc -l /etc/passwd
+wc -l /etc/passwd
 
 # 单词数
-$ wc -w /etc/passwd
+wc -w /etc/passwd
 
 # 字节数
-$ wc -c /etc/passwd
+wc -c /etc/passwd
 
 # 字符数
-$ wc -m /etc/passwd
+wc -m /etc/passwd
 
 # 最长行字节数
-$ wc -L /etc/passwd
+wc -L /etc/passwd
 </code></pre>
 <blockquote>
 <p>注意：对于西文字符来说，一个字符就是一个字节，但对于中文字符一个汉子是大于2个字节的，具体数目是由字符编码决定的</p>
@@ -788,13 +842,13 @@ $ wc -L /etc/passwd
 </table>
 <p><code>操作举例：</code></p>
 <pre><code class="bash"># 删除 &quot;hello shiyanlou&quot; 中所有的&#39;o&#39;,&#39;l&#39;,&#39;h&#39;
-$ echo &#39;hello shiyanlou&#39; | tr -d &#39;olh&#39;
+echo &#39;hello shiyanlou&#39; | tr -d &#39;olh&#39;
 
 # 将&quot;hello&quot; 中的ll,去重为一个l
-$ echo &#39;hello&#39; | tr -s &#39;l&#39;
+echo &#39;hello&#39; | tr -s &#39;l&#39;
 
 # 将输入文本，全部转换为大写或小写输出
-$ cat /etc/passwd | tr &#39;[:lower:]&#39; &#39;[:upper:]&#39;
+cat /etc/passwd | tr &#39;[:lower:]&#39; &#39;[:upper:]&#39;
 # 上面的&#39;[:lower:]&#39; &#39;[:upper:]&#39;你也可以简单的写作&#39;[a-z]&#39; &#39;[A-Z]&#39;,当然反过来将大写变小写也是可以的
 </code></pre>
 <h2 id="col-命令"><a href="#col-命令" class="headerlink" title="col 命令"></a>col 命令</h2><p>col 命令可以将 Tab 换成对等数量的空格建，或反转这个操作.用来格式化代码超爽 使用方式：</p>
@@ -821,10 +875,10 @@ $ cat /etc/passwd | tr &#39;[:lower:]&#39; &#39;[:upper:]&#39;
 </table>
 <p><code>操作举例：</code></p>
 <pre><code class="bash"># 查看/etc/protocols中的不可见字符，可以看到很多^I，这其实就是Tab键转义成可见字符的符号
-$ cat -A /etc/protocols
+cat -A /etc/protocols
 
 # 使用col -x将/etc/protocols中的Tab转换为空格,然后再使用cat查看，你发现^I不见了
-$ cat /etc/protocols | col -x | cat -A
+cat /etc/protocols | col -x | cat -A
 </code></pre>
 
       
@@ -958,7 +1012,7 @@ $ cat /etc/protocols | col -x | cat -A
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1741,8 +1795,17 @@ $ cat /etc/protocols | col -x | cat -A
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

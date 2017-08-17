@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="技术分享博客">
 <meta property="og:description" content="Ubuntu 默认不开启 root 账户的，所以有需开启 root 账户的按照以下做法即可，切换 root 账户后 chromium 浏览器不能使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-15T13:16:21.138Z">
+<meta property="og:updated_time" content="2017-08-17T12:18:26.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 开启 root 用户">
 <meta name="twitter:description" content="Ubuntu 默认不开启 root 账户的，所以有需开启 root 账户的按照以下做法即可，切换 root 账户后 chromium 浏览器不能使用">
@@ -192,6 +192,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -401,8 +457,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:16:21+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:18:26+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -455,8 +511,6 @@
             <div class="post-wordcount">
               
                 
-                  <span class="post-meta-divider">|</span>
-                
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
@@ -499,30 +553,30 @@
 
       
         <p>Ubuntu 默认不开启 root 账户的，所以有需开启 root 账户的按照以下做法即可，切换 root 账户后 chromium 浏览器不能使用 <a id="more"></a></p>
-<h1 id="打开终端开启-root-账户"><a href="#打开终端开启-root-账户" class="headerlink" title="打开终端开启 root 账户"></a>打开终端开启 root 账户</h1><pre><code class="bash">$ sudo passwd -u root
+<h1 id="打开终端开启-root-账户"><a href="#打开终端开启-root-账户" class="headerlink" title="打开终端开启 root 账户"></a>打开终端开启 root 账户</h1><pre><code class="bash">sudo passwd -u root
 </code></pre>
 <h1 id="为-root-账户设置密码"><a href="#为-root-账户设置密码" class="headerlink" title="为 root 账户设置密码"></a>为 root 账户设置密码</h1><blockquote>
 <p>输入两次</p>
 </blockquote>
-<pre><code class="bash">$ sudo passwd root
+<pre><code class="bash">sudo passwd root
 </code></pre>
 <h2 id="测试-root-账户"><a href="#测试-root-账户" class="headerlink" title="测试 root 账户"></a>测试 root 账户</h2><blockquote>
 <p>输入 root 密码，进入 root 终端</p>
 </blockquote>
-<pre><code class="bash">$ su -
+<pre><code class="bash">su -
 </code></pre>
 <h1 id="设置登录面板，使其实现-root-登录"><a href="#设置登录面板，使其实现-root-登录" class="headerlink" title="设置登录面板，使其实现 root 登录"></a>设置登录面板，使其实现 root 登录</h1><p>使用 <code>vim</code></p>
-<pre><code class="bash">$ sudo vim /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
+<pre><code class="bash">sudo vim /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
 </code></pre>
 <p>使用 <code>gedit</code></p>
-<pre><code class="bash">$ sudo gedit /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
+<pre><code class="bash">sudo gedit /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
 </code></pre>
 <p>添加如下代码,保存退出</p>
 <pre><code class="bash">user-session=ubuntu
 greeter-show-manual-login=true
 all-guest=false
 </code></pre>
-<h1 id="重启-ubuntu，需切换-root-账户"><a href="#重启-ubuntu，需切换-root-账户" class="headerlink" title="重启 ubuntu，需切换 root 账户"></a>重启 ubuntu，需切换 root 账户</h1><pre><code class="bash">$ su -
+<h1 id="重启-ubuntu，需切换-root-账户"><a href="#重启-ubuntu，需切换-root-账户" class="headerlink" title="重启 ubuntu，需切换 root 账户"></a>重启 ubuntu，需切换 root 账户</h1><pre><code class="bash">su -
 reboot
 </code></pre>
 <h1 id="删除原先账户"><a href="#删除原先账户" class="headerlink" title="删除原先账户"></a>删除原先账户</h1><blockquote>
@@ -530,7 +584,7 @@ reboot
 </blockquote>
 <h2 id="在-root-用户下"><a href="#在-root-用户下" class="headerlink" title="在 root 用户下"></a>在 root 用户下</h2><pre><code class="bash">userdel -r userName
 </code></pre>
-<h2 id="在普通用户下"><a href="#在普通用户下" class="headerlink" title="在普通用户下"></a>在普通用户下</h2><pre><code class="bash">$ sudo userdel -r userName
+<h2 id="在普通用户下"><a href="#在普通用户下" class="headerlink" title="在普通用户下"></a>在普通用户下</h2><pre><code class="bash">sudo userdel -r userName
 </code></pre>
 <blockquote>
 <p>注意：因为需要彻底删除用户，所以加上-r的选项，在删除用户的同时一起把这个用户的宿主目录和邮件目录删除；userName 需替换成你的原先账户名</p>
@@ -665,7 +719,7 @@ reboot
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1448,8 +1502,17 @@ reboot
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

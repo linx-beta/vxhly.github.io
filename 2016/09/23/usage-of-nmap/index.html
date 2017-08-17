@@ -135,7 +135,7 @@
 <meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/liunx-nmap-5.png">
 <meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/liunx-nmap-6.png">
 <meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/liunx-nmap-7.png">
-<meta property="og:updated_time" content="2017-08-15T13:16:42.365Z">
+<meta property="og:updated_time" content="2017-08-17T12:18:39.958Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="渗透工具用法（三）：Nmap 的用法">
 <meta name="twitter:description" content="此系列笔记是网络渗透工具的使用方法，本篇是介绍端口扫描工具 Nmap 的使用方法。Nmap 在渗透测试中经常用到，它不仅可以用来确定目标网络上计算机的存活状态，而且可以扫描各个计算机的操作系统、开放端口、服务，还有可能获得用户的证书。熟练掌握 Nmap 的用法，可以极大的提高渗透测试技术">
@@ -200,6 +200,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -409,8 +465,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:16:42+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:18:39+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -462,8 +518,6 @@
           
             <div class="post-wordcount">
               
-                
-                  <span class="post-meta-divider">|</span>
                 
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
@@ -573,58 +627,58 @@ nmap -iL IPL.txt        # 扫描 IPL.txt 中保存的所有 IP
 <h1 id="其他更详细的扫描"><a href="#其他更详细的扫描" class="headerlink" title="其他更详细的扫描"></a>其他更详细的扫描</h1><h2 id="Nmap-扫描策略"><a href="#Nmap-扫描策略" class="headerlink" title="Nmap 扫描策略"></a>Nmap 扫描策略</h2><pre><code class="bash"># 适用所有大小网络最好的 nmap 扫描策略
 
 # 主机发现，生成存活主机列表
-$ nmap -sn -T4 -oG Discovery.gnmap 192.168.56.0/24
-$ grep &quot;Status: Up&quot; Discovery.gnmap | cut -f 2 -d &#39; &#39; &gt; LiveHosts.txt
+nmap -sn -T4 -oG Discovery.gnmap 192.168.56.0/24
+grep &quot;Status: Up&quot; Discovery.gnmap | cut -f 2 -d &#39; &#39; &gt; LiveHosts.txt
 
 # 端口发现，发现大部分常用端口
 # http://nmap.org/presentations/BHDC08/bhdc08-slides-fyodor.pdf
-$ nmap -sS -T4 -Pn -oG TopTCP -iL LiveHosts.txt
-$ nmap -sU -T4 -Pn -oN TopUDP -iL LiveHosts.txt
-$ nmap -sS -T4 -Pn --top-ports 3674 -oG 3674 -iL LiveHosts.txt
+nmap -sS -T4 -Pn -oG TopTCP -iL LiveHosts.txt
+nmap -sU -T4 -Pn -oN TopUDP -iL LiveHosts.txt
+nmap -sS -T4 -Pn --top-ports 3674 -oG 3674 -iL LiveHosts.txt
 
 # 端口发现，发现全部端口，但 UDP 端口的扫描会非常慢
-$ nmap -sS -T4 -Pn -p 0-65535 -oN FullTCP -iL LiveHosts.txt
-$ nmap -sU -T4 -Pn -p 0-65535 -oN FullUDP -iL LiveHosts.txt
+nmap -sS -T4 -Pn -p 0-65535 -oN FullTCP -iL LiveHosts.txt
+nmap -sU -T4 -Pn -p 0-65535 -oN FullUDP -iL LiveHosts.txt
 
 # 显示 TCP\UDP 端口
-$ grep &quot;open&quot; FullTCP|cut -f 1 -d &#39; &#39; | sort -nu | cut -f 1 -d &#39;/&#39; |xargs | sed &#39;s/ /,/g&#39;|awk &#39;{print &quot;T:&quot;$0}&#39;
-$ grep &quot;open&quot; FullUDP|cut -f 1 -d &#39; &#39; | sort -nu | cut -f 1 -d &#39;/&#39; |xargs | sed &#39;s/ /,/g&#39;|awk &#39;{print &quot;U:&quot;$0}&#39;
+grep &quot;open&quot; FullTCP|cut -f 1 -d &#39; &#39; | sort -nu | cut -f 1 -d &#39;/&#39; |xargs | sed &#39;s/ /,/g&#39;|awk &#39;{print &quot;T:&quot;$0}&#39;
+grep &quot;open&quot; FullUDP|cut -f 1 -d &#39; &#39; | sort -nu | cut -f 1 -d &#39;/&#39; |xargs | sed &#39;s/ /,/g&#39;|awk &#39;{print &quot;U:&quot;$0}&#39;
 
 # 侦测服务版本
-$ nmap -sV -T4 -Pn -oG ServiceDetect -iL LiveHosts.txt
+nmap -sV -T4 -Pn -oG ServiceDetect -iL LiveHosts.txt
 
 # 扫做系统扫描
-$ nmap -O -T4 -Pn -oG OSDetect -iL LiveHosts.txt
+nmap -O -T4 -Pn -oG OSDetect -iL LiveHosts.txt
 
 # 系统和服务检测
-$ nmap -O -sV -T4 -Pn -p U:53,111,137,T:21-25,80,139,8080 -oG OS_Service_Detect -iL LiveHosts.txt
+nmap -O -sV -T4 -Pn -p U:53,111,137,T:21-25,80,139,8080 -oG OS_Service_Detect -iL LiveHosts.txt
 
 # 扫描 B 段的存活主机
-$ nmap -v -sn -PE -n --min-hostgroup 1024 --min-parallelism 1024 172.16.0.0/16 | grep -v down | grep &quot;172.16.&quot;
+nmap -v -sn -PE -n --min-hostgroup 1024 --min-parallelism 1024 172.16.0.0/16 | grep -v down | grep &quot;172.16.&quot;
 </code></pre>
 <h2 id="Nmap-躲避防火墙"><a href="#Nmap-躲避防火墙" class="headerlink" title="Nmap 躲避防火墙"></a>Nmap 躲避防火墙</h2><pre><code class="bash"># 分段
-$ nmap -f
+nmap -f
 
 # 修改默认 MTU 大小，但必须为 8 的倍数(8,16,24,32 等等)
-$ nmap --mtu 24
+nmap --mtu 24
 
 # 生成随机数量的欺骗
-$ nmap -D RND:10 [target]
+nmap -D RND:10 [target]
 
 # 手动指定欺骗使用的 IP
-$ nmap -D decoy1,decoy2,decoy3 etc.
+nmap -D decoy1,decoy2,decoy3 etc.
 
 # 僵尸网络扫描, 首先需要找到僵尸网络的IP
-$ nmap -sI [Zombie IP] [Target IP]
+nmap -sI [Zombie IP] [Target IP]
 
 # 指定源端口号
-$ nmap --source-port 80 IP
+nmap --source-port 80 IP
 
 # 在每个扫描数据包后追加随机数量的数据
-$ nmap --data-length 25 IP
+nmap --data-length 25 IP
 
 # MAC 地址欺骗，可以生成不同主机的 MAC 地址
-$ nmap --spoof-mac Dell/Apple/3Com IP
+nmap --spoof-mac Dell/Apple/3Com IP
 </code></pre>
 <h2 id="Nmap-进行-Web-漏洞扫描"><a href="#Nmap-进行-Web-漏洞扫描" class="headerlink" title="Nmap 进行 Web 漏洞扫描"></a>Nmap 进行 Web 漏洞扫描</h2><pre><code class="bash">cd /usr/share/nmap/scripts/
 wget http://www.computec.ch/projekte/vulscan/download/nmap_nse_vulscan-2.0.tar.gz &amp;&amp; tar xzf nmap_nse_vulscan-2.0.tar.gz
@@ -803,7 +857,7 @@ nmap -sC 192.168.31.10-12 (全部使用默认配置)
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1586,8 +1640,17 @@ nmap -sC 192.168.31.10-12 (全部使用默认配置)
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>

@@ -128,7 +128,7 @@
 <meta property="og:site_name" content="技术分享博客">
 <meta property="og:description" content="package.json 是 Node.js 应用中比较重要的部分，它定义了项目的依赖关系，这里将介绍该文件各个配置项的作用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-15T13:16:10.430Z">
+<meta property="og:updated_time" content="2017-08-17T12:17:52.278Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解读 npm 中的 package.json">
 <meta name="twitter:description" content="package.json 是 Node.js 应用中比较重要的部分，它定义了项目的依赖关系，这里将介绍该文件各个配置项的作用">
@@ -192,6 +192,62 @@
 
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <style>
+    pre {
+      position: relative;
+    }
+
+    code.has-numbering {
+      margin-left: 2.5rem;
+    }
+
+    code.has-numbering::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pre-numbering {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .pre-numbering li {
+      list-style-type: decimal-leading-zero !important;
+    }
+
+    blockquote {
+      color: #888;
+      background-color: #eae6f3;
+      border-left: 1rem solid #5236a0;
+      padding: 0 1.5rem;
+      position: relative;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    blockquote:before,
+    blockquote:after {
+      color: #392570;
+      font-size: 2.5rem;
+      position: absolute;
+      line-height: 2.5rem;
+    }
+
+    blockquote:before {
+      content: "\201C";
+      left: -1rem;
+      top: 0;
+    }
+
+    blockquote:after {
+      content: "\201D";
+      right: 0;
+      bottom: -1rem;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -401,8 +457,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:16:10+08:00">
-                2017-08-15
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-17T20:17:52+08:00">
+                2017-08-17
               </time>
             
           </span>
@@ -455,8 +511,6 @@
             <div class="post-wordcount">
               
                 
-                  <span class="post-meta-divider">|</span>
-                
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
@@ -502,7 +556,7 @@
 <h1 id="创建-package-json-文件"><a href="#创建-package-json-文件" class="headerlink" title="创建 package.json 文件"></a>创建 package.json 文件</h1><blockquote>
 <p>安装包的信息可保持到项目的 <code>package.json</code> 文件中，以便后续的其它的项目开发或者他人合作使用，也说 <code>package.json</code> 在项目中是必不可少的。</p>
 </blockquote>
-<pre><code class="bash">$ npm init
+<pre><code class="bash">npm init
 </code></pre>
 <h1 id="package-json-文件解读"><a href="#package-json-文件解读" class="headerlink" title="package.json 文件解读"></a>package.json 文件解读</h1><h2 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h2><blockquote>
 <p><code>npm</code> 会根据包内容设置一些默认值。</p>
@@ -1053,7 +1107,7 @@ if (foo) {
           
 
  
-  <div class="comments" id="comments">
+  <div id="comments">
     
   </div>
 
@@ -1836,8 +1890,17 @@ if (foo) {
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block)
+      hljs.initHighlighting();
+      $('pre code').each(function() {
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this)
+          .addClass('has-numbering')
+          .parent()
+          .append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
       });
     });
   </script>
