@@ -1,0 +1,1511 @@
+<!DOCTYPE html>    
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-big-counter.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="true" />
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="STkvd9SMW5" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JavaScript,Layout,jQuery,Moblie," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="技术分享博客" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://oaq0p7t2g.bkt.clouddn.com/code.png?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="解决移动端网页的自适应，让开发变得更加简洁">
+<meta name="keywords" content="JavaScript,Layout,jQuery,Moblie">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端网页自适应方案">
+<meta property="og:url" content="https://vxhly.github.io/2016/08/13/layout-project-for-moblie/index.html">
+<meta property="og:site_name" content="技术分享博客">
+<meta property="og:description" content="解决移动端网页的自适应，让开发变得更加简洁">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/layout-moblie.gif">
+<meta property="og:updated_time" content="2017-08-15T13:13:31.275Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动端网页自适应方案">
+<meta name="twitter:description" content="解决移动端网页的自适应，让开发变得更加简洁">
+<meta name="twitter:image" content="http://oaq0p7t2g.bkt.clouddn.com/layout-moblie.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://vxhly.github.io/2016/08/13/layout-project-for-moblie/"/>
+
+
+
+
+
+  <title>移动端网页自适应方案 | 技术分享博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?24951489115e0096058141e6f12d09bb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+     
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">技术分享博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">更专注于分享</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://vxhly.github.io/2016/08/13/layout-project-for-moblie/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="星火燎原@vxhly">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oaq0p7t2g.bkt.clouddn.com/100.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术分享博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">移动端网页自适应方案</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-13T19:40:34+08:00">
+                2016-08-13
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:13:31+08:00">
+                2017-08-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design/" itemprop="url" rel="index">
+                    <span itemprop="name">design</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/08/13/layout-project-for-moblie/" class="leancloud_visitors" data-flag-title="移动端网页自适应方案">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  1,363
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>解决移动端网页的自适应，让开发变得更加简洁 <a id="more"></a></p>
+<h1 id="mate-标签"><a href="#mate-标签" class="headerlink" title="mate 标签"></a>mate 标签</h1><blockquote>
+<p>首先要让页面大小铺满屏幕又不能溢出。只需要在 html 的 head 标签内加入 viewport（如下），参数分别表示：页面宽度＝屏幕宽度，最大和最小伸缩比都是 1，不允许用户拉缩。</p>
+</blockquote>
+<pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;
+</code></pre>
+<ul>
+<li><strong>width</strong>：viewport 的宽度，可以指定为一个像素值，如：640，或者为特殊的值，如：device-width （设备的宽度）。</li>
+<li><strong>initial-scale</strong>：初始缩放比例，即当浏览器第一次加载页面时的缩放比例。值为 1.0 即原始尺寸。</li>
+<li><strong>maximum-scale</strong>：允许浏览者缩放到的最大比例，一般设为 1.0，即原始尺寸。</li>
+<li><strong>minimum-scale</strong>：允许浏览者缩放到的最小比例，一般设为 1.0，即原始尺寸。</li>
+<li><strong>user-scalable</strong>：浏览者是否可以手动缩放，yes 或 no 。</li>
+</ul>
+<h1 id="使用百分比自适应"><a href="#使用百分比自适应" class="headerlink" title="使用百分比自适应"></a>使用百分比自适应</h1><blockquote>
+<p>把长度单位转换为百分比来表示，这样在不同的宽度下，元素的长宽也会随之变化。</p>
+</blockquote>
+<ul>
+<li>优点：宽度之间无缝衔接， 操作起来也相对比较方便。</li>
+<li>缺点：字体大小需要另外一套自适应方法来调整；当屏幕宽度大于 <code>700px</code> 后，继续按照百分比元素会偏大，这个时候调整起来会比较麻烦。</li>
+</ul>
+<h1 id="rem-em-自适应"><a href="#rem-em-自适应" class="headerlink" title="rem, em 自适应"></a>rem, em 自适应</h1><blockquote>
+<p>用媒体查询的方法，确定在不同屏幕宽度下，改变 html 或 body 的 font-size。再用 rem , em 替代 px 作为单位实现自适应。</p>
+</blockquote>
+<ul>
+<li>优点：可以根据不同屏幕宽度来设置，可以完美解决上面说的屏幕偏大时的比例问题。字体的大小也不存在问题。</li>
+<li>缺点：根据宽度区间来设置，无法实现无缝变换。</li>
+</ul>
+<h1 id="引入-JavaScript-代码"><a href="#引入-JavaScript-代码" class="headerlink" title="引入 JavaScript 代码"></a>引入 JavaScript 代码</h1><blockquote>
+<p>这些兼容方法各有优缺点，都不算完美，怎样才能把优点结合在一起，同时避免缺点呢？ 引入 JavaScript 方法源码，方法原理：使页面 html 的 font-size 会根据屏幕的宽度自动调整，而且屏幕宽度和所设字体大小的商是一定的，然后按照固定比例缩小后作为 rem 的单位长度实现自适应。</p>
+</blockquote>
+<h2 id="方法源码一（需引入-jQuery）"><a href="#方法源码一（需引入-jQuery）" class="headerlink" title="方法源码一（需引入 jQuery）"></a>方法源码一（需引入 jQuery）</h2><pre><code class="javascript">Zepto(function($){
+  // 获取文档的根节点
+  var doc = document.documentElement;
+
+  function setFontSize() {
+    // 获取当前窗口的宽度
+    var winWidth =  $(window).width();
+    // 640 宽度以上进行限制
+    var size = (winWidth / 640) * 100;
+    doc.style.fontSize = (size &lt; 100 ? size : 100) + &#39;px&#39; ;
+  };
+
+  // 防止在 html 未加载完毕时执行，保证获取正确的页宽
+  setTimeout(function(){
+    // 初始化
+    setFontSize();
+  }, 200);
+});
+</code></pre>
+<h2 id="方法源码二（JavaScript-原生代码）"><a href="#方法源码二（JavaScript-原生代码）" class="headerlink" title="方法源码二（JavaScript 原生代码）"></a>方法源码二（JavaScript 原生代码）</h2><pre><code class="javascript">(function (doc, win) {
+  // 获取文档的根节点
+  var docEl = doc.documentElement;
+  // 判断移动端是否发生方向改变
+  var resizeEvt = &#39;orientationchange&#39; in window ? &#39;orientationchange&#39; : &#39;resize&#39;;
+
+  var recalc = function () {
+    // 获取对象的宽度
+    var clientWidth = docEl.clientWidth;
+
+    if (!clientWidth) return;
+
+    if(clientWidth &gt;= 640) {
+      docEl.style.fontSize = &#39;100px&#39;;
+    } else {
+      docEl.style.fontSize = 100 * (clientWidth / 640) + &#39;px&#39;;
+    }
+  };
+
+  if (!doc.addEventListener) return;
+
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener(&#39;DOMContentLoaded&#39;, recalc, false);
+})(document, window);
+</code></pre>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><blockquote>
+<p>以上两个方法源码是 rem 布局的核心代码。 如果你的页面不需要引入 jQuery，建议你使用 JavaScript 原生代码。 代码大意： 如果页面的宽度超过了 640px，那么页面中 html 的 font-size 恒为 100px，否则，页面中 html 的 font-size 的大小为： 100 * (当前页面宽度 / 640)</p>
+</blockquote>
+<h3 id="为什么是-640px？"><a href="#为什么是-640px？" class="headerlink" title="为什么是 640px？"></a>为什么是 640px？</h3><p>对于手机屏幕来说， <code>640px</code> 的页面宽度是一个安全的最大宽度，保证了移动端页面两边不会留白。注意这里的 <code>px</code> 是 <code>css</code> 逻辑像素，与设备的物理像素是有区别的。 如果要切移动端页面，你可以先把效果图宽度等比例缩放到 <code>640px</code>，很好用。</p>
+<h3 id="为什么要设置-html-的-font-size？"><a href="#为什么要设置-html-的-font-size？" class="headerlink" title="为什么要设置 html 的 font-size？"></a>为什么要设置 html 的 font-size？</h3><p><code>rem</code> 就是根元素（即： <code>html</code>）的字体大小。<code>html</code> 中的所有标签样式凡是涉及到尺寸的（如： <code>height</code>, <code>width</code>, <code>padding</code>, <code>margin</code>, <code>font-size</code>。甚至 <code>left</code>, <code>top</code>等）你都可以放心大胆的用 <code>rem</code>作单位。 如果你把 <code>html</code> 的 <code>font-size</code> 设为 <code>20px</code>，前面说过， <code>rem</code>就是 <code>html</code> 的字体大小，那么 <code>1rem = 20px</code>。</p>
+<h3 id="模拟为什么要使用-iphone-4？"><a href="#模拟为什么要使用-iphone-4？" class="headerlink" title="模拟为什么要使用 iphone 4？"></a>模拟为什么要使用 iphone 4？</h3><p>假设你部门的设计师给你的页面标准宽度为 <code>640px</code>，则页面中所有的 <code>宽高</code> 全部除以 2 ，Chrome 浏览器 模拟手机页面 设置手机型号为 <code>IPhone 4</code>。 这也就是为什么要将所有的宽高除以 2 的原因：<code>IPhone 4</code> 标准 宽 是 <code>320 px</code>。 然后正常的用 <code>px</code> 为单位 写你的 <code>css</code> ，你所需要做的就是你写的页面，要在 <code>IPhone 4</code> 完全正确显示。 如果你说，那设计那边给的不是 <code>640px</code> 标准怎么办？你只要让你的页面按照设计图在 <code>iphone 4</code> 上正确显示，就木问题。</p>
+<h3 id="rem-单位是如何换算的？"><a href="#rem-单位是如何换算的？" class="headerlink" title="rem 单位是如何换算的？"></a>rem 单位是如何换算的？</h3><p>页面 <code>css</code> 全部写完之后，将所有的 <code>px</code> 转换为以 <code>rem</code>为单位的数字。 例如 我设置 <code>body</code> 的 <code>width：320px；</code> 则根据设置的 <code>font - size</code> 值，转换为 <code>rem</code>，则是 <code>width：16 rem；</code> 【320 / 20 (你设置的标准 <code>font - size</code>) = 16】。</p>
+<h3 id="如何使用插件换算？"><a href="#如何使用插件换算？" class="headerlink" title="如何使用插件换算？"></a>如何使用插件换算？</h3><p>如果你说一个页面的 <code>css</code> 有几百行，写完再去改太麻烦了，那可以用 <code>px</code> 转换成 <code>rem</code> 的插件。 我这里有一款推荐：<code>cssrem</code>（下载使用网址 <a href="https://github.com/flashlizi/cssrem" target="_blank" rel="external">cssrem</a>）。 该插件是 <code>sublime text</code> 的一款插件。<br><br><img src="http://oaq0p7t2g.bkt.clouddn.com/layout-moblie.gif" alt="cssrem"></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      星火燎原@vxhly
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://vxhly.github.io/2016/08/13/layout-project-for-moblie/" title="移动端网页自适应方案">https://vxhly.github.io/2016/08/13/layout-project-for-moblie/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/Layout/" rel="tag"># Layout</a>
+          
+            <a href="/tags/jQuery/" rel="tag"># jQuery</a>
+          
+            <a href="/tags/Moblie/" rel="tag"># Moblie</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/11/run-commands/" rel="next" title="运行命令集合">
+                <i class="fa fa-chevron-left"></i> 运行命令集合
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/15/html5-cold-knowledge/" rel="prev" title="HTML5 的一些冷知识">
+                HTML5 的一些冷知识 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+ 
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+         
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://oaq0p7t2g.bkt.clouddn.com/100.png"
+               alt="星火燎原@vxhly" />
+          <p class="site-author-name" itemprop="name">星火燎原@vxhly</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">73</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/vxhly" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/5039312152" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://man.linuxde.net/" title="Liunx Command" target="_blank">Liunx Command</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://least.renwenlong.com/" title="Least CSS pre-processors" target="_blank">Least CSS pre-processors</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#mate-标签"><span class="nav-number">1.</span> <span class="nav-text">mate 标签</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用百分比自适应"><span class="nav-number">2.</span> <span class="nav-text">使用百分比自适应</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rem-em-自适应"><span class="nav-number">3.</span> <span class="nav-text">rem, em 自适应</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引入-JavaScript-代码"><span class="nav-number">4.</span> <span class="nav-text">引入 JavaScript 代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法源码一（需引入-jQuery）"><span class="nav-number">4.1.</span> <span class="nav-text">方法源码一（需引入 jQuery）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法源码二（JavaScript-原生代码）"><span class="nav-number">4.2.</span> <span class="nav-text">方法源码二（JavaScript 原生代码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">4.3.</span> <span class="nav-text">常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么是-640px？"><span class="nav-number">4.3.1.</span> <span class="nav-text">为什么是 640px？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要设置-html-的-font-size？"><span class="nav-number">4.3.2.</span> <span class="nav-text">为什么要设置 html 的 font-size？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模拟为什么要使用-iphone-4？"><span class="nav-number">4.3.3.</span> <span class="nav-text">模拟为什么要使用 iphone 4？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rem-单位是如何换算的？"><span class="nav-number">4.3.4.</span> <span class="nav-text">rem 单位是如何换算的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何使用插件换算？"><span class="nav-number">4.3.5.</span> <span class="nav-text">如何使用插件换算？</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+ 
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">星火燎原@vxhly</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+  <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+  <span id="showDays"></span>
+</div>
+
+
+<script>
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+  	var birthDay = Date.UTC(2016,07,30,00,00,00);
+    setInterval(function() {
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+  	  var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = now - birthDay;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    	document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }, 1000);
+</script>
+ 
+ 
+      </div>
+    </footer>
+
+    
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i> 
+    </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+ 
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+ 
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+ 
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+ 
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+ 
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("fIfVwRc2hxTADHS46YFI60CR-gzGzoHsz", "5VpQxut10jVAkCK2XpJDeDSd");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+ 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+ 
+ 
+  
+
+ 
+ 
+
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block)
+      });
+    });
+  </script>
+</body>
+
+</html>

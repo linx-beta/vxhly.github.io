@@ -1,0 +1,1545 @@
+<!DOCTYPE html>    
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-big-counter.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="true" />
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="STkvd9SMW5" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Liunx,Security,Protocol,Service," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="技术分享博客" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://oaq0p7t2g.bkt.clouddn.com/code.png?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭，通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID），在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的">
+<meta name="keywords" content="Liunx,Security,Protocol,Service">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RedHat 系统安全加固（四）：服务和进程管理">
+<meta property="og:url" content="https://vxhly.github.io/2016/10/19/service-and-process-management/index.html">
+<meta property="og:site_name" content="技术分享博客">
+<meta property="og:description" content="本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭，通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID），在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-1.png">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-2.png">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-3.png">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-4.png">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-5.png">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-6.png">
+<meta property="og:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-7.png">
+<meta property="og:updated_time" content="2017-08-15T13:15:23.721Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RedHat 系统安全加固（四）：服务和进程管理">
+<meta name="twitter:description" content="本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭，通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID），在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的">
+<meta name="twitter:image" content="http://oaq0p7t2g.bkt.clouddn.com/process-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://vxhly.github.io/2016/10/19/service-and-process-management/"/>
+
+
+
+
+
+  <title>RedHat 系统安全加固（四）：服务和进程管理 | 技术分享博客</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?24951489115e0096058141e6f12d09bb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+     
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">技术分享博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">更专注于分享</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://vxhly.github.io/2016/10/19/service-and-process-management/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="星火燎原@vxhly">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oaq0p7t2g.bkt.clouddn.com/100.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术分享博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">RedHat 系统安全加固（四）：服务和进程管理</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-19T11:01:04+08:00">
+                2016-10-19
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-15T21:15:23+08:00">
+                2017-08-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/liunx/" itemprop="url" rel="index">
+                    <span itemprop="name">liunx</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/10/19/service-and-process-management/" class="leancloud_visitors" data-flag-title="RedHat 系统安全加固（四）：服务和进程管理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  1,417
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭，通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID），在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的 <a id="more"></a></p>
+<h1 id="ps-查看系统进程"><a href="#ps-查看系统进程" class="headerlink" title="ps 查看系统进程"></a>ps 查看系统进程</h1><blockquote>
+<p><code>ps</code> 命令用于报告当前系统的进程状态。可以搭配 <code>kill</code> 指令随时中断、删除不必要的程序。<code>ps</code> 命令是最基本同时也是非常强大的进程查看命令，使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多的资源等等，总之大部分信息都是可以通过执行该命令得到的。</p>
+</blockquote>
+<h2 id="相关选项"><a href="#相关选项" class="headerlink" title="相关选项"></a>相关选项</h2><ul>
+<li><strong>-a</strong> ——————– 显示所有终端机下执行的程序，除了阶段作业领导者之外</li>
+<li><strong>a</strong> ——————– 显示现行终端机下的所有程序，包括其他用户的程序</li>
+<li><strong>-A</strong> ——————– 显示所有程序</li>
+<li><strong>-u&lt;用户识别码&gt;</strong> ——————– 此选项的效果和指定 <code>&quot;-U&quot;</code> 选项相同</li>
+<li><strong>u</strong> ——————– 以用户为主的格式来显示程序状况</li>
+<li><strong>-U&lt;用户识别码&gt;</strong> ——————– 列出属于该用户的程序的状况，也可使用用户名称来指定</li>
+<li><strong>U&lt;用户名称&gt;</strong> ——————– 列出属于该用户的程序的状况</li>
+<li><strong>-e</strong> ——————– 此选项的效果和指定 <code>&quot;A&quot;</code> 选项相同</li>
+<li><strong>e</strong> ——————– 列出程序时，显示每个程序所使用的环境变量</li>
+<li><strong>-f</strong> ——————– 显示 UID，PPIP，C 与 STIME 栏位</li>
+<li><strong>f</strong> ——————– 用 ASCII 字符显示树状结构，表达程序间的相互关系</li>
+</ul>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><code>For Example:</code></p>
+<pre><code class="bash">ps aux | grep ssh
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-1.png" alt="RedHat 安全加固"></p>
+<h1 id="netstat-查看网络情况"><a href="#netstat-查看网络情况" class="headerlink" title="netstat 查看网络情况"></a>netstat 查看网络情况</h1><blockquote>
+<p>netstat 命令用来打印 Linux 中网络系统的状态信息，可让你得知整个 Linux 系统的网络情况。</p>
+</blockquote>
+<h2 id="相关选项-1"><a href="#相关选项-1" class="headerlink" title="相关选项"></a>相关选项</h2><ul>
+<li><strong>-t 或 –tcp</strong> ——————– 显示 TCP 传输协议的连线状况</li>
+<li><strong>-u 或 –udp</strong> ——————– 显示 UDP 传输协议的连线状况</li>
+<li><strong>-n 或 –numeric</strong> ——————– 直接使用 ip 地址，而不通过域名服务器</li>
+<li><strong>-p 或 –programs</strong> ——————– 显示正在使用 Socket 的程序识别码和程序名称</li>
+<li><strong>-l 或 –listening</strong> ——————– 显示监控中的服务器的 Socket</li>
+</ul>
+<h2 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h2><p><code>For Example:</code></p>
+<pre><code class="bash">netstat -tulnp
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-2.png" alt="RedHat 安全加固"></p>
+<h1 id="chkconfig-查看系统服务"><a href="#chkconfig-查看系统服务" class="headerlink" title="chkconfig 查看系统服务"></a>chkconfig 查看系统服务</h1><blockquote>
+<p>chkconfig 命令检查、设置系统的各种服务。这是 Red Hat 公司遵循 GPL 规则所开发的程序，它可查询操作系统在每一个执行等级中会执行哪些系统服务，其中包括各类常驻服务。谨记 chkconfig 不是立即自动禁止或激活一个服务，它只是简单的改变了符号连接。</p>
+</blockquote>
+<h2 id="选项解释"><a href="#选项解释" class="headerlink" title="选项解释"></a>选项解释</h2><ul>
+<li><strong>–add</strong> ——————– 增加所指定的系统服务，让 <code>chkconfig</code> 指令得以管理它，并同时在系统启动的叙述文件内增加相关数据；</li>
+<li><strong>–del</strong> ——————– 删除所指定的系统服务，不再由 <code>chkconfig</code> 指令管理，并同时在系统启动的叙述文件内删除相关数据；</li>
+<li><p><strong>–level&lt;等级代号&gt;</strong> ——————– 指定读系统服务要在哪一个执行等级中开启或关毕。</p>
+<ul>
+<li>等级 <code>0</code> 表示 ——————– 表示关机</li>
+<li>等级 <code>1</code> 表示 ——————– 单用户模式</li>
+<li>等级 <code>2</code> 表示 ——————– 无网络连接的多用户命令行模式</li>
+<li>等级 <code>3</code> 表示 ——————– 有网络连接的多用户命令行模式</li>
+<li>等级 <code>4</code> 表示 ——————– 不可用</li>
+<li>等级 <code>5</code> 表示 ——————– 带图形界面的多用户模式</li>
+<li>等级 <code>6</code> 表示 ——————– 重新启动</li>
+</ul>
+</li>
+<li><p><strong>–list</strong> ——————– 列出系统服务列表</p>
+</li>
+</ul>
+<h2 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h2><p><code>For Example:</code></p>
+<pre><code class="bash">chkconfig --list
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-3.png" alt="RedHat 安全加固"></p>
+<h1 id="关闭进程或服务"><a href="#关闭进程或服务" class="headerlink" title="关闭进程或服务"></a>关闭进程或服务</h1><h2 id="kill-杀死进程"><a href="#kill-杀死进程" class="headerlink" title="kill 杀死进程"></a>kill 杀死进程</h2><blockquote>
+<p>kill 命令用来删除执行中的程序或工作。kill 可将指定的信息送至程序。预设的信息为 SIGTERM(15)，可将指定程序终止。若仍无法终止该程序，可使用 SIGKILL(9) 信息尝试强制删除程序。程序或工作的编号可利用 ps 指令或 job 指令查看。</p>
+</blockquote>
+<h3 id="选项解释-1"><a href="#选项解释-1" class="headerlink" title="选项解释"></a>选项解释</h3><ul>
+<li><strong>-a</strong>——————– 当处理当前进程时，不限制命令名和进程号的对应关系；</li>
+<li><strong>-l &lt;信息编号&gt;</strong>——————– 若不加 <code>&lt;信息编号&gt;</code> 选项，则 <code>-l</code> 参数会列出全部的信息名称；</li>
+<li><strong>p</strong>——————– 指定 kill 命令只打印相关进程的进程号，而不发送任何信号；</li>
+<li><strong>-s &lt;信息名称或编号&gt;</strong>——————– 指定要送出的信息；</li>
+<li><strong>-u</strong>——————– 指定用户。 参数</li>
+</ul>
+<p>只有第 9 种信号(<code>SIGKILL</code>)才可以无条件终止进程，其他信号进程都有权利忽略，下面是常用的信号——————–</p>
+<ul>
+<li><strong>HUP</strong> 1 终端断线</li>
+<li><strong>INT</strong> 2 中断（同 <code>Ctrl + C</code>）</li>
+<li><strong>QUIT</strong> 3 退出（同 <code>Ctrl + \</code>）</li>
+<li><strong>TERM</strong> 15 终止</li>
+<li><strong>KILL</strong> 9 强制终止</li>
+<li><strong>CONT</strong> 18 继续（与 <code>STOP</code> 相反， <code>fg/bg</code> 命令）</li>
+<li><strong>STOP</strong> 19 暂停（同 <code>Ctrl + Z</code>）</li>
+</ul>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><p>用 ps 查找进程，然后用 kill 杀掉，<code>For Examlpe:</code></p>
+<pre><code class="bash">ps -ef | grep ssh
+kill 4456
+</code></pre>
+<p>用 netstat 查找进程，然后用 kill 杀掉，<code>For Examlpe:</code></p>
+<pre><code class="bash">netstat -tulnp | grep ssh
+kill 4456
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-4.png" alt="RedHat 安全加固"></p>
+<h2 id="service-关闭服务"><a href="#service-关闭服务" class="headerlink" title="service 关闭服务"></a>service 关闭服务</h2><blockquote>
+<p>service 命令是 Redhat Linux 兼容的发行版中用来控制系统服务的实用工具，它以启动、停止、重新启动和关闭系统服务，还可以显示所有系统服务的当前状态。</p>
+</blockquote>
+<h3 id="选项信息"><a href="#选项信息" class="headerlink" title="选项信息"></a>选项信息</h3><ul>
+<li><strong>-h</strong>——————– 显示帮助信息；</li>
+<li><strong>–status-all</strong>——————– 显示所服务的状态。</li>
+</ul>
+<h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><p><code>For Examlpe:</code></p>
+<pre><code class="bash">service mysqld status
+service mysqld stop
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-5.png" alt="RedHat 安全加固"></p>
+<p>那么要是系统没有 <code>service</code> 命令，怎么办呢？Liunx 系统下是所有的服务名是存放在 <code>/etc/init.d/</code> 下的，所以也可以使用以下命令来停止服务，<code>For Examlpe:</code></p>
+<pre><code class="bash">/etc/init.d/named status
+/etc/init.d/named stop
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-6.png" alt="RedHat 安全加固"></p>
+<h2 id="chkconfig-删除服务"><a href="#chkconfig-删除服务" class="headerlink" title="chkconfig 删除服务"></a>chkconfig 删除服务</h2><h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><p><code>For Examlpe:</code></p>
+<pre><code class="bash">chkconfig --list | grep sendmail
+chkconfig --del sendmail
+</code></pre>
+<p><img src="http://oaq0p7t2g.bkt.clouddn.com/process-7.png" alt="RedHat 安全加固"></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      星火燎原@vxhly
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://vxhly.github.io/2016/10/19/service-and-process-management/" title="RedHat 系统安全加固（四）：服务和进程管理">https://vxhly.github.io/2016/10/19/service-and-process-management/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Liunx/" rel="tag"># Liunx</a>
+          
+            <a href="/tags/Security/" rel="tag"># Security</a>
+          
+            <a href="/tags/Protocol/" rel="tag"># Protocol</a>
+          
+            <a href="/tags/Service/" rel="tag"># Service</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/16/log-audit-function/" rel="next" title="RedHat 系统安全加固（三）：系统日志审计">
+                <i class="fa fa-chevron-left"></i> RedHat 系统安全加固（三）：系统日志审计
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/22/some-suggest-for-writing-css/" rel="prev" title="编写 CSS 代码的一些建议">
+                编写 CSS 代码的一些建议 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+ 
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+         
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://oaq0p7t2g.bkt.clouddn.com/100.png"
+               alt="星火燎原@vxhly" />
+          <p class="site-author-name" itemprop="name">星火燎原@vxhly</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">73</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/vxhly" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/5039312152" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://man.linuxde.net/" title="Liunx Command" target="_blank">Liunx Command</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://least.renwenlong.com/" title="Least CSS pre-processors" target="_blank">Least CSS pre-processors</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ps-查看系统进程"><span class="nav-number">1.</span> <span class="nav-text">ps 查看系统进程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#相关选项"><span class="nav-number">1.1.</span> <span class="nav-text">相关选项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#示例"><span class="nav-number">1.2.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#netstat-查看网络情况"><span class="nav-number">2.</span> <span class="nav-text">netstat 查看网络情况</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#相关选项-1"><span class="nav-number">2.1.</span> <span class="nav-text">相关选项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#示例-1"><span class="nav-number">2.2.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#chkconfig-查看系统服务"><span class="nav-number">3.</span> <span class="nav-text">chkconfig 查看系统服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选项解释"><span class="nav-number">3.1.</span> <span class="nav-text">选项解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#示例-2"><span class="nav-number">3.2.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关闭进程或服务"><span class="nav-number">4.</span> <span class="nav-text">关闭进程或服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#kill-杀死进程"><span class="nav-number">4.1.</span> <span class="nav-text">kill 杀死进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选项解释-1"><span class="nav-number">4.1.1.</span> <span class="nav-text">选项解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-3"><span class="nav-number">4.1.2.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#service-关闭服务"><span class="nav-number">4.2.</span> <span class="nav-text">service 关闭服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选项信息"><span class="nav-number">4.2.1.</span> <span class="nav-text">选项信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-4"><span class="nav-number">4.2.2.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chkconfig-删除服务"><span class="nav-number">4.3.</span> <span class="nav-text">chkconfig 删除服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例-5"><span class="nav-number">4.3.1.</span> <span class="nav-text">示例</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+ 
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">星火燎原@vxhly</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+  <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+  <span id="showDays"></span>
+</div>
+
+
+<script>
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+  	var birthDay = Date.UTC(2016,07,30,00,00,00);
+    setInterval(function() {
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+  	  var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = now - birthDay;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    	document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }, 1000);
+</script>
+ 
+ 
+      </div>
+    </footer>
+
+    
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i> 
+    </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+ 
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+ 
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+ 
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+ 
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+ 
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("fIfVwRc2hxTADHS46YFI60CR-gzGzoHsz", "5VpQxut10jVAkCK2XpJDeDSd");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+ 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+ 
+ 
+  
+
+ 
+ 
+
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block)
+      });
+    });
+  </script>
+</body>
+
+</html>
