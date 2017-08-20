@@ -394,30 +394,6 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/03/install-hexo-next-on-github/</loc>
-    <lastmod>2017-08-20T15:06:49.525Z</lastmod>
-    <data>
-        <display>
-        <title>使用 Hexo+NexT 在 Github 上搭建静态博客</title>
-        <pubTime>2016-08-03T05:11:30.000Z</pubTime>
-        
-        <tag>Liunx</tag>
-         
-        <tag>Git</tag>
-         
-        <tag>Node.js</tag>
-         
-         
-           
-             
-              <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://vxhly.github.io/2017/04/08/install-cmder-on-windows/</loc>
     <lastmod>2017-08-20T15:06:49.525Z</lastmod>
     <data>
@@ -435,6 +411,30 @@
            
              
               <breadCrumb title="windows" url="https://vxhly.github.io/categories/windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://vxhly.github.io/2016/08/03/install-hexo-next-on-github/</loc>
+    <lastmod>2017-08-20T15:06:49.525Z</lastmod>
+    <data>
+        <display>
+        <title>使用 Hexo+NexT 在 Github 上搭建静态博客</title>
+        <pubTime>2016-08-03T05:11:30.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Git</tag>
+         
+        <tag>Node.js</tag>
+         
+         
+           
+             
+              <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
           
         </display>
     </data>
