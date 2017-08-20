@@ -205,9 +205,9 @@
         <title>Flexbox 布局</title>
         <pubTime>2016-08-11T06:27:56.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
         <tag>Layout</tag>
+         
+        <tag>CSS</tag>
          
         <tag>Code</tag>
          
@@ -318,6 +318,28 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2016/08/18/jquery-download-links/</loc>
+    <lastmod>2017-08-20T15:06:49.535Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery 各个版本的下载链接</title>
+        <pubTime>2016-08-18T09:13:24.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="https://vxhly.github.io/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2016/08/13/layout-project-for-moblie/</loc>
     <lastmod>2017-08-20T15:06:49.535Z</lastmod>
     <data>
@@ -337,28 +359,6 @@
            
              
               <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2016/08/18/jquery-download-links/</loc>
-    <lastmod>2017-08-20T15:06:49.535Z</lastmod>
-    <data>
-        <display>
-        <title>jQuery 各个版本的下载链接</title>
-        <pubTime>2016-08-18T09:13:24.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-        <tag>jQuery</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="https://vxhly.github.io/categories/web/"/>
           
         </display>
     </data>
@@ -1271,9 +1271,9 @@
         <title>CSS 的一些冷知识</title>
         <pubTime>2016-08-17T09:27:08.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
         <tag>Layout</tag>
+         
+        <tag>CSS</tag>
          
         <tag>Code</tag>
          
