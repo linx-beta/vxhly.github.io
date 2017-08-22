@@ -4,7 +4,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/25/font-awesome-icons/</loc>
+    <loc>https://vxhly.github.io/font-awesome-icons/</loc>
     <lastmod>2017-08-20T15:06:49.625Z</lastmod>
     <data>
         <display>
@@ -28,7 +28,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/20/usage-of-sqlmap/</loc>
+    <loc>https://vxhly.github.io/usage-of-sqlmap/</loc>
     <lastmod>2017-08-20T15:06:49.622Z</lastmod>
     <data>
         <display>
@@ -54,7 +54,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/07/31/usage-nvm-to-install-node-js/</loc>
+    <loc>https://vxhly.github.io/usage-nvm-to-install-node-js/</loc>
     <lastmod>2017-08-20T15:06:49.620Z</lastmod>
     <data>
         <display>
@@ -76,7 +76,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/08/usage-of-burp/</loc>
+    <loc>https://vxhly.github.io/usage-of-burp/</loc>
     <lastmod>2017-08-20T15:06:49.618Z</lastmod>
     <data>
         <display>
@@ -102,7 +102,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/03/reveal-js-cn-document/</loc>
+    <loc>https://vxhly.github.io/reveal-js-cn-document/</loc>
     <lastmod>2017-08-20T15:06:49.615Z</lastmod>
     <data>
         <display>
@@ -130,7 +130,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/30/talk-package-json-on-npm/</loc>
+    <loc>https://vxhly.github.io/talk-package-json-on-npm/</loc>
     <lastmod>2017-08-20T15:06:49.572Z</lastmod>
     <data>
         <display>
@@ -152,7 +152,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/22/some-suggest-for-writing-css/</loc>
+    <loc>https://vxhly.github.io/some-suggest-for-writing-css/</loc>
     <lastmod>2017-08-20T15:06:49.572Z</lastmod>
     <data>
         <display>
@@ -174,7 +174,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/15/html5-cold-knowledge/</loc>
+    <loc>https://vxhly.github.io/html5-cold-knowledge/</loc>
     <lastmod>2017-08-20T15:06:49.550Z</lastmod>
     <data>
         <display>
@@ -198,16 +198,16 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/11/flexbox-layout/</loc>
+    <loc>https://vxhly.github.io/flexbox-layout/</loc>
     <lastmod>2017-08-20T15:06:49.548Z</lastmod>
     <data>
         <display>
         <title>Flexbox 布局</title>
         <pubTime>2016-08-11T06:27:56.000Z</pubTime>
         
-        <tag>Layout</tag>
-         
         <tag>CSS</tag>
+         
+        <tag>Layout</tag>
          
         <tag>Code</tag>
          
@@ -224,7 +224,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/07/31/ubuntu-over-the-wall/</loc>
+    <loc>https://vxhly.github.io/ubuntu-over-the-wall/</loc>
     <lastmod>2017-08-20T15:06:49.545Z</lastmod>
     <data>
         <display>
@@ -248,7 +248,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/11/24/socks-proxy-rebound/</loc>
+    <loc>https://vxhly.github.io/socks-proxy-rebound/</loc>
     <lastmod>2017-08-20T15:06:49.543Z</lastmod>
     <data>
         <display>
@@ -272,7 +272,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/05/20/pentest-tips-and-tricks/</loc>
+    <loc>https://vxhly.github.io/pentest-tips-and-tricks/</loc>
     <lastmod>2017-08-20T15:06:49.537Z</lastmod>
     <data>
         <display>
@@ -296,7 +296,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/07/need-a-super-software/</loc>
+    <loc>https://vxhly.github.io/need-a-super-software/</loc>
     <lastmod>2017-08-20T15:06:49.536Z</lastmod>
     <data>
         <display>
@@ -318,7 +318,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/18/jquery-download-links/</loc>
+    <loc>https://vxhly.github.io/jquery-download-links/</loc>
     <lastmod>2017-08-20T15:06:49.535Z</lastmod>
     <data>
         <display>
@@ -340,7 +340,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/13/layout-project-for-moblie/</loc>
+    <loc>https://vxhly.github.io/layout-project-for-moblie/</loc>
     <lastmod>2017-08-20T15:06:49.535Z</lastmod>
     <data>
         <display>
@@ -366,7 +366,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/05/29/install-mongodb-on-windwos/</loc>
+    <loc>https://vxhly.github.io/install-mongodb-on-windwos/</loc>
     <lastmod>2017-08-20T15:06:49.532Z</lastmod>
     <data>
         <display>
@@ -394,31 +394,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/04/08/install-cmder-on-windows/</loc>
-    <lastmod>2017-08-20T15:06:49.525Z</lastmod>
-    <data>
-        <display>
-        <title>在 windows 下安装 Cmder</title>
-        <pubTime>2017-04-08T06:15:00.000Z</pubTime>
-        
-        <tag>Liunx</tag>
-         
-        <tag>Windows</tag>
-         
-        <tag>Command</tag>
-         
-         
-           
-             
-              <breadCrumb title="windows" url="https://vxhly.github.io/categories/windows/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2016/08/03/install-hexo-next-on-github/</loc>
+    <loc>https://vxhly.github.io/install-hexo-next-on-github/</loc>
     <lastmod>2017-08-20T15:06:49.525Z</lastmod>
     <data>
         <display>
@@ -442,7 +418,31 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/06/02/insatll-ghost-on-your-vps/</loc>
+    <loc>https://vxhly.github.io/install-cmder-on-windows/</loc>
+    <lastmod>2017-08-20T15:06:49.525Z</lastmod>
+    <data>
+        <display>
+        <title>在 windows 下安装 Cmder</title>
+        <pubTime>2017-04-08T06:15:00.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Windows</tag>
+         
+        <tag>Command</tag>
+         
+         
+           
+             
+              <breadCrumb title="windows" url="https://vxhly.github.io/categories/windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://vxhly.github.io/insatll-ghost-on-your-vps/</loc>
     <lastmod>2017-08-20T15:06:49.515Z</lastmod>
     <data>
         <display>
@@ -464,7 +464,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/03/html-and-css-code-criterion/</loc>
+    <loc>https://vxhly.github.io/html-and-css-code-criterion/</loc>
     <lastmod>2017-08-20T15:06:49.514Z</lastmod>
     <data>
         <display>
@@ -488,7 +488,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/28/gulp-usage-guide/</loc>
+    <loc>https://vxhly.github.io/gulp-usage-guide/</loc>
     <lastmod>2017-08-20T15:06:49.491Z</lastmod>
     <data>
         <display>
@@ -512,7 +512,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/07/31/git-push-setting/</loc>
+    <loc>https://vxhly.github.io/git-push-setting/</loc>
     <lastmod>2017-08-20T15:06:49.473Z</lastmod>
     <data>
         <display>
@@ -536,7 +536,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/15/browser-object-model/</loc>
+    <loc>https://vxhly.github.io/browser-object-model/</loc>
     <lastmod>2017-08-20T15:06:49.459Z</lastmod>
     <data>
         <display>
@@ -558,7 +558,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/08/usage-of-vim/</loc>
+    <loc>https://vxhly.github.io/usage-of-vim/</loc>
     <lastmod>2017-08-20T15:05:49.159Z</lastmod>
     <data>
         <display>
@@ -578,7 +578,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/08/15/talk-ssh-service/</loc>
+    <loc>https://vxhly.github.io/talk-ssh-service/</loc>
     <lastmod>2017-08-20T15:05:49.099Z</lastmod>
     <data>
         <display>
@@ -602,7 +602,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/14/user-and-file-permissions/</loc>
+    <loc>https://vxhly.github.io/user-and-file-permissions/</loc>
     <lastmod>2017-08-20T15:05:49.086Z</lastmod>
     <data>
         <display>
@@ -626,7 +626,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/23/usage-of-nmap/</loc>
+    <loc>https://vxhly.github.io/usage-of-nmap/</loc>
     <lastmod>2017-08-20T15:05:49.062Z</lastmod>
     <data>
         <display>
@@ -652,7 +652,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/01/ubuntu-connect-wifi/</loc>
+    <loc>https://vxhly.github.io/ubuntu-connect-wifi/</loc>
     <lastmod>2017-08-20T15:05:49.007Z</lastmod>
     <data>
         <display>
@@ -676,7 +676,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/14/special-permissions-for-files/</loc>
+    <loc>https://vxhly.github.io/special-permissions-for-files/</loc>
     <lastmod>2017-08-20T15:05:48.996Z</lastmod>
     <data>
         <display>
@@ -698,7 +698,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/10/some-tips-for-console/</loc>
+    <loc>https://vxhly.github.io/some-tips-for-console/</loc>
     <lastmod>2017-08-20T15:05:48.994Z</lastmod>
     <data>
         <display>
@@ -722,7 +722,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/19/service-and-process-management/</loc>
+    <loc>https://vxhly.github.io/service-and-process-management/</loc>
     <lastmod>2017-08-20T15:05:48.988Z</lastmod>
     <data>
         <display>
@@ -748,7 +748,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/11/sass-usage-guide/</loc>
+    <loc>https://vxhly.github.io/sass-usage-guide/</loc>
     <lastmod>2017-08-20T15:05:48.973Z</lastmod>
     <data>
         <display>
@@ -770,7 +770,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/09/regular-expression/</loc>
+    <loc>https://vxhly.github.io/regular-expression/</loc>
     <lastmod>2017-08-20T15:05:48.963Z</lastmod>
     <data>
         <display>
@@ -792,7 +792,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/05/19/php-code-audit/</loc>
+    <loc>https://vxhly.github.io/php-code-audit/</loc>
     <lastmod>2017-08-20T15:05:48.937Z</lastmod>
     <data>
         <display>
@@ -816,7 +816,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/30/mysql-database-user-policy/</loc>
+    <loc>https://vxhly.github.io/mysql-database-user-policy/</loc>
     <lastmod>2017-08-20T15:05:48.888Z</lastmod>
     <data>
         <display>
@@ -842,7 +842,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/04/02/php-file-inclusion/</loc>
+    <loc>https://vxhly.github.io/php-file-inclusion/</loc>
     <lastmod>2017-08-20T15:05:48.856Z</lastmod>
     <data>
         <display>
@@ -864,7 +864,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/15/liunx-service/</loc>
+    <loc>https://vxhly.github.io/liunx-service/</loc>
     <lastmod>2017-08-20T15:05:48.851Z</lastmod>
     <data>
         <display>
@@ -888,7 +888,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/27/liunx-service-dns/</loc>
+    <loc>https://vxhly.github.io/liunx-service-dns/</loc>
     <lastmod>2017-08-20T15:05:48.735Z</lastmod>
     <data>
         <display>
@@ -914,7 +914,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/19/liunx-service-apache/</loc>
+    <loc>https://vxhly.github.io/liunx-service-apache/</loc>
     <lastmod>2017-08-20T15:05:48.696Z</lastmod>
     <data>
         <display>
@@ -940,7 +940,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/15/liunx-basic-operation/</loc>
+    <loc>https://vxhly.github.io/liunx-basic-operation/</loc>
     <lastmod>2017-08-20T15:05:48.690Z</lastmod>
     <data>
         <display>
@@ -962,7 +962,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/07/js-get-url-request/</loc>
+    <loc>https://vxhly.github.io/js-get-url-request/</loc>
     <lastmod>2017-08-20T15:05:48.623Z</lastmod>
     <data>
         <display>
@@ -984,7 +984,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/16/log-audit-function/</loc>
+    <loc>https://vxhly.github.io/log-audit-function/</loc>
     <lastmod>2017-08-20T15:05:48.580Z</lastmod>
     <data>
         <display>
@@ -1008,7 +1008,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/16/liunx-service-ssh/</loc>
+    <loc>https://vxhly.github.io/liunx-service-ssh/</loc>
     <lastmod>2017-08-20T15:05:48.552Z</lastmod>
     <data>
         <display>
@@ -1034,7 +1034,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/19/liunx-service-samba/</loc>
+    <loc>https://vxhly.github.io/liunx-service-samba/</loc>
     <lastmod>2017-08-20T15:05:48.539Z</lastmod>
     <data>
         <display>
@@ -1060,7 +1060,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/16/liunx-service-ftp/</loc>
+    <loc>https://vxhly.github.io/liunx-service-ftp/</loc>
     <lastmod>2017-08-20T15:05:48.511Z</lastmod>
     <data>
         <display>
@@ -1086,7 +1086,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/08/liunx-directory-structure/</loc>
+    <loc>https://vxhly.github.io/liunx-directory-structure/</loc>
     <lastmod>2017-08-20T15:05:48.508Z</lastmod>
     <data>
         <display>
@@ -1106,7 +1106,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/27/iptables-settings/</loc>
+    <loc>https://vxhly.github.io/iptables-settings/</loc>
     <lastmod>2017-08-20T15:05:48.353Z</lastmod>
     <data>
         <display>
@@ -1128,7 +1128,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/30/install-jdk-on-windows/</loc>
+    <loc>https://vxhly.github.io/install-jdk-on-windows/</loc>
     <lastmod>2017-08-20T15:05:48.240Z</lastmod>
     <data>
         <display>
@@ -1148,7 +1148,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/04/emmet-usage-examples/</loc>
+    <loc>https://vxhly.github.io/emmet-usage-examples/</loc>
     <lastmod>2017-08-20T15:05:48.164Z</lastmod>
     <data>
         <display>
@@ -1172,7 +1172,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/22/html5-head-meta/</loc>
+    <loc>https://vxhly.github.io/html5-head-meta/</loc>
     <lastmod>2017-08-20T15:05:48.055Z</lastmod>
     <data>
         <display>
@@ -1194,7 +1194,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/05/debug-for-chrome-browser/</loc>
+    <loc>https://vxhly.github.io/debug-for-chrome-browser/</loc>
     <lastmod>2017-08-20T15:05:48.035Z</lastmod>
     <data>
         <display>
@@ -1222,7 +1222,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/03/21/css-new-features/</loc>
+    <loc>https://vxhly.github.io/css-new-features/</loc>
     <lastmod>2017-08-20T15:05:48.018Z</lastmod>
     <data>
         <display>
@@ -1244,7 +1244,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/12/22/css-length-unit/</loc>
+    <loc>https://vxhly.github.io/css-length-unit/</loc>
     <lastmod>2017-08-20T15:05:47.953Z</lastmod>
     <data>
         <display>
@@ -1264,16 +1264,16 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/17/css-cold-knowledge/</loc>
+    <loc>https://vxhly.github.io/css-cold-knowledge/</loc>
     <lastmod>2017-08-20T15:05:47.929Z</lastmod>
     <data>
         <display>
         <title>CSS 的一些冷知识</title>
         <pubTime>2016-08-17T09:27:08.000Z</pubTime>
         
-        <tag>Layout</tag>
-         
         <tag>CSS</tag>
+         
+        <tag>Layout</tag>
          
         <tag>Code</tag>
          
@@ -1288,7 +1288,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/24/css-code-writing/</loc>
+    <loc>https://vxhly.github.io/css-code-writing/</loc>
     <lastmod>2017-08-20T15:05:47.901Z</lastmod>
     <data>
         <display>
@@ -1310,7 +1310,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/03/02/configure-ipsec-vpn/</loc>
+    <loc>https://vxhly.github.io/configure-ipsec-vpn/</loc>
     <lastmod>2017-08-20T15:05:47.898Z</lastmod>
     <data>
         <display>
@@ -1334,7 +1334,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/16/common-port/</loc>
+    <loc>https://vxhly.github.io/common-port/</loc>
     <lastmod>2017-08-20T15:05:47.865Z</lastmod>
     <data>
         <display>
@@ -1364,7 +1364,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/14/account-security/</loc>
+    <loc>https://vxhly.github.io/account-security/</loc>
     <lastmod>2017-08-20T15:05:47.838Z</lastmod>
     <data>
         <display>
@@ -1388,7 +1388,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/10/basic-regular-expression-under-liunx/</loc>
+    <loc>https://vxhly.github.io/basic-regular-expression-under-liunx/</loc>
     <lastmod>2017-08-20T15:05:47.787Z</lastmod>
     <data>
         <display>
@@ -1410,7 +1410,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/02/ubuntu-enble-root/</loc>
+    <loc>https://vxhly.github.io/ubuntu-enble-root/</loc>
     <lastmod>2017-08-17T12:18:26.324Z</lastmod>
     <data>
         <display>
@@ -1430,7 +1430,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/07/user-management/</loc>
+    <loc>https://vxhly.github.io/user-management/</loc>
     <lastmod>2017-08-15T13:17:01.050Z</lastmod>
     <data>
         <display>
@@ -1452,7 +1452,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/26/talk-npm-on-node-js/</loc>
+    <loc>https://vxhly.github.io/talk-npm-on-node-js/</loc>
     <lastmod>2017-08-15T13:16:06.081Z</lastmod>
     <data>
         <display>
@@ -1476,7 +1476,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/09/some-tips-for-jquery/</loc>
+    <loc>https://vxhly.github.io/some-tips-for-jquery/</loc>
     <lastmod>2017-08-15T13:15:57.754Z</lastmod>
     <data>
         <display>
@@ -1500,7 +1500,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/11/run-commands/</loc>
+    <loc>https://vxhly.github.io/run-commands/</loc>
     <lastmod>2017-08-15T13:15:14.421Z</lastmod>
     <data>
         <display>
@@ -1526,7 +1526,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/07/05/nofollow-proper-use-of-the-way/</loc>
+    <loc>https://vxhly.github.io/nofollow-proper-use-of-the-way/</loc>
     <lastmod>2017-08-15T13:14:32.137Z</lastmod>
     <data>
         <display>
@@ -1548,7 +1548,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/05/20/liunx-security-command/</loc>
+    <loc>https://vxhly.github.io/liunx-security-command/</loc>
     <lastmod>2017-08-15T13:13:43.022Z</lastmod>
     <data>
         <display>
@@ -1574,7 +1574,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/02/js-generated-random-number/</loc>
+    <loc>https://vxhly.github.io/js-generated-random-number/</loc>
     <lastmod>2017-08-15T13:13:22.639Z</lastmod>
     <data>
         <display>
@@ -1596,7 +1596,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/11/ip-address-planning/</loc>
+    <loc>https://vxhly.github.io/ip-address-planning/</loc>
     <lastmod>2017-08-15T13:13:08.203Z</lastmod>
     <data>
         <display>
@@ -1616,7 +1616,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/11/23/file-header-and-tail/</loc>
+    <loc>https://vxhly.github.io/file-header-and-tail/</loc>
     <lastmod>2017-08-15T13:08:27.894Z</lastmod>
     <data>
         <display>
@@ -1638,7 +1638,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/09/10/file-compression-and-decompression/</loc>
+    <loc>https://vxhly.github.io/file-compression-and-decompression/</loc>
     <lastmod>2017-08-15T13:08:21.395Z</lastmod>
     <data>
         <display>
@@ -1658,7 +1658,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/10/28/dom-event-in-javascript/</loc>
+    <loc>https://vxhly.github.io/dom-event-in-javascript/</loc>
     <lastmod>2017-08-15T13:08:06.723Z</lastmod>
     <data>
         <display>
@@ -1680,7 +1680,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2017/03/03/css-selector-introduction/</loc>
+    <loc>https://vxhly.github.io/css-selector-introduction/</loc>
     <lastmod>2017-08-15T13:07:48.022Z</lastmod>
     <data>
         <display>
@@ -1700,7 +1700,7 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/2016/08/02/cmd-commands/</loc>
+    <loc>https://vxhly.github.io/cmd-commands/</loc>
     <lastmod>2017-08-15T13:06:01.504Z</lastmod>
     <data>
         <display>
