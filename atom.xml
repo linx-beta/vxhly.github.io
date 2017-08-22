@@ -4,9 +4,9 @@
   <subtitle>更专注于分享</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://vxhly.github.io/"/>
+  <link href="https://vxhly.coding.me/"/>
   <updated>2017-08-22T12:33:57.619Z</updated>
-  <id>https://vxhly.github.io/</id>
+  <id>https://vxhly.coding.me/</id>
   
   <author>
     <name>星火燎原@vxhly</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>浅谈 SSH 服务</title>
-    <link href="https://vxhly.github.io/2017/08/talk-ssh-service/"/>
-    <id>https://vxhly.github.io/2017/08/talk-ssh-service/</id>
+    <link href="https://vxhly.coding.me/2017/08/talk-ssh-service/"/>
+    <id>https://vxhly.coding.me/2017/08/talk-ssh-service/</id>
     <published>2017-08-15T13:42:25.000Z</published>
     <updated>2017-08-22T12:33:57.619Z</updated>
     
@@ -28,21 +28,21 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>Nofollow 正确使用方式</title>
-    <link href="https://vxhly.github.io/2017/07/nofollow-proper-use-of-the-way/"/>
-    <id>https://vxhly.github.io/2017/07/nofollow-proper-use-of-the-way/</id>
+    <link href="https://vxhly.coding.me/2017/07/nofollow-proper-use-of-the-way/"/>
+    <id>https://vxhly.coding.me/2017/07/nofollow-proper-use-of-the-way/</id>
     <published>2017-07-05T11:07:00.000Z</published>
     <updated>2017-08-15T13:14:32.137Z</updated>
     
@@ -52,19 +52,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
-      <category term="SEO" scheme="https://vxhly.github.io/tags/SEO/"/>
+      <category term="SEO" scheme="https://vxhly.coding.me/tags/SEO/"/>
     
   </entry>
   
   <entry>
     <title>在你的 VPS 服务器搭建 Ghost 博客系统</title>
-    <link href="https://vxhly.github.io/2017/06/insatll-ghost-on-your-vps/"/>
-    <id>https://vxhly.github.io/2017/06/insatll-ghost-on-your-vps/</id>
+    <link href="https://vxhly.coding.me/2017/06/insatll-ghost-on-your-vps/"/>
+    <id>https://vxhly.coding.me/2017/06/insatll-ghost-on-your-vps/</id>
     <published>2017-06-02T06:53:49.000Z</published>
     <updated>2017-08-20T15:06:49.515Z</updated>
     
@@ -74,19 +74,19 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
   </entry>
   
   <entry>
     <title>Windows 下安装 MongoDB</title>
-    <link href="https://vxhly.github.io/2017/05/install-mongodb-on-windwos/"/>
-    <id>https://vxhly.github.io/2017/05/install-mongodb-on-windwos/</id>
+    <link href="https://vxhly.coding.me/2017/05/install-mongodb-on-windwos/"/>
+    <id>https://vxhly.coding.me/2017/05/install-mongodb-on-windwos/</id>
     <published>2017-05-29T09:11:30.000Z</published>
     <updated>2017-08-20T15:06:49.532Z</updated>
     
@@ -96,25 +96,25 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
-      <category term="MongoDB" scheme="https://vxhly.github.io/tags/MongoDB/"/>
+      <category term="MongoDB" scheme="https://vxhly.coding.me/tags/MongoDB/"/>
     
-      <category term="JSON" scheme="https://vxhly.github.io/tags/JSON/"/>
+      <category term="JSON" scheme="https://vxhly.coding.me/tags/JSON/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 安全加固命令集合</title>
-    <link href="https://vxhly.github.io/2017/05/liunx-security-command/"/>
-    <id>https://vxhly.github.io/2017/05/liunx-security-command/</id>
+    <link href="https://vxhly.coding.me/2017/05/liunx-security-command/"/>
+    <id>https://vxhly.coding.me/2017/05/liunx-security-command/</id>
     <published>2017-05-20T06:22:42.000Z</published>
     <updated>2017-08-15T13:13:43.022Z</updated>
     
@@ -124,23 +124,23 @@
     
     </summary>
     
-      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+      <category term="pentest" scheme="https://vxhly.coding.me/categories/pentest/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://vxhly.coding.me/tags/Command/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>kali 下渗透测试的一些小技巧</title>
-    <link href="https://vxhly.github.io/2017/05/pentest-tips-and-tricks/"/>
-    <id>https://vxhly.github.io/2017/05/pentest-tips-and-tricks/</id>
+    <link href="https://vxhly.coding.me/2017/05/pentest-tips-and-tricks/"/>
+    <id>https://vxhly.coding.me/2017/05/pentest-tips-and-tricks/</id>
     <published>2017-05-20T05:23:12.000Z</published>
     <updated>2017-08-20T15:06:49.537Z</updated>
     
@@ -150,21 +150,21 @@
     
     </summary>
     
-      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+      <category term="pentest" scheme="https://vxhly.coding.me/categories/pentest/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>PHP 代码审计之 PHP 基础知识</title>
-    <link href="https://vxhly.github.io/2017/05/php-code-audit/"/>
-    <id>https://vxhly.github.io/2017/05/php-code-audit/</id>
+    <link href="https://vxhly.coding.me/2017/05/php-code-audit/"/>
+    <id>https://vxhly.coding.me/2017/05/php-code-audit/</id>
     <published>2017-05-19T09:31:01.000Z</published>
     <updated>2017-08-20T15:05:48.937Z</updated>
     
@@ -174,21 +174,21 @@
     
     </summary>
     
-      <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
+      <category term="debug" scheme="https://vxhly.coding.me/categories/debug/"/>
     
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
+      <category term="PHP" scheme="https://vxhly.coding.me/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>在 windows 下安装 Cmder</title>
-    <link href="https://vxhly.github.io/2017/04/install-cmder-on-windows/"/>
-    <id>https://vxhly.github.io/2017/04/install-cmder-on-windows/</id>
+    <link href="https://vxhly.coding.me/2017/04/install-cmder-on-windows/"/>
+    <id>https://vxhly.coding.me/2017/04/install-cmder-on-windows/</id>
     <published>2017-04-08T06:15:00.000Z</published>
     <updated>2017-08-20T15:06:49.525Z</updated>
     
@@ -198,21 +198,21 @@
     
     </summary>
     
-      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+      <category term="windows" scheme="https://vxhly.coding.me/categories/windows/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://vxhly.coding.me/tags/Command/"/>
     
   </entry>
   
   <entry>
     <title>PHP 文件包含漏洞总结</title>
-    <link href="https://vxhly.github.io/2017/04/php-file-inclusion/"/>
-    <id>https://vxhly.github.io/2017/04/php-file-inclusion/</id>
+    <link href="https://vxhly.coding.me/2017/04/php-file-inclusion/"/>
+    <id>https://vxhly.coding.me/2017/04/php-file-inclusion/</id>
     <published>2017-04-02T08:31:38.000Z</published>
     <updated>2017-08-20T15:05:48.856Z</updated>
     
@@ -222,19 +222,19 @@
     
     </summary>
     
-      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+      <category term="pentest" scheme="https://vxhly.coding.me/categories/pentest/"/>
     
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
+      <category term="PHP" scheme="https://vxhly.coding.me/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>CSS 的新特性</title>
-    <link href="https://vxhly.github.io/2017/03/css-new-features/"/>
-    <id>https://vxhly.github.io/2017/03/css-new-features/</id>
+    <link href="https://vxhly.coding.me/2017/03/css-new-features/"/>
+    <id>https://vxhly.coding.me/2017/03/css-new-features/</id>
     <published>2017-03-21T12:04:11.000Z</published>
     <updated>2017-08-20T15:05:48.018Z</updated>
     
@@ -244,19 +244,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
   </entry>
   
   <entry>
     <title>CSS 选择器介绍</title>
-    <link href="https://vxhly.github.io/2017/03/css-selector-introduction/"/>
-    <id>https://vxhly.github.io/2017/03/css-selector-introduction/</id>
+    <link href="https://vxhly.coding.me/2017/03/css-selector-introduction/"/>
+    <id>https://vxhly.coding.me/2017/03/css-selector-introduction/</id>
     <published>2017-03-03T11:52:30.000Z</published>
     <updated>2017-08-15T13:07:48.022Z</updated>
     
@@ -266,17 +266,17 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>IPSec VPN 的配置</title>
-    <link href="https://vxhly.github.io/2017/03/configure-ipsec-vpn/"/>
-    <id>https://vxhly.github.io/2017/03/configure-ipsec-vpn/</id>
+    <link href="https://vxhly.coding.me/2017/03/configure-ipsec-vpn/"/>
+    <id>https://vxhly.coding.me/2017/03/configure-ipsec-vpn/</id>
     <published>2017-03-02T02:02:33.000Z</published>
     <updated>2017-08-20T15:05:47.898Z</updated>
     
@@ -286,21 +286,21 @@
     
     </summary>
     
-      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+      <category term="windows" scheme="https://vxhly.coding.me/categories/windows/"/>
     
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>7 种新型的 CSS 长度单位</title>
-    <link href="https://vxhly.github.io/2016/12/css-length-unit/"/>
-    <id>https://vxhly.github.io/2016/12/css-length-unit/</id>
+    <link href="https://vxhly.coding.me/2016/12/css-length-unit/"/>
+    <id>https://vxhly.coding.me/2016/12/css-length-unit/</id>
     <published>2016-12-22T12:41:34.000Z</published>
     <updated>2017-08-20T15:05:47.953Z</updated>
     
@@ -310,17 +310,17 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>Socks 代理反弹突破内网</title>
-    <link href="https://vxhly.github.io/2016/11/socks-proxy-rebound/"/>
-    <id>https://vxhly.github.io/2016/11/socks-proxy-rebound/</id>
+    <link href="https://vxhly.coding.me/2016/11/socks-proxy-rebound/"/>
+    <id>https://vxhly.coding.me/2016/11/socks-proxy-rebound/</id>
     <published>2016-11-24T06:46:22.000Z</published>
     <updated>2017-08-20T15:06:49.543Z</updated>
     
@@ -330,21 +330,21 @@
     
     </summary>
     
-      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+      <category term="networking" scheme="https://vxhly.coding.me/categories/networking/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://vxhly.coding.me/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>常见的文件头和文件尾</title>
-    <link href="https://vxhly.github.io/2016/11/file-header-and-tail/"/>
-    <id>https://vxhly.github.io/2016/11/file-header-and-tail/</id>
+    <link href="https://vxhly.coding.me/2016/11/file-header-and-tail/"/>
+    <id>https://vxhly.coding.me/2016/11/file-header-and-tail/</id>
     <published>2016-11-23T02:05:44.000Z</published>
     <updated>2017-08-15T13:08:27.894Z</updated>
     
@@ -354,19 +354,19 @@
     
     </summary>
     
-      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+      <category term="windows" scheme="https://vxhly.coding.me/categories/windows/"/>
     
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>MySQL 数据库安全加固</title>
-    <link href="https://vxhly.github.io/2016/10/mysql-database-user-policy/"/>
-    <id>https://vxhly.github.io/2016/10/mysql-database-user-policy/</id>
+    <link href="https://vxhly.coding.me/2016/10/mysql-database-user-policy/"/>
+    <id>https://vxhly.coding.me/2016/10/mysql-database-user-policy/</id>
     <published>2016-10-30T08:02:43.000Z</published>
     <updated>2017-08-20T15:05:48.888Z</updated>
     
@@ -376,23 +376,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
-      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://vxhly.coding.me/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Gulp 使用指南</title>
-    <link href="https://vxhly.github.io/2016/10/gulp-usage-guide/"/>
-    <id>https://vxhly.github.io/2016/10/gulp-usage-guide/</id>
+    <link href="https://vxhly.coding.me/2016/10/gulp-usage-guide/"/>
+    <id>https://vxhly.coding.me/2016/10/gulp-usage-guide/</id>
     <published>2016-10-28T11:06:15.000Z</published>
     <updated>2017-08-20T15:06:49.491Z</updated>
     
@@ -402,21 +402,21 @@
     
     </summary>
     
-      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+      <category term="manual" scheme="https://vxhly.coding.me/categories/manual/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
-      <category term="Gulp" scheme="https://vxhly.github.io/tags/Gulp/"/>
+      <category term="Gulp" scheme="https://vxhly.coding.me/tags/Gulp/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 中的 DOM 事件</title>
-    <link href="https://vxhly.github.io/2016/10/dom-event-in-javascript/"/>
-    <id>https://vxhly.github.io/2016/10/dom-event-in-javascript/</id>
+    <link href="https://vxhly.coding.me/2016/10/dom-event-in-javascript/"/>
+    <id>https://vxhly.coding.me/2016/10/dom-event-in-javascript/</id>
     <published>2016-10-28T08:59:57.000Z</published>
     <updated>2017-08-15T13:08:06.723Z</updated>
     
@@ -426,19 +426,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+      <category term="jQuery" scheme="https://vxhly.coding.me/tags/jQuery/"/>
     
   </entry>
   
   <entry>
     <title>RedHat 系统安全加固（五）：防火墙 (iptables) 的设置</title>
-    <link href="https://vxhly.github.io/2016/10/iptables-settings/"/>
-    <id>https://vxhly.github.io/2016/10/iptables-settings/</id>
+    <link href="https://vxhly.coding.me/2016/10/iptables-settings/"/>
+    <id>https://vxhly.coding.me/2016/10/iptables-settings/</id>
     <published>2016-10-27T02:00:55.000Z</published>
     <updated>2017-08-20T15:05:48.353Z</updated>
     
@@ -448,19 +448,19 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
   </entry>
   
   <entry>
     <title>编写 CSS 代码的一些建议</title>
-    <link href="https://vxhly.github.io/2016/10/some-suggest-for-writing-css/"/>
-    <id>https://vxhly.github.io/2016/10/some-suggest-for-writing-css/</id>
+    <link href="https://vxhly.coding.me/2016/10/some-suggest-for-writing-css/"/>
+    <id>https://vxhly.coding.me/2016/10/some-suggest-for-writing-css/</id>
     <published>2016-10-22T14:28:14.000Z</published>
     <updated>2017-08-20T15:06:49.572Z</updated>
     
@@ -470,19 +470,19 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+      <category term="Criterion" scheme="https://vxhly.coding.me/tags/Criterion/"/>
     
   </entry>
   
   <entry>
     <title>RedHat 系统安全加固（四）：服务和进程管理</title>
-    <link href="https://vxhly.github.io/2016/10/service-and-process-management/"/>
-    <id>https://vxhly.github.io/2016/10/service-and-process-management/</id>
+    <link href="https://vxhly.coding.me/2016/10/service-and-process-management/"/>
+    <id>https://vxhly.coding.me/2016/10/service-and-process-management/</id>
     <published>2016-10-19T03:01:04.000Z</published>
     <updated>2017-08-20T15:05:48.988Z</updated>
     
@@ -492,23 +492,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>RedHat 系统安全加固（三）：系统日志审计</title>
-    <link href="https://vxhly.github.io/2016/10/log-audit-function/"/>
-    <id>https://vxhly.github.io/2016/10/log-audit-function/</id>
+    <link href="https://vxhly.coding.me/2016/10/log-audit-function/"/>
+    <id>https://vxhly.coding.me/2016/10/log-audit-function/</id>
     <published>2016-10-16T05:39:09.000Z</published>
     <updated>2017-08-20T15:05:48.580Z</updated>
     
@@ -518,21 +518,21 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>RedHat 系统安全加固（二）：用户和文件权限</title>
-    <link href="https://vxhly.github.io/2016/10/user-and-file-permissions/"/>
-    <id>https://vxhly.github.io/2016/10/user-and-file-permissions/</id>
+    <link href="https://vxhly.coding.me/2016/10/user-and-file-permissions/"/>
+    <id>https://vxhly.coding.me/2016/10/user-and-file-permissions/</id>
     <published>2016-10-14T14:08:33.000Z</published>
     <updated>2017-08-20T15:05:49.086Z</updated>
     
@@ -542,21 +542,21 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（七）：文件的特殊权限</title>
-    <link href="https://vxhly.github.io/2016/10/special-permissions-for-files/"/>
-    <id>https://vxhly.github.io/2016/10/special-permissions-for-files/</id>
+    <link href="https://vxhly.coding.me/2016/10/special-permissions-for-files/"/>
+    <id>https://vxhly.coding.me/2016/10/special-permissions-for-files/</id>
     <published>2016-10-14T11:25:27.000Z</published>
     <updated>2017-08-20T15:05:48.996Z</updated>
     
@@ -566,19 +566,19 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
   </entry>
   
   <entry>
     <title>RedHat 系统安全加固（一）：帐号安全</title>
-    <link href="https://vxhly.github.io/2016/10/account-security/"/>
-    <id>https://vxhly.github.io/2016/10/account-security/</id>
+    <link href="https://vxhly.coding.me/2016/10/account-security/"/>
+    <id>https://vxhly.coding.me/2016/10/account-security/</id>
     <published>2016-10-14T03:06:38.000Z</published>
     <updated>2017-08-20T15:05:47.838Z</updated>
     
@@ -588,21 +588,21 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>SASS 用法指南</title>
-    <link href="https://vxhly.github.io/2016/10/sass-usage-guide/"/>
-    <id>https://vxhly.github.io/2016/10/sass-usage-guide/</id>
+    <link href="https://vxhly.coding.me/2016/10/sass-usage-guide/"/>
+    <id>https://vxhly.coding.me/2016/10/sass-usage-guide/</id>
     <published>2016-10-11T10:57:49.000Z</published>
     <updated>2017-08-20T15:05:48.973Z</updated>
     
@@ -612,19 +612,19 @@
     
     </summary>
     
-      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+      <category term="manual" scheme="https://vxhly.coding.me/categories/manual/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="SASS" scheme="https://vxhly.github.io/tags/SASS/"/>
+      <category term="SASS" scheme="https://vxhly.coding.me/tags/SASS/"/>
     
   </entry>
   
   <entry>
     <title>渗透工具用法（二）：BurpSuite 的用法</title>
-    <link href="https://vxhly.github.io/2016/10/usage-of-burp/"/>
-    <id>https://vxhly.github.io/2016/10/usage-of-burp/</id>
+    <link href="https://vxhly.coding.me/2016/10/usage-of-burp/"/>
+    <id>https://vxhly.coding.me/2016/10/usage-of-burp/</id>
     <published>2016-10-08T08:02:34.000Z</published>
     <updated>2017-08-20T15:06:49.618Z</updated>
     
@@ -634,23 +634,23 @@
     
     </summary>
     
-      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+      <category term="pentest" scheme="https://vxhly.coding.me/categories/pentest/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（六）：用户的管理</title>
-    <link href="https://vxhly.github.io/2016/10/user-management/"/>
-    <id>https://vxhly.github.io/2016/10/user-management/</id>
+    <link href="https://vxhly.coding.me/2016/10/user-management/"/>
+    <id>https://vxhly.coding.me/2016/10/user-management/</id>
     <published>2016-10-06T17:31:32.000Z</published>
     <updated>2017-08-15T13:17:01.050Z</updated>
     
@@ -660,19 +660,19 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
   </entry>
   
   <entry>
     <title>HTML 和 CSS 代码规范</title>
-    <link href="https://vxhly.github.io/2016/10/html-and-css-code-criterion/"/>
-    <id>https://vxhly.github.io/2016/10/html-and-css-code-criterion/</id>
+    <link href="https://vxhly.coding.me/2016/10/html-and-css-code-criterion/"/>
+    <id>https://vxhly.coding.me/2016/10/html-and-css-code-criterion/</id>
     <published>2016-10-03T13:45:11.000Z</published>
     <updated>2017-08-20T15:06:49.514Z</updated>
     
@@ -682,21 +682,21 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+      <category term="Criterion" scheme="https://vxhly.coding.me/tags/Criterion/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
   </entry>
   
   <entry>
     <title>JDK 的安装和环境变量的配置</title>
-    <link href="https://vxhly.github.io/2016/09/install-jdk-on-windows/"/>
-    <id>https://vxhly.github.io/2016/09/install-jdk-on-windows/</id>
+    <link href="https://vxhly.coding.me/2016/09/install-jdk-on-windows/"/>
+    <id>https://vxhly.coding.me/2016/09/install-jdk-on-windows/</id>
     <published>2016-09-30T11:36:02.000Z</published>
     <updated>2017-08-20T15:05:48.240Z</updated>
     
@@ -706,17 +706,17 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="Software" scheme="https://vxhly.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://vxhly.coding.me/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 服务配置笔记（六）：DNS 服务安全配置</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-service-dns/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-service-dns/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-service-dns/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-service-dns/</id>
     <published>2016-09-27T05:25:48.000Z</published>
     <updated>2017-08-20T15:05:48.735Z</updated>
     
@@ -726,23 +726,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>FontAwesome 图标样式 CSS 参考清单</title>
-    <link href="https://vxhly.github.io/2016/09/font-awesome-icons/"/>
-    <id>https://vxhly.github.io/2016/09/font-awesome-icons/</id>
+    <link href="https://vxhly.coding.me/2016/09/font-awesome-icons/"/>
+    <id>https://vxhly.coding.me/2016/09/font-awesome-icons/</id>
     <published>2016-09-25T08:50:04.000Z</published>
     <updated>2017-08-20T15:06:49.625Z</updated>
     
@@ -752,21 +752,21 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
-      <category term="Fonts" scheme="https://vxhly.github.io/tags/Fonts/"/>
+      <category term="Fonts" scheme="https://vxhly.coding.me/tags/Fonts/"/>
     
   </entry>
   
   <entry>
     <title>渗透工具用法（三）：Nmap 的用法</title>
-    <link href="https://vxhly.github.io/2016/09/usage-of-nmap/"/>
-    <id>https://vxhly.github.io/2016/09/usage-of-nmap/</id>
+    <link href="https://vxhly.coding.me/2016/09/usage-of-nmap/"/>
+    <id>https://vxhly.coding.me/2016/09/usage-of-nmap/</id>
     <published>2016-09-23T08:29:57.000Z</published>
     <updated>2017-08-20T15:05:49.062Z</updated>
     
@@ -776,23 +776,23 @@
     
     </summary>
     
-      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+      <category term="pentest" scheme="https://vxhly.coding.me/categories/pentest/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
   </entry>
   
   <entry>
     <title>渗透工具用法（一）：SQLmap 的用法</title>
-    <link href="https://vxhly.github.io/2016/09/usage-of-sqlmap/"/>
-    <id>https://vxhly.github.io/2016/09/usage-of-sqlmap/</id>
+    <link href="https://vxhly.coding.me/2016/09/usage-of-sqlmap/"/>
+    <id>https://vxhly.coding.me/2016/09/usage-of-sqlmap/</id>
     <published>2016-09-20T02:46:46.000Z</published>
     <updated>2017-08-20T15:06:49.622Z</updated>
     
@@ -802,23 +802,23 @@
     
     </summary>
     
-      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+      <category term="pentest" scheme="https://vxhly.coding.me/categories/pentest/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="Python" scheme="https://vxhly.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://vxhly.coding.me/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 服务配置笔记（五）：SAMBA 服务安全配置</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-service-samba/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-service-samba/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-service-samba/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-service-samba/</id>
     <published>2016-09-19T11:33:21.000Z</published>
     <updated>2017-08-20T15:05:48.539Z</updated>
     
@@ -828,23 +828,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 服务配置笔记（四）：APACHE 服务安全配置</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-service-apache/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-service-apache/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-service-apache/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-service-apache/</id>
     <published>2016-09-19T06:58:33.000Z</published>
     <updated>2017-08-20T15:05:48.696Z</updated>
     
@@ -854,23 +854,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 服务配置笔记（三）：FTP 服务安全配置</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-service-ftp/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-service-ftp/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-service-ftp/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-service-ftp/</id>
     <published>2016-09-16T12:56:49.000Z</published>
     <updated>2017-08-20T15:05:48.511Z</updated>
     
@@ -880,23 +880,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 服务配置笔记（二）：SSH 服务安全配置</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-service-ssh/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-service-ssh/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-service-ssh/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-service-ssh/</id>
     <published>2016-09-16T03:59:15.000Z</published>
     <updated>2017-08-20T15:05:48.552Z</updated>
     
@@ -906,23 +906,23 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 服务配置笔记（一）：概述</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-service/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-service/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-service/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-service/</id>
     <published>2016-09-15T10:59:15.000Z</published>
     <updated>2017-08-20T15:05:48.851Z</updated>
     
@@ -932,21 +932,21 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+      <category term="Service" scheme="https://vxhly.coding.me/tags/Service/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（五）：基础操作</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-basic-operation/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-basic-operation/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-basic-operation/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-basic-operation/</id>
     <published>2016-09-15T08:09:27.000Z</published>
     <updated>2017-08-20T15:05:48.690Z</updated>
     
@@ -956,19 +956,19 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://vxhly.coding.me/tags/Command/"/>
     
   </entry>
   
   <entry>
     <title>IP 地址规划</title>
-    <link href="https://vxhly.github.io/2016/09/ip-address-planning/"/>
-    <id>https://vxhly.github.io/2016/09/ip-address-planning/</id>
+    <link href="https://vxhly.coding.me/2016/09/ip-address-planning/"/>
+    <id>https://vxhly.coding.me/2016/09/ip-address-planning/</id>
     <published>2016-09-11T13:49:24.000Z</published>
     <updated>2017-08-15T13:13:08.203Z</updated>
     
@@ -978,17 +978,17 @@
     
     </summary>
     
-      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+      <category term="networking" scheme="https://vxhly.coding.me/categories/networking/"/>
     
     
-      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://vxhly.coding.me/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（四）：基础正则表达式</title>
-    <link href="https://vxhly.github.io/2016/09/basic-regular-expression-under-liunx/"/>
-    <id>https://vxhly.github.io/2016/09/basic-regular-expression-under-liunx/</id>
+    <link href="https://vxhly.coding.me/2016/09/basic-regular-expression-under-liunx/"/>
+    <id>https://vxhly.coding.me/2016/09/basic-regular-expression-under-liunx/</id>
     <published>2016-09-10T07:29:24.000Z</published>
     <updated>2017-08-20T15:05:47.787Z</updated>
     
@@ -998,19 +998,19 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="RegExp" scheme="https://vxhly.github.io/tags/RegExp/"/>
+      <category term="RegExp" scheme="https://vxhly.coding.me/tags/RegExp/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（三）：文件的压缩与解压缩</title>
-    <link href="https://vxhly.github.io/2016/09/file-compression-and-decompression/"/>
-    <id>https://vxhly.github.io/2016/09/file-compression-and-decompression/</id>
+    <link href="https://vxhly.coding.me/2016/09/file-compression-and-decompression/"/>
+    <id>https://vxhly.coding.me/2016/09/file-compression-and-decompression/</id>
     <published>2016-09-10T06:04:39.000Z</published>
     <updated>2017-08-15T13:08:21.395Z</updated>
     
@@ -1020,17 +1020,17 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
   </entry>
   
   <entry>
     <title>常用的正则表达式</title>
-    <link href="https://vxhly.github.io/2016/09/regular-expression/"/>
-    <id>https://vxhly.github.io/2016/09/regular-expression/</id>
+    <link href="https://vxhly.coding.me/2016/09/regular-expression/"/>
+    <id>https://vxhly.coding.me/2016/09/regular-expression/</id>
     <published>2016-09-09T11:02:34.000Z</published>
     <updated>2017-08-20T15:05:48.963Z</updated>
     
@@ -1040,19 +1040,19 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="RegExp" scheme="https://vxhly.github.io/tags/RegExp/"/>
+      <category term="RegExp" scheme="https://vxhly.coding.me/tags/RegExp/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（二）：vim 的使用</title>
-    <link href="https://vxhly.github.io/2016/09/usage-of-vim/"/>
-    <id>https://vxhly.github.io/2016/09/usage-of-vim/</id>
+    <link href="https://vxhly.coding.me/2016/09/usage-of-vim/"/>
+    <id>https://vxhly.coding.me/2016/09/usage-of-vim/</id>
     <published>2016-09-08T14:20:23.000Z</published>
     <updated>2017-08-20T15:05:49.159Z</updated>
     
@@ -1062,17 +1062,17 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
   </entry>
   
   <entry>
     <title>Liunx 学习笔记（一）：目录结构说明</title>
-    <link href="https://vxhly.github.io/2016/09/liunx-directory-structure/"/>
-    <id>https://vxhly.github.io/2016/09/liunx-directory-structure/</id>
+    <link href="https://vxhly.coding.me/2016/09/liunx-directory-structure/"/>
+    <id>https://vxhly.coding.me/2016/09/liunx-directory-structure/</id>
     <published>2016-09-08T11:35:12.000Z</published>
     <updated>2017-08-20T15:05:48.508Z</updated>
     
@@ -1082,17 +1082,17 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
   </entry>
   
   <entry>
     <title>reveal.js（HTML 演示文稿）中文文档</title>
-    <link href="https://vxhly.github.io/2016/09/reveal-js-cn-document/"/>
-    <id>https://vxhly.github.io/2016/09/reveal-js-cn-document/</id>
+    <link href="https://vxhly.coding.me/2016/09/reveal-js-cn-document/"/>
+    <id>https://vxhly.coding.me/2016/09/reveal-js-cn-document/</id>
     <published>2016-09-03T05:49:17.000Z</published>
     <updated>2017-08-20T15:06:49.615Z</updated>
     
@@ -1102,25 +1102,25 @@
     
     </summary>
     
-      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+      <category term="manual" scheme="https://vxhly.coding.me/categories/manual/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
   </entry>
   
   <entry>
     <title>解读 npm 中的 package.json</title>
-    <link href="https://vxhly.github.io/2016/08/talk-package-json-on-npm/"/>
-    <id>https://vxhly.github.io/2016/08/talk-package-json-on-npm/</id>
+    <link href="https://vxhly.coding.me/2016/08/talk-package-json-on-npm/"/>
+    <id>https://vxhly.coding.me/2016/08/talk-package-json-on-npm/</id>
     <published>2016-08-30T09:08:18.000Z</published>
     <updated>2017-08-20T15:06:49.572Z</updated>
     
@@ -1130,19 +1130,19 @@
     
     </summary>
     
-      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+      <category term="node.js" scheme="https://vxhly.coding.me/categories/node-js/"/>
     
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
-      <category term="JSON" scheme="https://vxhly.github.io/tags/JSON/"/>
+      <category term="JSON" scheme="https://vxhly.coding.me/tags/JSON/"/>
     
   </entry>
   
   <entry>
     <title>浅谈 Node.js 中的 npm</title>
-    <link href="https://vxhly.github.io/2016/08/talk-npm-on-node-js/"/>
-    <id>https://vxhly.github.io/2016/08/talk-npm-on-node-js/</id>
+    <link href="https://vxhly.coding.me/2016/08/talk-npm-on-node-js/"/>
+    <id>https://vxhly.coding.me/2016/08/talk-npm-on-node-js/</id>
     <published>2016-08-26T07:30:10.000Z</published>
     <updated>2017-08-15T13:16:06.081Z</updated>
     
@@ -1152,21 +1152,21 @@
     
     </summary>
     
-      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+      <category term="node.js" scheme="https://vxhly.coding.me/categories/node-js/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
-      <category term="JSON" scheme="https://vxhly.github.io/tags/JSON/"/>
+      <category term="JSON" scheme="https://vxhly.coding.me/tags/JSON/"/>
     
   </entry>
   
   <entry>
     <title>CSS 代码书写顺序以及代码规范</title>
-    <link href="https://vxhly.github.io/2016/08/css-code-writing/"/>
-    <id>https://vxhly.github.io/2016/08/css-code-writing/</id>
+    <link href="https://vxhly.coding.me/2016/08/css-code-writing/"/>
+    <id>https://vxhly.coding.me/2016/08/css-code-writing/</id>
     <published>2016-08-24T12:40:06.000Z</published>
     <updated>2017-08-20T15:05:47.901Z</updated>
     
@@ -1176,19 +1176,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+      <category term="Criterion" scheme="https://vxhly.coding.me/tags/Criterion/"/>
     
   </entry>
   
   <entry>
     <title>HTML5 移动端头部标签</title>
-    <link href="https://vxhly.github.io/2016/08/html5-head-meta/"/>
-    <id>https://vxhly.github.io/2016/08/html5-head-meta/</id>
+    <link href="https://vxhly.coding.me/2016/08/html5-head-meta/"/>
+    <id>https://vxhly.coding.me/2016/08/html5-head-meta/</id>
     <published>2016-08-22T08:21:30.000Z</published>
     <updated>2017-08-20T15:05:48.055Z</updated>
     
@@ -1198,19 +1198,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
-      <category term="Moblie" scheme="https://vxhly.github.io/tags/Moblie/"/>
+      <category term="Moblie" scheme="https://vxhly.coding.me/tags/Moblie/"/>
     
   </entry>
   
   <entry>
     <title>jQuery 各个版本的下载链接</title>
-    <link href="https://vxhly.github.io/2016/08/jquery-download-links/"/>
-    <id>https://vxhly.github.io/2016/08/jquery-download-links/</id>
+    <link href="https://vxhly.coding.me/2016/08/jquery-download-links/"/>
+    <id>https://vxhly.coding.me/2016/08/jquery-download-links/</id>
     <published>2016-08-18T09:13:24.000Z</published>
     <updated>2017-08-20T15:06:49.535Z</updated>
     
@@ -1220,19 +1220,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+      <category term="jQuery" scheme="https://vxhly.coding.me/tags/jQuery/"/>
     
   </entry>
   
   <entry>
     <title>CSS 的一些冷知识</title>
-    <link href="https://vxhly.github.io/2016/08/css-cold-knowledge/"/>
-    <id>https://vxhly.github.io/2016/08/css-cold-knowledge/</id>
+    <link href="https://vxhly.coding.me/2016/08/css-cold-knowledge/"/>
+    <id>https://vxhly.coding.me/2016/08/css-cold-knowledge/</id>
     <published>2016-08-17T09:27:08.000Z</published>
     <updated>2017-08-20T15:05:47.929Z</updated>
     
@@ -1242,21 +1242,21 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+      <category term="Layout" scheme="https://vxhly.coding.me/tags/Layout/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
   </entry>
   
   <entry>
     <title>常见的端口号以及其对应的应用程序或服务</title>
-    <link href="https://vxhly.github.io/2016/08/common-port/"/>
-    <id>https://vxhly.github.io/2016/08/common-port/</id>
+    <link href="https://vxhly.coding.me/2016/08/common-port/"/>
+    <id>https://vxhly.coding.me/2016/08/common-port/</id>
     <published>2016-08-16T08:04:29.000Z</published>
     <updated>2017-08-20T15:05:47.865Z</updated>
     
@@ -1266,27 +1266,27 @@
     
     </summary>
     
-      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+      <category term="networking" scheme="https://vxhly.coding.me/categories/networking/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://vxhly.coding.me/tags/Network/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
   </entry>
   
   <entry>
     <title>浏览器对象模型</title>
-    <link href="https://vxhly.github.io/2016/08/browser-object-model/"/>
-    <id>https://vxhly.github.io/2016/08/browser-object-model/</id>
+    <link href="https://vxhly.coding.me/2016/08/browser-object-model/"/>
+    <id>https://vxhly.coding.me/2016/08/browser-object-model/</id>
     <published>2016-08-15T13:58:30.000Z</published>
     <updated>2017-08-20T15:06:49.459Z</updated>
     
@@ -1296,19 +1296,19 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>HTML5 的一些冷知识</title>
-    <link href="https://vxhly.github.io/2016/08/html5-cold-knowledge/"/>
-    <id>https://vxhly.github.io/2016/08/html5-cold-knowledge/</id>
+    <link href="https://vxhly.coding.me/2016/08/html5-cold-knowledge/"/>
+    <id>https://vxhly.coding.me/2016/08/html5-cold-knowledge/</id>
     <published>2016-08-15T10:12:36.000Z</published>
     <updated>2017-08-20T15:06:49.550Z</updated>
     
@@ -1318,21 +1318,21 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+      <category term="Layout" scheme="https://vxhly.coding.me/tags/Layout/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
   </entry>
   
   <entry>
     <title>移动端网页自适应方案</title>
-    <link href="https://vxhly.github.io/2016/08/layout-project-for-moblie/"/>
-    <id>https://vxhly.github.io/2016/08/layout-project-for-moblie/</id>
+    <link href="https://vxhly.coding.me/2016/08/layout-project-for-moblie/"/>
+    <id>https://vxhly.coding.me/2016/08/layout-project-for-moblie/</id>
     <published>2016-08-13T11:40:34.000Z</published>
     <updated>2017-08-20T15:06:49.535Z</updated>
     
@@ -1342,23 +1342,23 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+      <category term="Layout" scheme="https://vxhly.coding.me/tags/Layout/"/>
     
-      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+      <category term="jQuery" scheme="https://vxhly.coding.me/tags/jQuery/"/>
     
-      <category term="Moblie" scheme="https://vxhly.github.io/tags/Moblie/"/>
+      <category term="Moblie" scheme="https://vxhly.coding.me/tags/Moblie/"/>
     
   </entry>
   
   <entry>
     <title>运行命令集合</title>
-    <link href="https://vxhly.github.io/2016/08/run-commands/"/>
-    <id>https://vxhly.github.io/2016/08/run-commands/</id>
+    <link href="https://vxhly.coding.me/2016/08/run-commands/"/>
+    <id>https://vxhly.coding.me/2016/08/run-commands/</id>
     <published>2016-08-11T12:46:27.000Z</published>
     <updated>2017-08-15T13:15:14.421Z</updated>
     
@@ -1368,23 +1368,23 @@
     
     </summary>
     
-      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+      <category term="windows" scheme="https://vxhly.coding.me/categories/windows/"/>
     
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://vxhly.coding.me/tags/Command/"/>
     
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+      <category term="Pentest" scheme="https://vxhly.coding.me/tags/Pentest/"/>
     
   </entry>
   
   <entry>
     <title>Flexbox 布局</title>
-    <link href="https://vxhly.github.io/2016/08/flexbox-layout/"/>
-    <id>https://vxhly.github.io/2016/08/flexbox-layout/</id>
+    <link href="https://vxhly.coding.me/2016/08/flexbox-layout/"/>
+    <id>https://vxhly.coding.me/2016/08/flexbox-layout/</id>
     <published>2016-08-11T06:27:56.000Z</published>
     <updated>2017-08-20T15:06:49.548Z</updated>
     
@@ -1394,23 +1394,23 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+      <category term="Layout" scheme="https://vxhly.coding.me/tags/Layout/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
   </entry>
   
   <entry>
     <title>Console 的一些应用小技巧</title>
-    <link href="https://vxhly.github.io/2016/08/some-tips-for-console/"/>
-    <id>https://vxhly.github.io/2016/08/some-tips-for-console/</id>
+    <link href="https://vxhly.coding.me/2016/08/some-tips-for-console/"/>
+    <id>https://vxhly.coding.me/2016/08/some-tips-for-console/</id>
     <published>2016-08-10T08:57:53.000Z</published>
     <updated>2017-08-20T15:05:48.994Z</updated>
     
@@ -1420,21 +1420,21 @@
     
     </summary>
     
-      <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
+      <category term="debug" scheme="https://vxhly.coding.me/categories/debug/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="Debug" scheme="https://vxhly.github.io/tags/Debug/"/>
+      <category term="Debug" scheme="https://vxhly.coding.me/tags/Debug/"/>
     
-      <category term="Software" scheme="https://vxhly.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://vxhly.coding.me/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>简单而实用的 jQuery 小技巧</title>
-    <link href="https://vxhly.github.io/2016/08/some-tips-for-jquery/"/>
-    <id>https://vxhly.github.io/2016/08/some-tips-for-jquery/</id>
+    <link href="https://vxhly.coding.me/2016/08/some-tips-for-jquery/"/>
+    <id>https://vxhly.coding.me/2016/08/some-tips-for-jquery/</id>
     <published>2016-08-09T07:26:35.000Z</published>
     <updated>2017-08-15T13:15:57.754Z</updated>
     
@@ -1444,21 +1444,21 @@
     
     </summary>
     
-      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+      <category term="web" scheme="https://vxhly.coding.me/categories/web/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
-      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+      <category term="jQuery" scheme="https://vxhly.coding.me/tags/jQuery/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 获取 URL 请求参数</title>
-    <link href="https://vxhly.github.io/2016/08/js-get-url-request/"/>
-    <id>https://vxhly.github.io/2016/08/js-get-url-request/</id>
+    <link href="https://vxhly.coding.me/2016/08/js-get-url-request/"/>
+    <id>https://vxhly.coding.me/2016/08/js-get-url-request/</id>
     <published>2016-08-07T11:21:58.000Z</published>
     <updated>2017-08-20T15:05:48.623Z</updated>
     
@@ -1468,19 +1468,19 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
   </entry>
   
   <entry>
     <title>需要一款称手的编辑器</title>
-    <link href="https://vxhly.github.io/2016/08/need-a-super-software/"/>
-    <id>https://vxhly.github.io/2016/08/need-a-super-software/</id>
+    <link href="https://vxhly.coding.me/2016/08/need-a-super-software/"/>
+    <id>https://vxhly.coding.me/2016/08/need-a-super-software/</id>
     <published>2016-08-07T08:49:47.000Z</published>
     <updated>2017-08-20T15:06:49.536Z</updated>
     
@@ -1490,19 +1490,19 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
-      <category term="Software" scheme="https://vxhly.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://vxhly.coding.me/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>关于 Chrome 浏览器的调试方法</title>
-    <link href="https://vxhly.github.io/2016/08/debug-for-chrome-browser/"/>
-    <id>https://vxhly.github.io/2016/08/debug-for-chrome-browser/</id>
+    <link href="https://vxhly.coding.me/2016/08/debug-for-chrome-browser/"/>
+    <id>https://vxhly.coding.me/2016/08/debug-for-chrome-browser/</id>
     <published>2016-08-05T10:24:29.000Z</published>
     <updated>2017-08-20T15:05:48.035Z</updated>
     
@@ -1512,25 +1512,25 @@
     
     </summary>
     
-      <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
+      <category term="debug" scheme="https://vxhly.coding.me/categories/debug/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
-      <category term="Debug" scheme="https://vxhly.github.io/tags/Debug/"/>
+      <category term="Debug" scheme="https://vxhly.coding.me/tags/Debug/"/>
     
-      <category term="Software" scheme="https://vxhly.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://vxhly.coding.me/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>Emmet 用法举例</title>
-    <link href="https://vxhly.github.io/2016/08/emmet-usage-examples/"/>
-    <id>https://vxhly.github.io/2016/08/emmet-usage-examples/</id>
+    <link href="https://vxhly.coding.me/2016/08/emmet-usage-examples/"/>
+    <id>https://vxhly.coding.me/2016/08/emmet-usage-examples/</id>
     <published>2016-08-04T05:20:34.000Z</published>
     <updated>2017-08-20T15:05:48.164Z</updated>
     
@@ -1540,21 +1540,21 @@
     
     </summary>
     
-      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+      <category term="manual" scheme="https://vxhly.coding.me/categories/manual/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="https://vxhly.coding.me/tags/CSS/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="HTML5" scheme="https://vxhly.coding.me/tags/HTML5/"/>
     
-      <category term="Software" scheme="https://vxhly.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://vxhly.coding.me/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>使用 Hexo+NexT 在 Github 上搭建静态博客</title>
-    <link href="https://vxhly.github.io/2016/08/install-hexo-next-on-github/"/>
-    <id>https://vxhly.github.io/2016/08/install-hexo-next-on-github/</id>
+    <link href="https://vxhly.coding.me/2016/08/install-hexo-next-on-github/"/>
+    <id>https://vxhly.coding.me/2016/08/install-hexo-next-on-github/</id>
     <published>2016-08-03T05:11:30.000Z</published>
     <updated>2017-08-20T15:06:49.525Z</updated>
     
@@ -1564,21 +1564,21 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Git" scheme="https://vxhly.github.io/tags/Git/"/>
+      <category term="Git" scheme="https://vxhly.coding.me/tags/Git/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
   </entry>
   
   <entry>
     <title>CMD 常用命令</title>
-    <link href="https://vxhly.github.io/2016/08/cmd-commands/"/>
-    <id>https://vxhly.github.io/2016/08/cmd-commands/</id>
+    <link href="https://vxhly.coding.me/2016/08/cmd-commands/"/>
+    <id>https://vxhly.coding.me/2016/08/cmd-commands/</id>
     <published>2016-08-02T10:59:24.000Z</published>
     <updated>2017-08-15T13:06:01.504Z</updated>
     
@@ -1588,21 +1588,21 @@
     
     </summary>
     
-      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+      <category term="windows" scheme="https://vxhly.coding.me/categories/windows/"/>
     
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://vxhly.coding.me/tags/Windows/"/>
     
-      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+      <category term="Security" scheme="https://vxhly.coding.me/tags/Security/"/>
     
-      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+      <category term="Command" scheme="https://vxhly.coding.me/tags/Command/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 开启 root 用户</title>
-    <link href="https://vxhly.github.io/2016/08/ubuntu-enble-root/"/>
-    <id>https://vxhly.github.io/2016/08/ubuntu-enble-root/</id>
+    <link href="https://vxhly.coding.me/2016/08/ubuntu-enble-root/"/>
+    <id>https://vxhly.coding.me/2016/08/ubuntu-enble-root/</id>
     <published>2016-08-02T07:29:46.000Z</published>
     <updated>2017-08-17T12:18:26.324Z</updated>
     
@@ -1612,17 +1612,17 @@
     
     </summary>
     
-      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+      <category term="liunx" scheme="https://vxhly.coding.me/categories/liunx/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 生成随机数</title>
-    <link href="https://vxhly.github.io/2016/08/js-generated-random-number/"/>
-    <id>https://vxhly.github.io/2016/08/js-generated-random-number/</id>
+    <link href="https://vxhly.coding.me/2016/08/js-generated-random-number/"/>
+    <id>https://vxhly.coding.me/2016/08/js-generated-random-number/</id>
     <published>2016-08-02T05:49:41.000Z</published>
     <updated>2017-08-15T13:13:22.639Z</updated>
     
@@ -1632,19 +1632,19 @@
     
     </summary>
     
-      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+      <category term="design" scheme="https://vxhly.coding.me/categories/design/"/>
     
     
-      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://vxhly.coding.me/tags/JavaScript/"/>
     
-      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+      <category term="Code" scheme="https://vxhly.coding.me/tags/Code/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 下连接 WIFI</title>
-    <link href="https://vxhly.github.io/2016/08/ubuntu-connect-wifi/"/>
-    <id>https://vxhly.github.io/2016/08/ubuntu-connect-wifi/</id>
+    <link href="https://vxhly.coding.me/2016/08/ubuntu-connect-wifi/"/>
+    <id>https://vxhly.coding.me/2016/08/ubuntu-connect-wifi/</id>
     <published>2016-08-01T04:24:19.000Z</published>
     <updated>2017-08-20T15:05:49.007Z</updated>
     
@@ -1654,21 +1654,21 @@
     
     </summary>
     
-      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+      <category term="networking" scheme="https://vxhly.coding.me/categories/networking/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://vxhly.coding.me/tags/Network/"/>
     
-      <category term="Software" scheme="https://vxhly.github.io/tags/Software/"/>
+      <category term="Software" scheme="https://vxhly.coding.me/tags/Software/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 下科学上网</title>
-    <link href="https://vxhly.github.io/2016/07/ubuntu-over-the-wall/"/>
-    <id>https://vxhly.github.io/2016/07/ubuntu-over-the-wall/</id>
+    <link href="https://vxhly.coding.me/2016/07/ubuntu-over-the-wall/"/>
+    <id>https://vxhly.coding.me/2016/07/ubuntu-over-the-wall/</id>
     <published>2016-07-31T13:32:24.000Z</published>
     <updated>2017-08-20T15:06:49.545Z</updated>
     
@@ -1678,21 +1678,21 @@
     
     </summary>
     
-      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+      <category term="networking" scheme="https://vxhly.coding.me/categories/networking/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://vxhly.coding.me/tags/Network/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
   </entry>
   
   <entry>
     <title>Git 远程推送配置</title>
-    <link href="https://vxhly.github.io/2016/07/git-push-setting/"/>
-    <id>https://vxhly.github.io/2016/07/git-push-setting/</id>
+    <link href="https://vxhly.coding.me/2016/07/git-push-setting/"/>
+    <id>https://vxhly.coding.me/2016/07/git-push-setting/</id>
     <published>2016-07-31T08:09:21.000Z</published>
     <updated>2017-08-20T15:06:49.473Z</updated>
     
@@ -1702,21 +1702,21 @@
     
     </summary>
     
-      <category term="git" scheme="https://vxhly.github.io/categories/git/"/>
+      <category term="git" scheme="https://vxhly.coding.me/categories/git/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+      <category term="Protocol" scheme="https://vxhly.coding.me/tags/Protocol/"/>
     
-      <category term="Git" scheme="https://vxhly.github.io/tags/Git/"/>
+      <category term="Git" scheme="https://vxhly.coding.me/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>使用 nvm 安装 Node.js</title>
-    <link href="https://vxhly.github.io/2016/07/usage-nvm-to-install-node-js/"/>
-    <id>https://vxhly.github.io/2016/07/usage-nvm-to-install-node-js/</id>
+    <link href="https://vxhly.coding.me/2016/07/usage-nvm-to-install-node-js/"/>
+    <id>https://vxhly.coding.me/2016/07/usage-nvm-to-install-node-js/</id>
     <published>2016-07-31T07:11:44.000Z</published>
     <updated>2017-08-20T15:06:49.620Z</updated>
     
@@ -1726,12 +1726,12 @@
     
     </summary>
     
-      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+      <category term="node.js" scheme="https://vxhly.coding.me/categories/node-js/"/>
     
     
-      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+      <category term="Liunx" scheme="https://vxhly.coding.me/tags/Liunx/"/>
     
-      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+      <category term="Node.js" scheme="https://vxhly.coding.me/tags/Node-js/"/>
     
   </entry>
   
