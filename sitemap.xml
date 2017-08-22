@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vxhly.coding.me/2017/08/talk-ssh-service/</loc>
+    <loc>https://vxhly.coding.me/2017/08/shell-listen-for-new-files/</loc>
     
-    <lastmod>2017-08-22T12:33:57.619Z</lastmod>
+    <lastmod>2017-08-22T13:20:19.566Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://vxhly.coding.me/about/index.html</loc>
     
-    <lastmod>2017-08-22T09:28:20.680Z</lastmod>
+    <lastmod>2017-08-22T13:03:55.580Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vxhly.coding.me/2017/08/talk-ssh-service/</loc>
+    
+    <lastmod>2017-08-22T12:54:16.632Z</lastmod>
     
   </url>
   
