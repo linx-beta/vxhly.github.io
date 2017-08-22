@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vxhly.github.io/about/index.html</loc>
+    
+    <lastmod>2017-08-22T09:28:20.680Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vxhly.github.io/font-awesome-icons/</loc>
     
     <lastmod>2017-08-20T15:06:49.625Z</lastmod>
@@ -93,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://vxhly.github.io/jquery-download-links/</loc>
+    <loc>https://vxhly.github.io/layout-project-for-moblie/</loc>
     
     <lastmod>2017-08-20T15:06:49.535Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://vxhly.github.io/layout-project-for-moblie/</loc>
+    <loc>https://vxhly.github.io/jquery-download-links/</loc>
     
     <lastmod>2017-08-20T15:06:49.535Z</lastmod>
     
@@ -516,13 +523,6 @@
     <loc>https://vxhly.github.io/tags/index.html</loc>
     
     <lastmod>2017-08-13T15:10:56.371Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vxhly.github.io/about/index.html</loc>
-    
-    <lastmod>2017-08-13T15:10:47.008Z</lastmod>
     
   </url>
   

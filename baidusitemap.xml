@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>https://vxhly.github.io/font-awesome-icons/</loc>
     <lastmod>2017-08-20T15:06:49.625Z</lastmod>
@@ -318,28 +319,6 @@
 
     
   <url>
-    <loc>https://vxhly.github.io/jquery-download-links/</loc>
-    <lastmod>2017-08-20T15:06:49.535Z</lastmod>
-    <data>
-        <display>
-        <title>jQuery 各个版本的下载链接</title>
-        <pubTime>2016-08-18T09:13:24.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-        <tag>jQuery</tag>
-         
-         
-           
-             
-              <breadCrumb title="web" url="https://vxhly.github.io/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://vxhly.github.io/layout-project-for-moblie/</loc>
     <lastmod>2017-08-20T15:06:49.535Z</lastmod>
     <data>
@@ -359,6 +338,28 @@
            
              
               <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://vxhly.github.io/jquery-download-links/</loc>
+    <lastmod>2017-08-20T15:06:49.535Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery 各个版本的下载链接</title>
+        <pubTime>2016-08-18T09:13:24.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="https://vxhly.github.io/categories/web/"/>
           
         </display>
     </data>
@@ -403,9 +404,9 @@
         
         <tag>Liunx</tag>
          
-        <tag>Git</tag>
-         
         <tag>Node.js</tag>
+         
+        <tag>Git</tag>
          
          
            
@@ -1722,7 +1723,6 @@
     </data>
     </url>
 
-    
     
     
 </urlset>
