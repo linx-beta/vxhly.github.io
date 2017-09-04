@@ -4,6 +4,38 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
+    <lastmod>2017-09-03T14:47:22.989Z</lastmod>
+    <data>
+        <display>
+        <title>安全渗透基础测试题</title>
+        <pubTime>2017-09-03T09:04:22.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Security</tag>
+         
+        <tag>Pentest</tag>
+         
+        <tag>MySQL</tag>
+         
+        <tag>WEB</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="testing" url="https://vxhly.github.io/categories/testing/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2017/06/insatll-ghost-on-your-vps/</loc>
     <lastmod>2017-09-03T14:26:33.845Z</lastmod>
     <data>
@@ -567,38 +599,6 @@
            
              
               <breadCrumb title="windows" url="https://vxhly.github.io/categories/windows/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
-    <lastmod>2017-09-03T09:46:00.682Z</lastmod>
-    <data>
-        <display>
-        <title>安全渗透基础测试题</title>
-        <pubTime>2017-09-03T09:04:22.000Z</pubTime>
-        
-        <tag>Liunx</tag>
-         
-        <tag>Security</tag>
-         
-        <tag>Pentest</tag>
-         
-        <tag>MySQL</tag>
-         
-        <tag>WEB</tag>
-         
-        <tag>PHP</tag>
-         
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="testing" url="https://vxhly.github.io/categories/testing/"/>
           
         </display>
     </data>
