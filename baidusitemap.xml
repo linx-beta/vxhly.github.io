@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2016/08/ubuntu-connect-wifi/</loc>
+    <lastmod>2017-09-06T12:25:16.798Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu 下连接 WIFI</title>
+        <pubTime>2016-08-01T04:24:19.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Network</tag>
+         
+         
+           
+             
+              <breadCrumb title="networking" url="https://vxhly.github.io/categories/networking/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://vxhly.github.io/2017/09/vuejs-and-express-mysql-or-mongodb/</loc>
+    <lastmod>2017-09-06T12:24:27.640Z</lastmod>
+    <data>
+        <display>
+        <title>Vue 利用 Express 结合 MySQL 或者 MongoDB</title>
+        <pubTime>2017-09-01T16:04:08.000Z</pubTime>
+        
+        <tag>Node.js</tag>
+         
+        <tag>MongoDB</tag>
+         
+        <tag>MySQL</tag>
+         
+        <tag>Vue</tag>
+         
+        <tag>Express</tag>
+         
+         
+           
+             
+              <breadCrumb title="node.js" url="https://vxhly.github.io/categories/node-js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
     <lastmod>2017-09-06T11:13:32.068Z</lastmod>
     <data>
@@ -454,56 +504,6 @@
         <pubTime>2016-08-30T09:08:18.000Z</pubTime>
         
         <tag>Node.js</tag>
-         
-         
-           
-             
-              <breadCrumb title="node.js" url="https://vxhly.github.io/categories/node-js/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2016/08/ubuntu-connect-wifi/</loc>
-    <lastmod>2017-09-03T14:11:08.489Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu 下连接 WIFI</title>
-        <pubTime>2016-08-01T04:24:19.000Z</pubTime>
-        
-        <tag>Liunx</tag>
-         
-        <tag>Network</tag>
-         
-         
-           
-             
-              <breadCrumb title="networking" url="https://vxhly.github.io/categories/networking/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2017/09/vuejs-and-express-mysql-or-mongodb/</loc>
-    <lastmod>2017-09-03T14:07:09.771Z</lastmod>
-    <data>
-        <display>
-        <title>Vue 利用 Express 结合 MySQL 或者 MongoDB</title>
-        <pubTime>2017-09-01T16:04:08.000Z</pubTime>
-        
-        <tag>Node.js</tag>
-         
-        <tag>MongoDB</tag>
-         
-        <tag>MySQL</tag>
-         
-        <tag>Vue</tag>
-         
-        <tag>Express</tag>
          
          
            

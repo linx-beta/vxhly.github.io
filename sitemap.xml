@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vxhly.github.io/2016/08/ubuntu-connect-wifi/</loc>
+    
+    <lastmod>2017-09-06T12:25:16.798Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vxhly.github.io/2017/09/vuejs-and-express-mysql-or-mongodb/</loc>
+    
+    <lastmod>2017-09-06T12:24:27.640Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
     
     <lastmod>2017-09-06T11:13:32.068Z</lastmod>
@@ -138,20 +152,6 @@
     <loc>https://vxhly.github.io/2016/08/talk-package-json-on-npm/</loc>
     
     <lastmod>2017-09-03T14:11:30.330Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vxhly.github.io/2016/08/ubuntu-connect-wifi/</loc>
-    
-    <lastmod>2017-09-03T14:11:08.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vxhly.github.io/2017/09/vuejs-and-express-mysql-or-mongodb/</loc>
-    
-    <lastmod>2017-09-03T14:07:09.771Z</lastmod>
     
   </url>
   
