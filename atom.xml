@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vxhly.github.io/"/>
-  <updated>2017-09-11T13:54:00.872Z</updated>
+  <updated>2017-09-14T05:56:45.101Z</updated>
   <id>https://vxhly.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/"/>
     <id>https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/</id>
     <published>2017-09-11T08:55:20.000Z</published>
-    <updated>2017-09-11T13:54:00.872Z</updated>
+    <updated>2017-09-14T05:56:45.101Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Mon Sep 11 2017 21:54:35 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目时，遇到的一些问题以及解决方案
+      &lt;!-- build time:Thu Sep 14 2017 14:10:52 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目时，遇到的一些问题以及解决方案
     
     </summary>
     
