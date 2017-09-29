@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[RESTful API 设计指南]]></title>
+    <url>%2F2017%2F09%2Frestfui-api%2F</url>
+    <content type="text"><![CDATA[网络应用程序，分为前端和后端两个部分。这时候必须有一种统一的机制，方便不同的前端设备与后端进行通信。这导致API构架的流行，甚至出现 “API First” 的设计思想。【RESTful API】(http://en.wikipedia.org/wiki/Representational_state_transfer) 是目前比较成熟的一套互联网应用程序的 API 设计理论协议API 与用户的通信协议，总是使用 【HTTPs】(//www.ruanyifeng.com/blog/2014/02/ssl_tls.html) 协议。域名应该尽量将API部署在专用域名之下。https://api.example.com如果确定 API 很简单，不会有进一步扩展，可以考虑放在主域名下。https://example.org/api/版本（Versioning）应该将 API 的版本号放入 URL。https://api.example.com/v1/另一种做法是，将版本号放在 HTTP 头信息中，但不如放入 URL 方便和直观。【Github】(//developer.github.com/v3/media/#request-specific-version) 采用这种做法。路径（Endpoint）路径又称”终点”（endpoint），表示API的具体网址。 在RESTful架构中，每个网址代表一种资源（resource），所以网址中不能有动词，只能有名词，而且所用的名词往往与数据库的表格名对应。一般来说，数据库中的表都是同种记录的”集合”（collection），所以 API 中的名词也应该使用复数。 举例来说，有一个 API 提供动物园（zoo）的信息，还包括各种动物和雇员的信息，则它的路径应该设计成下面这样。https://api.example.com/v1/zooshttps://api.example.com/v1/animalshttps://api.example.com/v1/employeesHTTP 动词对于资源的具体操作类型，由 HTTP 动词表示。 常用的HTTP动词有下面五个（括号里是对应的 SQL 命令）。GET（SELECT） =&gt; 从服务器取出资源（一项或多项）。POST（CREATE） =&gt; 在服务器新建一个资源。PUT（UPDATE） =&gt; 在服务器更新资源（客户端提供改变后的完整资源）。PATCH（UPDATE） =&gt; 在服务器更新资源（客户端提供改变的属性）。DELETE（DELETE） =&gt; 从服务器删除资源。还有两个不常用的 HTTP 动词。HEAD =&gt; 获取资源的元数据。OPTIONS =&gt; 获取信息，关于资源的哪些属性是客户端可以改变的。下面是一些例子。GET /zoos =&gt; 列出所有动物园POST /zoos =&gt; 新建一个动物园GET /zoos/ID =&gt; 获取某个指定动物园的信息PUT /zoos/ID =&gt; 更新某个指定动物园的信息（提供该动物园的全部信息）PATCH /zoos/ID =&gt; 更新某个指定动物园的信息（提供该动物园的部分信息）DELETE /zoos/ID =&gt; 删除某个动物园GET /zoos/ID/animals =&gt; 列出某个指定动物园的所有动物DELETE /zoos/ID/animals/ID =&gt; 删除某个指定动物园的指定动物过滤信息（Filtering）如果记录数量很多，服务器不可能都将它们返回给用户。AP I应该提供参数，过滤返回结果。 下面是一些常见的参数。?limit=10 =&gt; 指定返回记录的数量?offset=10 =&gt; 指定返回记录的开始位置。?page=2&amp;per_page=100 =&gt; 指定第几页，以及每页的记录数。?sortby=nameℴ=asc =&gt; 指定返回结果按照哪个属性排序，以及排序顺序。?animal_type_id=1 =&gt; 指定筛选条件参数的设计允许存在冗余，即允许 API 路径和 URL 参数偶尔有重复。比如，GET /zoo/ID/animals 与 GET /animals?zoo_id=ID 的含义是相同的。状态码（Status Codes）服务器向用户返回的状态码和提示信息，常见的有以下一些（方括号中是该状态码对应的 HTTP 动词）。200 OK -&gt; 【GET】 =&gt; 服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）。201 CREATED -&gt; 【POST/PUT/PATCH】 =&gt; 用户新建或修改数据成功。202 Accepted -&gt; 【*】 =&gt; 表示一个请求已经进入后台排队（异步任务）204 NO CONTENT -&gt; 【DELETE】 =&gt; 用户删除数据成功。400 INVALID REQUEST -&gt; 【POST/PUT/PATCH】 =&gt; 用户发出的请求有错误，服务器没有进行新建或修改数据的操作，该操作是幂等的。401 Unauthorized -&gt; 【*】 =&gt; 表示用户没有权限（令牌、用户名、密码错误）。403 Forbidden -&gt; 【*】 表示用户得到授权（与401错误相对），但是访问是被禁止的。404 NOT FOUND -&gt; 【*】 =&gt; 用户发出的请求针对的是不存在的记录，服务器没有进行操作，该操作是幂等的。406 Not Acceptable -&gt; 【GET】 =&gt; 用户请求的格式不可得（比如用户请求JSON格式，但是只有XML格式）。410 Gone -【GET】 =&gt; 用户请求的资源被永久删除，且不会再得到的。422 Unprocesable entity -&gt; 【POST/PUT/PATCH】 当创建一个对象时，发生一个验证错误。500 INTERNAL SERVER ERROR -&gt; 【*】 =&gt; 服务器发生错误，用户将无法判断发出的请求是否成功。状态码的完全列表参见这里。错误处理（Error handling）如果状态码是 4xx，就应该向用户返回出错信息。一般来说，返回的信息中将 error 作为键名，出错信息作为键值即可。{ &quot;error&quot;: &quot;Invalid API key&quot; } 返回结果针对不同操作，服务器向用户返回的结果应该符合以下规范。Get /collection =&gt; 返回资源对象的列表（数组）Get /collection/resource =&gt; 返回单个资源对象POST /collection =&gt; 返回新生成的资源对象PUT /collection/resource =&gt; 返回完整的资源对象PATCH /collection/resource =&gt; 返回完整的资源对象DELETE /collection/resource =&gt; 返回一个空文档Hypermedia APIRESTful API 最好做到 Hypermedia，即返回结果中提供链接，连向其他 API 方法，使得用户不查文档，也知道下一步应该做什么。 比如，当用户向 api.github.com 的根目录发出请求，会得到这样一个文档。{ &quot;link&quot;: { &quot;rel&quot;: &quot;collection https://www.example.com/zoos&quot;, &quot;href&quot;: &quot;https://api.example.com/zoos&quot;, &quot;title&quot;: &quot;List of zoos&quot;, &quot;type&quot;: &quot;application/vnd.yourformat+json&quot; } } 上面代码表示，文档中有一个 link 属性，用户读取这个属性就知道下一步该调用什么 API 了。rel 表示这个 API 与当前网址的关系（collection 关系，并给出该 collection 的网址），href 表示 API 的路径，title 表示 API 的标题，type 表示返回类型。Hypermedia API 的设计被称为 HATEOAS。Github 的 API 就是这种设计，访问 api.github.com 会得到一个所有可用 API 的网址列表。{ &quot;current_user_url&quot;: &quot;https://api.github.com/user&quot;, &quot;authorizations_url&quot;: &quot;https://api.github.com/authorizations&quot; } 从上面可以看到，如果想获取当前用户的信息，应该去访问 api.github.com/user，然后就得到了下面结果。{ &quot;message&quot;: &quot;Requires authentication&quot;, &quot;documentation_url&quot;: &quot;https://developer.github.com/v3&quot; } 上面代码表示，服务器给出了提示信息，以及文档的网址。其他（1）API的身份认证应该使用 OAuth 2.0 框架。 （2）服务器返回的数据格式，应该尽量使用 JSON，避免使用 XML。]]></content>
+      <categories>
+        <category>=&gt; manual</category>
+      </categories>
+      <tags>
+        <tag>=&gt; Criterion</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vue.js 填坑笔记]]></title>
     <url>%2F2017%2F09%2Ffill-the-pit-with-vuejs%2F</url>
-    <content type="text"><![CDATA[记录一些使用 vue-cli 脚手架创建项目时，遇到的一些问题以及解决方案设置代理与跨域开发时设置如果你的后端 API 服务是 Express 提供或者是 Thinkjs 再或者是 koa2 等等，当你请求数据时就会面临着跨域请求问题执行 npm run dev，你会发现会报一个错误：vue-resource.common.js?e289:1071 POST http://localhost:8080/api/use... 404 (Not Found)。这是由于直接访问 8080 端口，是访问不到的，所以这里需要设置一下代理转发映射.项目根目录下的 config 文件夹中有一个 proxyTable 参数，用来设置地址映射表，可以添加到开发时配置（dev）中config/index.jsdev: { // ... proxyTable: { &#39;/api&#39;: { target: &#39;http://127.0.0.1:3000/api/&#39;, changeOrigin: true, pathRewrite: { &#39;^/api&#39;: &#39;&#39; } } }, // ... } 添加以上代码之后，请求 /api 时就代表 http://127.0.0.1:3000/api/(这里要写 ip，不要写 localhost)， changeOrigin 参数接收一个布尔值，如果为 true，这样就不会有跨域问题了。更多接口参数配置，请参考 https://github.com/chimurai/http-proxy-middleware#optionswebpack 接口配置文档 https://webpack.js.org/configuration/dev-server/#devserver-proxy正式上线时设置|-- src |-- axios |-- index.js |-- config.js 正式上线时，不推荐使用上一个方案，这里推荐使用 axios 进行转发src/config.jsexport default { serverUrl: &#39;http://127.0.0.1:3000/&#39; } src/axios/index.jsimport axios from &#39;axios&#39; import config from &#39;@/config&#39; // 设置全局 axio s默认值 axios.defaults.baseURL = config.serverUrl axios.defaults.timeout = 5000 // 5000的超时验证 axios.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; // 创建一个 axios 实例 const instance = axios.create() instance.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; axios.interceptors.request.use = instance.interceptors.request.use export async function postDate (username, password) { try { const response = await fetch.post(&#39;/postDate&#39;, { username, password }) return response.data } catch (err) { console.log(&#39;message&#39;, err) if (err.response) { throw Error(err.response.data.message) } throw err } } 父子组件|-- src |-- components |-- HerderBar.vue |-- FooterBar.vue |-- pages |-- Home.vue 假如你的 components 目录下有 HerderBar.vue 和 FooterBar.vue 这两个子组件，而 Home.vue 要引用这两组件，那么下面这种写法可以完成该需求src/pages/Home.vue&lt;template&gt; &lt;div&gt; &lt;header-bar&gt;&lt;/header-bar&gt; &lt;!-- ... ... --&gt; &lt;footer-bar&gt;&lt;/footer-bar&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import HeaderBar from &#39;@/components/HeaderBar&#39; import FooterBar from &#39;@/components/FooterBar&#39; export default { name: &#39;Home&#39;, components: { HeaderBar, FooterBar } } &lt;/script&gt; 图标库市面上用的比较广泛的图标库有两个，一是阿里巴巴矢量图标库，其有上百万图标共程序员选择，自定义比较强；二是Font Awesome，该图标库虽没有上百万图标，但也受到大部门程序员喜爱。很多人在写 Vue 项目时，前端 UI 框架都喜欢使用 Element UI，但是该 UI 框架默认提供的图标库实现是少之又少，但是该 UI 框架允许我们引入第三方图标库iconfont这个引入就非常简单了，在 iconfont 网站上有提供离线版和在线版，看自己的意愿，然后在 index.html 里使用 style 标签引入即可。fontawesome参考代码element-font-awesome使用 less 时，别忘了安装 npm 依赖npm install -S less less-loader 目录结构|-- src |-- font.less |-- main.js src/main.jsimport &#39;./font.less&#39; src/font.less[class^=&quot;el-icon-fa&quot;], [class*=&quot; el-icon-fa&quot;] { display: inline-block; font: normal normal normal 14px/1 FontAwesome!important; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }; @import url(&quot;../node_modules/font-awesome/less/font-awesome&quot;); @fa-css-prefix: el-icon-fa; sass对于 css 的预编译器，个人比较喜欢 sass 的，在使用 sass 时仍然需要添加 npm 依赖npm install --save node-sass sass-lodaer 目录结构|-- src |-- assets |-- scss |-- _public.scss |-- index.scss |-- App.vue src/App.vue&lt;style lang=&quot;scss&quot;&gt; @import &#39;./assets/scss/index&#39;; &lt;/style&gt; &lt;template&gt; &lt;div id=&quot;app&quot;&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &#39;app&#39; } &lt;/script&gt; src/assets/scss/index.scss@import &#39;public&#39;; src/assets/scss/public.scss#app { font-family: &quot;Helvetica Neue&quot;,Helvetica,&quot;PingFang SC&quot;,&quot;Hiragino Sans GB&quot;,&quot;Microsoft YaHei&quot;,&quot;微软雅黑&quot;,Arial,sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } vuex目录结构|-- src |-- store |-- modules |-- ... ... |-- actions.js # 根级别的 action =&gt; |-- getters.js # 根级别的 mutation =&gt; |-- index.js # 我们组装模块并导出 store 的地方 |-- types.js # 根级别的 type =&gt; 状态 |-- main.js src/main.jsimport Vue from &#39;vue&#39; import App from &#39;./App&#39; import store from &#39;./store&#39; Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ el: &#39;#app&#39;, store, template: &#39;&lt;App/&gt;&#39;, components: { App } }) vue-router目录结构|-- router |-- axios |-- index.js |-- main.js src/main.jsimport Vue from &#39;vue&#39; import App from &#39;./App&#39; import router from &#39;./router&#39; Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ el: &#39;#app&#39;, router, template: &#39;&lt;App/&gt;&#39;, components: { App } }) HTML5 History 模式下面这一代码片段是使用 vue-cli 下载的模板写法，但是这种写法会使你的 URL 变成 http://localhost:8080/#/import Vue from &#39;vue&#39; import Router from &#39;vue-router&#39; // ... ... Vue.use(Router) export default new Router({ routes: [ { path: &#39;/&#39;, // ... ... } ] }) 对于强迫症的人来说，这样的 URL 非常丑，这就需要开启 HTML5 History 模式，更具体的说明请看官方文档 vue-router HTML5 History 模式router/index.jsimport Vue from &#39;vue&#39; import Router from &#39;vue-router&#39; // ... ... Vue.use(Router) const router = new VueRouter({ mode: &#39;history&#39;, routes: [ { path: &#39;/&#39;, // ... ... } ] }) export default router 路由拦截对于进入某些页面需要进行登录验证，那么就需要设置路由拦截，vue-router 官方文档称之为导航钩子，具体请看官方文档 vue-router 导航钩子实际上在进行路由拦截时需要进行数据验证，当验证通过时方能允许其通过该路由，该验证数据通常会存储在 vuex 的 state 中，或者会存储在 Local Storage，再或者 Session Storage，无论存储在哪里，vue-router 配置文件能够正确访问到即可，当然验证程序就需要后端服务 API 提供了router/index.jsimport Vue from &#39;vue&#39; import Router from &#39;vue-router&#39; import store from &#39;@/store&#39; // ... ... Vue.use(Router) const router = new VueRouter({ mode: &#39;history&#39;, routes: [ { path: &#39;/&#39;, // ... ... meta: { requireAuth: true // 添加该字段，表示进入这个路由是需要进行验证的 } } ] }) router.beforeEach((to, from, next) =&gt; { if (to.matched.some(r =&gt; r.meta.requireAuth)) { // 判断该路由是否需要登录权限 if (store.state.token) { // 通过 vuex state 获取当前的 token 是否存在 next() } else { next({ path: &#39;/login&#39;, // 验证失败，将会跳转到该路由 query: { redirect: to.fullPath } // 将跳转的路由 path 作为参数，登录成功后跳转到该路由 }) } } else { next() } }) export default router axios自从 Vue.js 更新至 2.x 版本之后，官方就不再使用 vue-resource，替而代之的是 axios目录结构|-- src |-- axios |-- index.js |-- pages |-- Home.vue |-- main.js src/main.jsimport Vue from &#39;vue&#39; import App from &#39;./App&#39; import api from &#39;./axios&#39; Vue.prototype.$api = api Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ el: &#39;#app&#39;, template: &#39;&lt;App/&gt;&#39;, components: { App } }) axios 拦截使用 vue-router 进行路由拦截是不够的，当然也是需要数据验证的，更加详细的说明以及例子请移步 【vue+axios】一个项目学会前端实现登录拦截axios/index.jsimport axios from &#39;axios&#39; import store from &#39;../store&#39; import router from &#39;../router&#39; // 设置全局axios默认值 axios.defaults.timeout = 5000 // 5000的超时验证 axios.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; // 创建一个axios实例 const instance = axios.create() instance.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; axios.interceptors.request.use = instance.interceptors.request.use // http request 拦截器 instance.interceptors.request.use( config =&gt; { if (store.state.token) { config.headers.Authorization = `token ${store.state.token}`.replace(/(^&quot;)|(&quot;$)/g, &#39;&#39;) } return config }, error =&gt; { return Promise.reject(error) }) // http response 拦截器 instance.interceptors.response.use( response =&gt; { return response }, error =&gt; { if (error.response) { switch (error.response.status) { case 401: store.dispatch(&#39;UserLogout&#39;) router.replace({ path: &#39;login&#39;, query: { redirect: router.currentRoute.fullPath } }) } } return Promise.reject(error.response) }) export default { // POST PostData (data) { return instance.post(&#39;/api/postData&#39;, data) }, // GET GetData () { return instance.get(&#39;/api/user/getData&#39;) } } 在 Vue 组件内调用src/pages/Home.vue&lt;template&gt; &lt;div&gt; &lt;!-- ... ... --&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &#39;Home&#39;, data: { return { fromData: [ // ... ... ] } }, created () { this.$api.GetData() .then(({data}) =&gt; { // ... ... }) .catch((err) =&gt; { console.log(err) }) }, methods: { post () { const opt = this.fromData this.$api.PostData(opt) .then(({data}) =&gt; { // ... ... }) .catch((err) =&gt; { console.log(err) }) } } } &lt;/script&gt;]]></content>
+    <content type="text"><![CDATA[记录一些使用 vue-cli 脚手架创建项目时，遇到的一些问题以及解决方案设置代理与跨域开发时设置如果你的后端 API 服务是 Express 提供或者是 Thinkjs 再或者是 koa2 等等，当你请求数据时就会面临着跨域请求问题执行 npm run dev，你会发现会报一个错误：vue-resource.common.js?e289:1071 POST http://localhost:8080/api/use... 404 (Not Found)。这是由于直接访问 8080 端口，是访问不到的，所以这里需要设置一下代理转发映射.项目根目录下的 config 文件夹中有一个 proxyTable 参数，用来设置地址映射表，可以添加到开发时配置（dev）中|-- config |-- dev.env.js |-- index.js |-- prod.env.js config/index.jsdev: { // ... proxyTable: { &#39;/api&#39;: { target: &#39;http://127.0.0.1:3000/api/&#39;, changeOrigin: true, pathRewrite: { &#39;^/api&#39;: &#39;&#39; } } }, // ... } 添加以上代码之后，请求 /api 时就代表 http://127.0.0.1:3000/api/(这里要写 ip，不要写 localhost)， changeOrigin 参数接收一个布尔值，如果为 true，这样就不会有跨域问题了。更多接口参数配置，请参考 https://github.com/chimurai/http-proxy-middleware#optionswebpack 接口配置文档 https://webpack.js.org/configuration/dev-server/#devserver-proxy正式上线时设置|-- src |-- axios |-- index.js |-- config.js 正式上线时，不推荐使用上一个方案，这里推荐使用 axios 进行转发src/config.jsexport default { serverUrl: &#39;http://127.0.0.1:3000/&#39; } src/axios/index.jsimport axios from &#39;axios&#39; import config from &#39;@/config&#39; // 设置全局 axio s默认值 axios.defaults.baseURL = config.serverUrl axios.defaults.timeout = 5000 // 5000的超时验证 axios.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; // 创建一个 axios 实例 const instance = axios.create() instance.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; axios.interceptors.request.use = instance.interceptors.request.use export async function postDate (username, password) { try { const response = await fetch.post(&#39;/postDate&#39;, { username, password }) return response.data } catch (err) { console.log(&#39;message&#39;, err) if (err.response) { throw Error(err.response.data.message) } throw err } } 父子组件|-- src |-- components |-- HerderBar.vue |-- FooterBar.vue |-- pages |-- Home.vue 假如你的 components 目录下有 HerderBar.vue 和 FooterBar.vue 这两个子组件，而 Home.vue 要引用这两组件，那么下面这种写法可以完成该需求src/pages/Home.vue&lt;template&gt; &lt;div&gt; &lt;header-bar&gt;&lt;/header-bar&gt; &lt;!-- ... ... --&gt; &lt;footer-bar&gt;&lt;/footer-bar&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import HeaderBar from &#39;@/components/HeaderBar&#39; import FooterBar from &#39;@/components/FooterBar&#39; export default { name: &#39;Home&#39;, components: { HeaderBar, FooterBar } } &lt;/script&gt; 图标库市面上用的比较广泛的图标库有两个，一是阿里巴巴矢量图标库，其有上百万图标共程序员选择，自定义比较强；二是Font Awesome，该图标库虽没有上百万图标，但也受到大部门程序员喜爱。很多人在写 Vue 项目时，前端 UI 框架都喜欢使用 Element UI，但是该 UI 框架默认提供的图标库实现是少之又少，但是该 UI 框架允许我们引入第三方图标库iconfont这个引入就非常简单了，在 iconfont 网站上有提供离线版和在线版，看自己的意愿，然后在 index.html 里使用 style 标签引入即可。fontawesome参考代码element-font-awesome使用 less 时，别忘了安装 npm 依赖npm install -S less less-loader 目录结构|-- src |-- font.less |-- main.js src/main.jsimport &#39;./font.less&#39; src/font.less[class^=&quot;el-icon-fa&quot;], [class*=&quot; el-icon-fa&quot;] { display: inline-block; font: normal normal normal 14px/1 FontAwesome!important; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }; @import url(&quot;../node_modules/font-awesome/less/font-awesome&quot;); @fa-css-prefix: el-icon-fa; sass对于 css 的预编译器，个人比较喜欢 sass 的，在使用 sass 时仍然需要添加 npm 依赖npm install --save node-sass sass-lodaer 目录结构|-- src |-- assets |-- scss |-- _public.scss |-- index.scss |-- App.vue src/App.vue&lt;style lang=&quot;scss&quot;&gt; @import &#39;./assets/scss/index&#39;; &lt;/style&gt; &lt;template&gt; &lt;div id=&quot;app&quot;&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &#39;app&#39; } &lt;/script&gt; src/assets/scss/index.scss@import &#39;public&#39;; src/assets/scss/public.scss#app { font-family: &quot;Helvetica Neue&quot;,Helvetica,&quot;PingFang SC&quot;,&quot;Hiragino Sans GB&quot;,&quot;Microsoft YaHei&quot;,&quot;微软雅黑&quot;,Arial,sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } vuex目录结构|-- src |-- store |-- modules |-- ... ... |-- actions.js # 根级别的 action =&gt; |-- getters.js # 根级别的 mutation =&gt; |-- index.js # 我们组装模块并导出 store 的地方 |-- types.js # 根级别的 type =&gt; 状态 |-- main.js src/main.jsimport Vue from &#39;vue&#39; import App from &#39;./App&#39; import store from &#39;./store&#39; Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ el: &#39;#app&#39;, store, template: &#39;&lt;App/&gt;&#39;, components: { App } }) vue-router目录结构|-- router |-- axios |-- index.js |-- main.js src/main.jsimport Vue from &#39;vue&#39; import App from &#39;./App&#39; import router from &#39;./router&#39; Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ el: &#39;#app&#39;, router, template: &#39;&lt;App/&gt;&#39;, components: { App } }) HTML5 History 模式下面这一代码片段是使用 vue-cli 下载的模板写法，但是这种写法会使你的 URL 变成 http://localhost:8080/#/import Vue from &#39;vue&#39; import Router from &#39;vue-router&#39; // ... ... Vue.use(Router) export default new Router({ routes: [ { path: &#39;/&#39;, // ... ... } ] }) 对于强迫症的人来说，这样的 URL 非常丑，这就需要开启 HTML5 History 模式，更具体的说明请看官方文档 vue-router HTML5 History 模式router/index.jsimport Vue from &#39;vue&#39; import Router from &#39;vue-router&#39; // ... ... Vue.use(Router) const router = new VueRouter({ mode: &#39;history&#39;, routes: [ { path: &#39;/&#39;, // ... ... } ] }) export default router 路由拦截对于进入某些页面需要进行登录验证，那么就需要设置路由拦截，vue-router 官方文档称之为导航钩子，具体请看官方文档 vue-router 导航钩子实际上在进行路由拦截时需要进行数据验证，当验证通过时方能允许其通过该路由，该验证数据通常会存储在 vuex 的 state 中，或者会存储在 Local Storage，再或者 Session Storage，无论存储在哪里，vue-router 配置文件能够正确访问到即可，当然验证程序就需要后端服务 API 提供了router/index.jsimport Vue from &#39;vue&#39; import Router from &#39;vue-router&#39; import store from &#39;@/store&#39; // ... ... Vue.use(Router) const router = new VueRouter({ mode: &#39;history&#39;, routes: [ { path: &#39;/&#39;, // ... ... meta: { requireAuth: true // 添加该字段，表示进入这个路由是需要进行验证的 } } ] }) router.beforeEach((to, from, next) =&gt; { if (to.matched.some(r =&gt; r.meta.requireAuth)) { // 判断该路由是否需要登录权限 if (store.state.token) { // 通过 vuex state 获取当前的 token 是否存在 next() } else { next({ path: &#39;/login&#39;, // 验证失败，将会跳转到该路由 query: { redirect: to.fullPath } // 将跳转的路由 path 作为参数，登录成功后跳转到该路由 }) } } else { next() } }) export default router axios自从 Vue.js 更新至 2.x 版本之后，官方就不再使用 vue-resource，替而代之的是 axios目录结构|-- src |-- axios |-- index.js |-- pages |-- Home.vue |-- main.js src/main.jsimport Vue from &#39;vue&#39; import App from &#39;./App&#39; import api from &#39;./axios&#39; Vue.prototype.$api = api Vue.config.productionTip = false /* eslint-disable no-new */ new Vue({ el: &#39;#app&#39;, template: &#39;&lt;App/&gt;&#39;, components: { App } }) axios 拦截使用 vue-router 进行路由拦截是不够的，当然也是需要数据验证的，更加详细的说明以及例子请移步 【vue+axios】一个项目学会前端实现登录拦截axios/index.jsimport axios from &#39;axios&#39; import store from &#39;../store&#39; import router from &#39;../router&#39; // 设置全局axios默认值 axios.defaults.timeout = 5000 // 5000的超时验证 axios.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; // 创建一个axios实例 const instance = axios.create() instance.defaults.headers.post[&#39;Content-Type&#39;] = &#39;application/jsoncharset=UTF-8&#39; axios.interceptors.request.use = instance.interceptors.request.use // http request 拦截器 instance.interceptors.request.use( config =&gt; { if (store.state.token) { config.headers.Authorization = `token ${store.state.token}`.replace(/(^&quot;)|(&quot;$)/g, &#39;&#39;) } return config }, error =&gt; { return Promise.reject(error) }) // http response 拦截器 instance.interceptors.response.use( response =&gt; { return response }, error =&gt; { if (error.response) { switch (error.response.status) { case 401: store.dispatch(&#39;UserLogout&#39;) router.replace({ path: &#39;login&#39;, query: { redirect: router.currentRoute.fullPath } }) } } return Promise.reject(error.response) }) export default { // POST PostData (data) { return instance.post(&#39;/api/postData&#39;, data) }, // GET GetData () { return instance.get(&#39;/api/user/getData&#39;) } } 在 Vue 组件内调用src/pages/Home.vue&lt;template&gt; &lt;div&gt; &lt;!-- ... ... --&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &#39;Home&#39;, data: { return { fromData: [ // ... ... ] } }, created () { this.$api.GetData() .then(({data}) =&gt; { // ... ... }) .catch((err) =&gt; { console.log(err) }) }, methods: { post () { const opt = this.fromData this.$api.PostData(opt) .then(({data}) =&gt; { // ... ... }) .catch((err) =&gt; { console.log(err) }) } } } &lt;/script&gt;]]></content>
       <categories>
         <category>node.js</category>
       </categories>
@@ -33,8 +44,8 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
+        <tag>Pentest</tag>
         <tag>PHP</tag>
       </tags>
   </entry>
@@ -46,12 +57,12 @@
         <category>testing</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
+        <tag>MySQL</tag>
         <tag>WEB</tag>
         <tag>PHP</tag>
-        <tag>MySQL</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -142,9 +153,9 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>Command</tag>
       </tags>
   </entry>
@@ -156,9 +167,9 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
       </tags>
   </entry>
   <entry>
@@ -169,8 +180,8 @@
         <category>debug</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>PHP</tag>
       </tags>
   </entry>
@@ -194,8 +205,8 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>PHP</tag>
       </tags>
   </entry>
@@ -253,8 +264,8 @@
         <category>networking</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
+        <tag>Pentest</tag>
         <tag>Network</tag>
       </tags>
   </entry>
@@ -354,9 +365,9 @@
         <category>liunx</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
       </tags>
   </entry>
   <entry>
@@ -367,9 +378,9 @@
         <category>liunx</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
       </tags>
   </entry>
   <entry>
@@ -392,9 +403,9 @@
         <category>liunx</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
       </tags>
   </entry>
   <entry>
@@ -416,9 +427,9 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>Protocol</tag>
       </tags>
   </entry>
@@ -492,9 +503,9 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>Protocol</tag>
       </tags>
   </entry>
@@ -506,9 +517,9 @@
         <category>pentest</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -758,9 +769,9 @@
         <category>networking</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Liunx</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>Network</tag>
         <tag>Windows</tag>
         <tag>Protocol</tag>
@@ -774,8 +785,8 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>Pentest</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -813,8 +824,8 @@
         <category>windows</category>
       </categories>
       <tags>
-        <tag>Pentest</tag>
         <tag>Security</tag>
+        <tag>Pentest</tag>
         <tag>Command</tag>
       </tags>
   </entry>
