@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vxhly.github.io/2017/10/hexo-next-advanced-settings/</loc>
+    
+    <lastmod>2017-10-28T13:25:21.442Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vxhly.github.io/2016/08/install-hexo-next-on-github/</loc>
+    
+    <lastmod>2017-10-28T12:57:49.085Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/</loc>
     
     <lastmod>2017-10-28T10:03:18.584Z</lastmod>
@@ -117,13 +131,6 @@
     <loc>https://vxhly.github.io/2016/08/ubuntu-connect-wifi/</loc>
     
     <lastmod>2017-09-06T12:25:16.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vxhly.github.io/2016/08/install-hexo-next-on-github/</loc>
-    
-    <lastmod>2017-09-03T14:26:24.265Z</lastmod>
     
   </url>
   
@@ -366,6 +373,13 @@
   </url>
   
   <url>
+    <loc>https://vxhly.github.io/2016/10/user-and-file-permissions/</loc>
+    
+    <lastmod>2017-08-24T11:53:50.801Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vxhly.github.io/2016/09/usage-of-vim/</loc>
     
     <lastmod>2017-08-24T11:53:50.801Z</lastmod>
@@ -374,13 +388,6 @@
   
   <url>
     <loc>https://vxhly.github.io/2016/10/some-suggest-for-writing-css/</loc>
-    
-    <lastmod>2017-08-24T11:53:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vxhly.github.io/2016/10/user-and-file-permissions/</loc>
     
     <lastmod>2017-08-24T11:53:50.801Z</lastmod>
     

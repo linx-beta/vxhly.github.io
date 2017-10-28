@@ -1,3 +1,4 @@
+https://vxhly.github.io/2017/10/hexo-next-advanced-settings/
 https://vxhly.github.io/2017/09/restfui-api/
 https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/
 https://vxhly.github.io/2017/09/liunx-command-testing/
@@ -7,4 +8,3 @@ https://vxhly.github.io/2017/09/vuejs-and-express-mysql-or-mongodb/
 https://vxhly.github.io/2017/08/shell-listen-for-new-files/
 https://vxhly.github.io/2017/08/talk-ssh-service/
 https://vxhly.github.io/2017/07/nofollow-proper-use-of-the-way/
-https://vxhly.github.io/2017/06/insatll-ghost-on-your-vps/
