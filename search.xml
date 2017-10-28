@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo+NexT 进阶设置]]></title>
     <url>%2F2017%2F10%2Fhexo-next-advanced-settings%2F</url>
-    <content type="text"><![CDATA[博客最近大更新，页面与之前大不相同，这里跟大家分享一下相关的设置方法highlight.jshighlightjs 官方网站Next 自带的代码高亮并不符合我的口味，所以就采用了第三方的 highlight.jsUse先禁用默认的高亮方式编辑配置文件./_config.ymlhighlight: enable: false line_number: true autoi_detect: true tab_replace: 引入第三方 highlight编辑主题源文件./themes/layout/_layout.swing注意这边需要引入样式，相关的样式以及支持的语言请查看 176 languages and 79 styles因为个人比较喜欢 Atom 这款编辑器，改编辑器用默认的样式为 atom-one-dark，所以这里采用该样式&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css&quot;&gt; 除了引入样式，还需初始化 highlightjs，这里提供的代码是可以显示行号的&lt;script src=&quot;//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt; $(function() { hljs.initHighlighting(); $(&#39;pre code&#39;).each(function() { var lines = $(this).text().split(&#39;\n&#39;).length - 1; var $numbering = $(&#39;&lt;ul/&gt;&#39;).addClass(&#39;pre-numbering&#39;); $(this) .addClass(&#39;has-numbering&#39;) .parent() .append($numbering); for (i = 1; i &lt;= lines; i++) { $numbering.append($(&#39;&lt;li/&gt;&#39;)); } }); }); &lt;/script&gt; 可以看到以上的代码是有添加 class 样式的，所以还需补上相关的样式表，以下的样式表在小分辨率的情况下行号是不显示出来的，优化效果请参照本博客代码高亮区块&lt;style&gt; pre { position: relative; padding: 0; } code.has-numbering { margin-left: 2.5rem; } code.has-numbering::-webkit-scrollbar { display: none; } .pre-numbering { margin: 0; position: absolute; top: 0; display: flex; flex-direction: column; justify-content: center; height: 100%; } .pre-numbering li { list-style-type: decimal-leading-zero !important; } @media (max-width: 760px) { .post-body pre { padding: 0px; } .post-body .pre-numbering { display: none; } code.has-numbering { margin: 0; } } &lt;/style&gt; 优化 blockquote默认的引用 blockquote 样式比较丑，写了一些样式优化它，优化效果请参照本博客的引用区块编辑主题源文件./themes/layout/_layout.swing&lt;style&gt; blockquote { color: #888; background-color: #eae6f3; border-left: 1rem solid #5236a0; padding: 0 1.5rem; position: relative; font-family: &#39;Roboto&#39;, sans-serif; } blockquote:before, blockquote:after { color: #392570; font-size: 2.5rem; position: absolute; line-height: 2.5rem; } blockquote:before { content: &quot;\201C&quot;; left: -1rem; top: 0; } blockquote:after { content: &quot;\201D&quot;; right: 0; bottom: -1rem; } &lt;/style&gt; 网站已运行时间编辑主题源文件./themes/layout/_parrials/footer.swing找到以下代码区块{% if theme.footer.theme.enable %} /* ... */ {% endif %} 在 &lt;/div&gt; 之前添加&lt;span&gt; | &lt;/span&gt; &lt;span id=&quot;showDays&quot;&gt;&lt;/span&gt; 在该文件末尾处添加&lt;script&gt; var seconds = 1000; var minutes = seconds * 60; var hours = minutes * 60; var days = hours * 24; var years = days * 365; var birthDay = Date.UTC(2016,07,30,00,00,00); // 这里设置建站时间 setInterval(function() { var today = new Date(); var todayYear = today.getFullYear(); var todayMonth = today.getMonth()+1; var todayDate = today.getDate(); var todayHour = today.getHours(); var todayMinute = today.getMinutes(); var todaySecond = today.getSeconds(); var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond); var diff = now - birthDay; var diffYears = Math.floor(diff/years); var diffDays = Math.floor((diff/days)-diffYears*365); var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours); var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes); var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds); document.getElementById(&#39;showDays&#39;).innerHTML=&quot;本站已运行 &quot;+diffYears+&quot; 年 &quot;+diffDays+&quot; 天 &quot;+diffHours+&quot; 小时 &quot;+diffMinutes+&quot; 分钟 &quot;+diffSeconds+&quot; 秒&quot;; }, 1000); &lt;/script&gt; 开启页面动画效果编辑主题配置文件./themes/_config.yml# Canvas-nest canvas_nest: true vendors: # Internal version: 1.0.0 # https://github.com/hustcc/canvas-nest.js canvas_nest: //cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js 新的评论系统自从多说和网易云跟帖都挂了之后，Next 官方引入了 Valine 这一款评论系统关于 Valine 的介绍请移步 Valine – 一款极简的评论系统，配置中出现 leancloud application appid 和 leancloud application appkey 获取方法也请看此链接相关的配置指南 https://valine.js.org/我的配置编辑主题配置文件./themes/_config.yml# Valine. # You can get your appid and appkey from https://leancloud.cn # more info please open https://github.com/xCss/Valine valine: enable: true appid: # your leancloud application appid appkey: # your leancloud application appkey notify: false # mail notifier , https://github.com/xCss/Valine/wiki verify: false # Verification code placeholder: ヾﾉ≧∀≦)o 亲爱的小主，有何指教 path: window.location.path avatar: mm 编辑主题源文件./themes/layout/_third-party/comments/valine.swig{% if page.comments and theme.valine.enable and theme.valine.appid and theme.valine.appkey %} new Valine({ av: AV, el: '#comments' , verify: {{ theme.valine.verify }}, notify: {{ theme.valine.notify }}, app_id: '{{ theme.valine.appid }}', app_key: '{{ theme.valine.appkey }}', placeholder: '{{ theme.valine.placeholder }}', avatar: '{{ theme.valine.avatar }}', // 由于默认的配置文件中没有此配置项，需要添加 path: '{{ theme.valine.path }}' // 由于默认的配置文件中没有此配置项，需要添加 }); {% endif %}]]></content>
+    <content type="text"><![CDATA[博客最近大更新，页面与之前大不相同，这里跟大家分享一下相关的设置方法highlight.jshighlightjs 官方网站Next 自带的代码高亮并不符合我的口味，所以就采用了第三方的 highlight.jsUse先禁用默认的高亮方式编辑配置文件./_config.ymlhighlight: enable: false line_number: true autoi_detect: true tab_replace: 引入第三方 highlight编辑主题源文件./themes/layout/_layout.swing注意这边需要引入样式，相关的样式以及支持的语言请查看 176 languages and 79 styles因为个人比较喜欢 Atom 这款编辑器，改编辑器用默认的样式为 atom-one-dark，所以这里采用该样式&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css&quot;&gt; 除了引入样式，还需初始化 highlightjs，这里提供的代码是可以显示行号的&lt;script src=&quot;//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt; $(function() { hljs.initHighlighting(); $(&#39;pre code&#39;).each(function() { var lines = $(this).text().split(&#39;\n&#39;).length - 1; var $numbering = $(&#39;&lt;ul/&gt;&#39;).addClass(&#39;pre-numbering&#39;); $(this) .addClass(&#39;has-numbering&#39;) .parent() .append($numbering); for (i = 1; i &lt;= lines; i++) { $numbering.append($(&#39;&lt;li/&gt;&#39;)); } }); }); &lt;/script&gt; 可以看到以上的代码是有添加 class 样式的，所以还需补上相关的样式表，以下的样式表在小分辨率的情况下行号是不显示出来的，优化效果请参照本博客代码高亮区块&lt;style&gt; pre { position: relative; padding: 0; } code.has-numbering { margin-left: 2.5rem; } code.has-numbering::-webkit-scrollbar { display: none; } .pre-numbering { margin: 0; position: absolute; top: 0; display: flex; flex-direction: column; justify-content: center; height: 100%; } .pre-numbering li { list-style-type: decimal-leading-zero !important; } @media (max-width: 760px) { .post-body pre { padding: 0px; } .post-body .pre-numbering { display: none; } code.has-numbering { margin: 0; } } &lt;/style&gt; 优化 blockquote默认的引用 blockquote 样式比较丑，写了一些样式优化它，优化效果请参照本博客的引用区块编辑主题源文件./themes/layout/_layout.swing&lt;style&gt; blockquote { color: #888; background-color: #eae6f3; border-left: 1rem solid #5236a0; padding: 0 1.5rem; position: relative; font-family: &#39;Roboto&#39;, sans-serif; } blockquote:before, blockquote:after { color: #392570; font-size: 2.5rem; position: absolute; line-height: 2.5rem; } blockquote:before { content: &quot;\201C&quot;; left: -1rem; top: 0; } blockquote:after { content: &quot;\201D&quot;; right: 0; bottom: -1rem; } &lt;/style&gt; 网站已运行时间编辑主题源文件./themes/layout/_parrials/footer.swing找到以下代码区块{% if theme.footer.theme.enable %} /* ... */ {% endif %} 在 &lt;/div&gt; 之前添加&lt;span&gt; | &lt;/span&gt; &lt;span id=&quot;showDays&quot;&gt;&lt;/span&gt; 在该文件末尾处添加&lt;script&gt; var seconds = 1000; var minutes = seconds * 60; var hours = minutes * 60; var days = hours * 24; var years = days * 365; var birthDay = Date.UTC(2016,07,30,00,00,00); // 这里设置建站时间 setInterval(function() { var today = new Date(); var todayYear = today.getFullYear(); var todayMonth = today.getMonth()+1; var todayDate = today.getDate(); var todayHour = today.getHours(); var todayMinute = today.getMinutes(); var todaySecond = today.getSeconds(); var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond); var diff = now - birthDay; var diffYears = Math.floor(diff/years); var diffDays = Math.floor((diff/days)-diffYears*365); var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours); var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes); var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds); document.getElementById(&#39;showDays&#39;).innerHTML=&quot;本站已运行 &quot;+diffYears+&quot; 年 &quot;+diffDays+&quot; 天 &quot;+diffHours+&quot; 小时 &quot;+diffMinutes+&quot; 分钟 &quot;+diffSeconds+&quot; 秒&quot;; }, 1000); &lt;/script&gt; 开启页面动画效果编辑主题配置文件./themes/_config.yml# Canvas-nest canvas_nest: true vendors: # Internal version: 1.0.0 # https://github.com/hustcc/canvas-nest.js canvas_nest: //cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js 新的评论系统自从多说和网易云跟帖都挂了之后，Next 官方引入了 Valine 这一款评论系统关于 Valine 的介绍请移步 Valine – 一款极简的评论系统，配置中出现 leancloud application appid 和 leancloud application appkey 获取方法也请看此链接相关的配置指南 https://valine.js.org/我的配置编辑主题配置文件./themes/_config.yml# Valine. # You can get your appid and appkey from https://leancloud.cn # more info please open https://github.com/xCss/Valine valine: enable: true appid: # your leancloud application appid appkey: # your leancloud application appkey notify: false # mail notifier , https://github.com/xCss/Valine/wiki verify: false # Verification code placeholder: ヾﾉ≧∀≦)o 亲爱的小主，有何指教 编辑主题源文件./themes/layout/_third-party/comments/valine.swig{% if page.comments and theme.valine.enable and theme.valine.appid and theme.valine.appkey %} new Valine({ av: AV, el: '#comments' , verify: {{ theme.valine.verify }}, notify: {{ theme.valine.notify }}, app_id: '{{ theme.valine.appid }}', app_key: '{{ theme.valine.appkey }}', placeholder: '{{ theme.valine.placeholder }}' }); {% endif %}]]></content>
       <categories>
         <category>node.js</category>
       </categories>
@@ -365,8 +365,8 @@
       <tags>
         <tag>Liunx</tag>
         <tag>Security</tag>
-        <tag>Protocol</tag>
         <tag>Service</tag>
+        <tag>Protocol</tag>
       </tags>
   </entry>
   <entry>
@@ -491,8 +491,8 @@
       <tags>
         <tag>Liunx</tag>
         <tag>Security</tag>
-        <tag>Protocol</tag>
         <tag>Service</tag>
+        <tag>Protocol</tag>
       </tags>
   </entry>
   <entry>
@@ -545,8 +545,8 @@
       <tags>
         <tag>Liunx</tag>
         <tag>Security</tag>
-        <tag>Protocol</tag>
         <tag>Service</tag>
+        <tag>Protocol</tag>
       </tags>
   </entry>
   <entry>
@@ -559,8 +559,8 @@
       <tags>
         <tag>Liunx</tag>
         <tag>Security</tag>
-        <tag>Protocol</tag>
         <tag>Service</tag>
+        <tag>Protocol</tag>
       </tags>
   </entry>
   <entry>
@@ -573,8 +573,8 @@
       <tags>
         <tag>Liunx</tag>
         <tag>Security</tag>
-        <tag>Protocol</tag>
         <tag>Service</tag>
+        <tag>Protocol</tag>
       </tags>
   </entry>
   <entry>
@@ -587,8 +587,8 @@
       <tags>
         <tag>Liunx</tag>
         <tag>Security</tag>
-        <tag>Protocol</tag>
         <tag>Service</tag>
+        <tag>Protocol</tag>
       </tags>
   </entry>
   <entry>
