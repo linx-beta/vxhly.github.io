@@ -60,9 +60,9 @@
         <tag>Liunx</tag>
         <tag>Security</tag>
         <tag>Pentest</tag>
-        <tag>MySQL</tag>
         <tag>WEB</tag>
         <tag>PHP</tag>
+        <tag>MySQL</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -624,8 +624,8 @@
       </categories>
       <tags>
         <tag>Liunx</tag>
-        <tag>RegExp</tag>
         <tag>Command</tag>
+        <tag>RegExp</tag>
       </tags>
   </entry>
   <entry>
@@ -682,8 +682,8 @@
         <category>manual</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>CSS</tag>
+        <tag>JavaScript</tag>
         <tag>Code</tag>
         <tag>HTML5</tag>
         <tag>Node.js</tag>
@@ -900,10 +900,10 @@
         <category>debug</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
         <tag>CSS</tag>
-        <tag>HTML5</tag>
+        <tag>JavaScript</tag>
         <tag>Debug</tag>
+        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
