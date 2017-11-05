@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
+    
+    <lastmod>2017-11-05T04:23:47.709Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vxhly.github.io/2017/10/hexo-next-advanced-settings/</loc>
     
-    <lastmod>2017-10-28T15:39:23.380Z</lastmod>
+    <lastmod>2017-10-31T11:29:01.466Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>https://vxhly.github.io/schedule/index.html</loc>
     
     <lastmod>2017-10-28T09:19:35.314Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
-    
-    <lastmod>2017-10-28T08:52:35.891Z</lastmod>
     
   </url>
   

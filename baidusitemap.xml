@@ -4,8 +4,40 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
+    <lastmod>2017-11-05T04:23:47.709Z</lastmod>
+    <data>
+        <display>
+        <title>安全渗透基础测试题</title>
+        <pubTime>2017-09-03T09:04:22.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Security</tag>
+         
+        <tag>Pentest</tag>
+         
+        <tag>MySQL</tag>
+         
+        <tag>WEB</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="testing" url="https://vxhly.github.io/categories/testing/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2017/10/hexo-next-advanced-settings/</loc>
-    <lastmod>2017-10-28T15:39:23.380Z</lastmod>
+    <lastmod>2017-10-31T11:29:01.466Z</lastmod>
     <data>
         <display>
         <title>Hexo+NexT 进阶设置</title>
@@ -120,38 +152,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://vxhly.github.io/2017/09/testing-topics/</loc>
-    <lastmod>2017-10-28T08:52:35.891Z</lastmod>
-    <data>
-        <display>
-        <title>安全渗透基础测试题</title>
-        <pubTime>2017-09-03T09:04:22.000Z</pubTime>
-        
-        <tag>Liunx</tag>
-         
-        <tag>Security</tag>
-         
-        <tag>Pentest</tag>
-         
-        <tag>MySQL</tag>
-         
-        <tag>WEB</tag>
-         
-        <tag>PHP</tag>
-         
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="testing" url="https://vxhly.github.io/categories/testing/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://vxhly.github.io/2016/08/html5-cold-knowledge/</loc>

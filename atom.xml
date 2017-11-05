@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vxhly.github.io/"/>
-  <updated>2017-10-28T15:39:23.380Z</updated>
+  <updated>2017-10-31T11:29:01.466Z</updated>
   <id>https://vxhly.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://vxhly.github.io/2017/10/hexo-next-advanced-settings/"/>
     <id>https://vxhly.github.io/2017/10/hexo-next-advanced-settings/</id>
     <published>2017-10-28T12:24:59.000Z</published>
-    <updated>2017-10-28T15:39:23.380Z</updated>
+    <updated>2017-10-31T11:29:01.466Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Oct 31 2017 19:05:37 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;博客最近大更新，页面与之前大不相同，这里跟大家分享一下相关的设置方法
+      &lt;!-- build time:Tue Oct 31 2017 20:34:35 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;博客最近大更新，页面与之前大不相同，这里跟大家分享一下相关的设置方法
     
     </summary>
     
@@ -133,11 +133,11 @@
     <link href="https://vxhly.github.io/2017/09/testing-topics/"/>
     <id>https://vxhly.github.io/2017/09/testing-topics/</id>
     <published>2017-09-03T09:04:22.000Z</published>
-    <updated>2017-10-28T08:52:35.891Z</updated>
+    <updated>2017-11-05T04:23:47.709Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Oct 31 2017 19:05:38 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;安全渗透基础测试题，考点涉及到 HTML、PHP、MySQL、SQL 注入、XSS 攻击、CTF、Python 等
+      &lt;!-- build time:Sun Nov 05 2017 12:25:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;安全渗透基础测试题，考点涉及到 HTML、PHP、MySQL、SQL 注入、XSS 攻击、CTF、Python 等
     
     </summary>
     
