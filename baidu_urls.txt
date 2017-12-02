@@ -1,3 +1,4 @@
+https://vxhly.github.io/2017/11/fill-the-pie-with-vuejs-elementUI/
 https://vxhly.github.io/2017/11/learning-es6/
 https://vxhly.github.io/2017/10/hexo-next-advanced-settings/
 https://vxhly.github.io/2017/09/restfui-api/
@@ -7,4 +8,3 @@ https://vxhly.github.io/2017/09/pentest-basic-knowledge/
 https://vxhly.github.io/2017/09/testing-topics/
 https://vxhly.github.io/2017/09/vuejs-and-express-mysql-or-mongodb/
 https://vxhly.github.io/2017/08/shell-listen-for-new-files/
-https://vxhly.github.io/2017/08/talk-ssh-service/
