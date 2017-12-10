@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vxhly.github.io/"/>
-  <updated>2017-12-02T07:38:38.298Z</updated>
+  <updated>2017-12-10T09:38:45.907Z</updated>
   <id>https://vxhly.github.io/</id>
   
   <author>
@@ -17,6 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【发福利】视频教程</title>
+    <link href="https://vxhly.github.io/2017/12/video-tutorial/"/>
+    <id>https://vxhly.github.io/2017/12/video-tutorial/</id>
+    <published>2017-12-10T09:09:06.000Z</published>
+    <updated>2017-12-10T09:38:45.907Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;最近得一套视频教程，里面包含 Node.js、Angular.js、WEB 开发、MySQL 等视频教程，全是百度云链接，尽快保存以防被和谐
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue.js + ElementUI 填坑笔记</title>
     <link href="https://vxhly.github.io/2017/11/fill-the-pie-with-vuejs-elementUI/"/>
     <id>https://vxhly.github.io/2017/11/fill-the-pie-with-vuejs-elementUI/</id>
@@ -25,7 +53,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目，且该项目的前端 UI 框架为 ElementUI 时，遇到的一些问题以及解决方案，这里采用的 ElementUI 若无特殊说明，则 ElementUI 的版本号为 1.4.x
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目，且该项目的前端 UI 框架为 ElementUI 时，遇到的一些问题以及解决方案，这里采用的 ElementUI 若无特殊说明，则 ElementUI 的版本号为 1.4.x
     
     </summary>
     
@@ -49,7 +77,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点，下面的例子没有先后之分，也是很简单的例子，想了解更多的直接戳 &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECMAScript 6 入门&lt;/a&gt;
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点，下面的例子没有先后之分，也是很简单的例子，想了解更多的直接戳 &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECMAScript 6 入门&lt;/a&gt;
     
     </summary>
     
@@ -65,7 +93,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;博客最近大更新，页面与之前大不相同，这里跟大家分享一下相关的设置方法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;博客最近大更新，页面与之前大不相同，这里跟大家分享一下相关的设置方法
     
     </summary>
     
@@ -87,7 +115,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;网络应用程序，分为前端和后端两个部分。这时候必须有一种统一的机制，方便不同的前端设备与后端进行通信。这导致API构架的流行，甚至出现 “API First” 的设计思想。【&lt;code&gt;RESTful API&lt;/code&gt;】(&lt;a href=&quot;http://en.wikipedia.org/wiki/Representational_state_transfer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://en.wikipedia.org/wiki/Representational_state_transfer&lt;/a&gt;) 是目前比较成熟的一套互联网应用程序的 API 设计理论
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;网络应用程序，分为前端和后端两个部分。这时候必须有一种统一的机制，方便不同的前端设备与后端进行通信。这导致API构架的流行，甚至出现 “API First” 的设计思想。【&lt;code&gt;RESTful API&lt;/code&gt;】(&lt;a href=&quot;http://en.wikipedia.org/wiki/Representational_state_transfer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://en.wikipedia.org/wiki/Representational_state_transfer&lt;/a&gt;) 是目前比较成熟的一套互联网应用程序的 API 设计理论
     
     </summary>
     
@@ -103,11 +131,11 @@
     <link href="https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/"/>
     <id>https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/</id>
     <published>2017-09-11T08:55:20.000Z</published>
-    <updated>2017-11-18T10:27:54.628Z</updated>
+    <updated>2017-12-10T07:52:29.135Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目时，遇到的一些问题以及解决方案
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目时，遇到的一些问题以及解决方案
     
     </summary>
     
@@ -129,7 +157,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;简单的一些 Liunx 命令练习
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;简单的一些 Liunx 命令练习
     
     </summary>
     
@@ -153,7 +181,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;整理的渗透所需的一些基础知识
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;整理的渗透所需的一些基础知识
     
     </summary>
     
@@ -177,7 +205,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;安全渗透基础测试题，考点涉及到 HTML、PHP、MySQL、SQL 注入、XSS 攻击、CTF、Python 等
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;安全渗透基础测试题，考点涉及到 HTML、PHP、MySQL、SQL 注入、XSS 攻击、CTF、Python 等
     
     </summary>
     
@@ -190,11 +218,11 @@
     
       <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
     
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
       <category term="WEB" scheme="https://vxhly.github.io/tags/WEB/"/>
     
       <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
-    
-      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
     
       <category term="Python" scheme="https://vxhly.github.io/tags/Python/"/>
     
@@ -209,7 +237,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;使用 vue-cli 脚手架工具创建一个基于 webpack 的 Vue 项目本身已经包含了 Express，但是项目若需要结合 MySQL 或者 MongoDB，还需折腾一番
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;使用 vue-cli 脚手架工具创建一个基于 webpack 的 Vue 项目本身已经包含了 Express，但是项目若需要结合 MySQL 或者 MongoDB，还需折腾一番
     
     </summary>
     
@@ -237,7 +265,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Liunx 下的监听 shell 脚本，脚本功能实现，当一小时内有新增的新文件，立刻删除它，此脚本允许被后台运行
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Liunx 下的监听 shell 脚本，脚本功能实现，当一小时内有新增的新文件，立刻删除它，此脚本允许被后台运行
     
     </summary>
     
@@ -261,7 +289,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;SSH 是每一台 Linux 系统的标准配置服务，本文将总结 SSH 的常见用法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;SSH 是每一台 Linux 系统的标准配置服务，本文将总结 SSH 的常见用法
     
     </summary>
     
@@ -285,7 +313,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;有的网站内容比较的重要，不希望别人所知道，同时也防止一些无聊的 SEO 站长特意灌水，发一些无关的信息，所以最佳解决方式是设置 Nofollow
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;有的网站内容比较的重要，不希望别人所知道，同时也防止一些无聊的 SEO 站长特意灌水，发一些无关的信息，所以最佳解决方式是设置 Nofollow
     
     </summary>
     
@@ -307,7 +335,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Ghost 采用 Node.js 编写，默认使用 SQLite3 数据库，非常轻量，因为是文件型数据库，所以无需安装。Ghost 允许多用户编写博文，使用 Markdown 来编写博文
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Ghost 采用 Node.js 编写，默认使用 SQLite3 数据库，非常轻量，因为是文件型数据库，所以无需安装。Ghost 允许多用户编写博文，使用 Markdown 来编写博文
     
     </summary>
     
@@ -329,7 +357,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;MongoDB 是目前在IT行业非常流行的一种非关系型数据库 (NoSql)，其灵活的数据存储方式备受当前 IT 从业人员的青睐。这里主要讲如何在 Windows 平台下安装 MongoDB
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;MongoDB 是目前在IT行业非常流行的一种非关系型数据库 (NoSql)，其灵活的数据存储方式备受当前 IT 从业人员的青睐。这里主要讲如何在 Windows 平台下安装 MongoDB
     
     </summary>
     
@@ -355,7 +383,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;收集 Liunx 系统安全加固时，发现系统漏洞，修复系统，加固系统信息等命令集合
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;收集 Liunx 系统安全加固时，发现系统漏洞，修复系统，加固系统信息等命令集合
     
     </summary>
     
@@ -381,7 +409,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;总结在渗透测试上的一些小技巧，基本上都是 kali 下的一些常用的工具使用集合
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;总结在渗透测试上的一些小技巧，基本上都是 kali 下的一些常用的工具使用集合
     
     </summary>
     
@@ -405,7 +433,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本文主要为学习代码审计前的一些 PHP 基础知识的学习笔记
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本文主要为学习代码审计前的一些 PHP 基础知识的学习笔记
     
     </summary>
     
@@ -429,7 +457,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Cmder 是一款 windows 环境下非常简洁美观易用轻量的 cmd 替代者，它支持了大部分的 Liunx 命令
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Cmder 是一款 windows 环境下非常简洁美观易用轻量的 cmd 替代者，它支持了大部分的 Liunx 命令
     
     </summary>
     
@@ -451,7 +479,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;PHP 文件包含漏洞的产生原因是在通过PHP的函数引入文件时，由于传入的文件名没有经过合理的校验，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;PHP 文件包含漏洞的产生原因是在通过PHP的函数引入文件时，由于传入的文件名没有经过合理的校验，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入
     
     </summary>
     
@@ -475,7 +503,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;在众多的 CSS 新特性中，有 3 个采用的新特性值得我们一起学习，这里将记录这些新特性的使用方法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;在众多的 CSS 新特性中，有 3 个采用的新特性值得我们一起学习，这里将记录这些新特性的使用方法
     
     </summary>
     
@@ -497,7 +525,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;CSS 选择器是 WEB 开发中一个重要部分，通过 CSS 选择器，可以提高开发人员的工作效率。在本篇文章中将介绍属性选择器和伪类选择器的基本用法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;CSS 选择器是 WEB 开发中一个重要部分，通过 CSS 选择器，可以提高开发人员的工作效率。在本篇文章中将介绍属性选择器和伪类选择器的基本用法
     
     </summary>
     
@@ -517,7 +545,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;IPSec VPN 指采用 IPSec 协议来实现远程接入的一种 VPN 技术，本篇文章介绍在虚拟机下搭建 IPSec VPN 的全过程（使用 L2TP 连接方式）
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;IPSec VPN 指采用 IPSec 协议来实现远程接入的一种 VPN 技术，本篇文章介绍在虚拟机下搭建 IPSec VPN 的全过程（使用 L2TP 连接方式）
     
     </summary>
     
@@ -539,7 +567,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;众所周知 CSS 技术我们虽然很熟悉，在使用的过程却很容易被困住，这让我们在新问题出现的时候变得很不利。所以本文将介绍 CSS 中会用到的几个度量单位
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;众所周知 CSS 技术我们虽然很熟悉，在使用的过程却很容易被困住，这让我们在新问题出现的时候变得很不利。所以本文将介绍 CSS 中会用到的几个度量单位
     
     </summary>
     
@@ -559,7 +587,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;对于渗透测试者来说，如何绕过防火墙的阻挡在内网展开渗透测试成为需解决的问题，本文介绍了在夺取映射到外网的内网服务器权限后，如何利用 Socks 代理反弹获得内网访问权限
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;对于渗透测试者来说，如何绕过防火墙的阻挡在内网展开渗透测试成为需解决的问题，本文介绍了在夺取映射到外网的内网服务器权限后，如何利用 Socks 代理反弹获得内网访问权限
     
     </summary>
     
@@ -568,9 +596,9 @@
     
       <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
     
-      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
-    
       <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
     
   </entry>
   
@@ -583,16 +611,16 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;文件头是位于文件开头的一段承担一定任务的数据，一般都在开头的部分。而文件尾对应的就在 文件的结束部分，本篇将介绍常见的文件头和文件尾的十六进制数，这些文件的文件头和文件尾几乎多是一样的
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;文件头是位于文件开头的一段承担一定任务的数据，一般都在开头的部分。而文件尾对应的就在 文件的结束部分，本篇将介绍常见的文件头和文件尾的十六进制数，这些文件的文件头和文件尾几乎多是一样的
     
     </summary>
     
       <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
     
     
-      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
-    
       <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
     
   </entry>
   
@@ -605,7 +633,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;数据库作为数据管理的平台，它的安全性首先由系统内部和网络安全两部分来决定的。对于系统管理员来说，首先要保证系统本身的安全，在安装 MySQL 数据时，需要对基础环境进行较好的配置。本篇笔记将记录在 RedHat Liunx 系统下 MySQL 数据库的安全加固方法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;数据库作为数据管理的平台，它的安全性首先由系统内部和网络安全两部分来决定的。对于系统管理员来说，首先要保证系统本身的安全，在安装 MySQL 数据时，需要对基础环境进行较好的配置。本篇笔记将记录在 RedHat Liunx 系统下 MySQL 数据库的安全加固方法
     
     </summary>
     
@@ -631,7 +659,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本文主要介绍如何使用 Gulp.js，来帮助你构建一个自动化的前端开发流程。总结并归类自身使用中所遇到的方法、问题，便于新人上手和理解，同时也作为一份 Gulp 参考文档来使用，让你对 Gulp 有个更深入的了解
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本文主要介绍如何使用 Gulp.js，来帮助你构建一个自动化的前端开发流程。总结并归类自身使用中所遇到的方法、问题，便于新人上手和理解，同时也作为一份 Gulp 参考文档来使用，让你对 Gulp 有个更深入的了解
     
     </summary>
     
@@ -653,7 +681,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;这篇文章主要介绍了 JavaScript 中 DOM 0 级事件和 DOM 2 级事件的区别介绍
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;这篇文章主要介绍了 JavaScript 中 DOM 0 级事件和 DOM 2 级事件的区别介绍
     
     </summary>
     
@@ -675,7 +703,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记记录 RedHat 下的防火请的开启和关闭，还有允许哪些端口通过防火墙
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记记录 RedHat 下的防火请的开启和关闭，还有允许哪些端口通过防火墙
     
     </summary>
     
@@ -697,7 +725,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;想要写出高质量的 CSS 代码。那么这篇记录将大大提升你撰写 CSS 代码的效率
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;想要写出高质量的 CSS 代码。那么这篇记录将大大提升你撰写 CSS 代码的效率
     
     </summary>
     
@@ -719,7 +747,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭，通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID），在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭，通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID），在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的
     
     </summary>
     
@@ -745,7 +773,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统日志审计的配置，加强系统的防御能力
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统日志审计的配置，加强系统的防御能力
     
     </summary>
     
@@ -769,7 +797,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录用户和文件的权限（主要是特殊权限），加强系统的防御能力
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录用户和文件的权限（主要是特殊权限），加强系统的防御能力
     
     </summary>
     
@@ -793,7 +821,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第七篇，在 Liunx 中文件除了 rwx 权限，还存在 SetUID 、 SetGID 、 Sicky BIT 特殊权限，本篇就是来介绍这些特殊权限
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第七篇，在 Liunx 中文件除了 rwx 权限，还存在 SetUID 、 SetGID 、 Sicky BIT 特殊权限，本篇就是来介绍这些特殊权限
     
     </summary>
     
@@ -815,7 +843,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇主要介绍相关于帐号安全的加固策略，加强系统的防御能力
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步，本系列学习笔记记录 RedHat 系统的安全加固。本篇主要介绍相关于帐号安全的加固策略，加强系统的防御能力
     
     </summary>
     
@@ -839,7 +867,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;SASS 是 CSS 预处理器之一，它的基本思想是，用一种专门的编程语言，进行网页样式设计，然后再编译成正常的 CSS 文件，它提供了许多便利的写法，大大节省了设计者的时间，使得 CSS 的开发，变得简单和可维护
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;SASS 是 CSS 预处理器之一，它的基本思想是，用一种专门的编程语言，进行网页样式设计，然后再编译成正常的 CSS 文件，它提供了许多便利的写法，大大节省了设计者的时间，使得 CSS 的开发，变得简单和可维护
     
     </summary>
     
@@ -859,7 +887,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法，本篇是介绍 Web 应用程序测试工具 BurpSuite 的使用方法。Burp Suite 其多种功能可以帮我们执行各种任务，请求的拦截和修改，扫描 web 应用程序漏洞，以暴力破解登陆表单，执行会话令牌等多种的随机性检查
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法，本篇是介绍 Web 应用程序测试工具 BurpSuite 的使用方法。Burp Suite 其多种功能可以帮我们执行各种任务，请求的拦截和修改，扫描 web 应用程序漏洞，以暴力破解登陆表单，执行会话令牌等多种的随机性检查
     
     </summary>
     
@@ -870,9 +898,9 @@
     
       <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
-    
       <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
     
   </entry>
   
@@ -885,7 +913,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第五篇，这一篇将介绍 Liunx 下用户的管理。用户管理看似很简单，但是里面还隐藏着大学问呢
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第五篇，这一篇将介绍 Liunx 下用户的管理。用户管理看似很简单，但是里面还隐藏着大学问呢
     
     </summary>
     
@@ -907,7 +935,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;介绍 HTML 和 CSS 的格式和代码规范，旨在提高代码质量和协作效率
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;介绍 HTML 和 CSS 的格式和代码规范，旨在提高代码质量和协作效率
     
     </summary>
     
@@ -931,7 +959,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;JDK 是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的 java 应用程序。JDK 是整个 java 开发的核心，它包含了 JAVA 的运行环境，JAVA 工具和 JAVA 基础的类库。这里将介绍在 Windows 下JDK 的安装和环境变量的配置
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;JDK 是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的 java 应用程序。JDK 是整个 java 开发的核心，它包含了 JAVA 的运行环境，JAVA 工具和 JAVA 基础的类库。这里将介绍在 Windows 下JDK 的安装和环境变量的配置
     
     </summary>
     
@@ -951,7 +979,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;这篇是 Liunx 的服务配置笔记系列第五篇，这一篇将具体介绍 Red Hat Liunx 下 DNS 服务的安全配置。所谓 DNS 就是一个域名解析服务器，其中 DNS 还包含正向解析和反向解析
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;这篇是 Liunx 的服务配置笔记系列第五篇，这一篇将具体介绍 Red Hat Liunx 下 DNS 服务的安全配置。所谓 DNS 就是一个域名解析服务器，其中 DNS 还包含正向解析和反向解析
     
     </summary>
     
@@ -977,7 +1005,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;在网站开发中多多少少都会使用到图标，这也是 HTML5 发展以来最具有特色的地方，也就是说，我们可以完全可以抛弃用图片当图标，现在就可以使用 CSS 样式加上字体库实现图标的引用
+      &lt;!-- build time:Sun Dec 10 2017 18:13:13 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;在网站开发中多多少少都会使用到图标，这也是 HTML5 发展以来最具有特色的地方，也就是说，我们可以完全可以抛弃用图片当图标，现在就可以使用 CSS 样式加上字体库实现图标的引用
     
     </summary>
     
@@ -999,7 +1027,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法，本篇是介绍端口扫描工具 Nmap 的使用方法。Nmap 在渗透测试中经常用到，它不仅可以用来确定目标网络上计算机的存活状态，而且可以扫描各个计算机的操作系统、开放端口、服务，还有可能获得用户的证书。熟练掌握 Nmap 的用法，可以极大的提高渗透测试技术
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法，本篇是介绍端口扫描工具 Nmap 的使用方法。Nmap 在渗透测试中经常用到，它不仅可以用来确定目标网络上计算机的存活状态，而且可以扫描各个计算机的操作系统、开放端口、服务，还有可能获得用户的证书。熟练掌握 Nmap 的用法，可以极大的提高渗透测试技术
     
     </summary>
     
@@ -1010,9 +1038,9 @@
     
       <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
     
-      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
-    
       <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
     
   </entry>
   
@@ -1025,7 +1053,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法，本篇是介绍 SQL 注入工具 SQLmap 的使用方法。SQLmap 是一款用来检测与利用 SQL 注入漏洞的免费开源工具，有一个非常棒的特性，即对检测与利用的自动化处理（数据库指纹、访问底层文件系统、执行命令）
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法，本篇是介绍 SQL 注入工具 SQLmap 的使用方法。SQLmap 是一款用来检测与利用 SQL 注入漏洞的免费开源工具，有一个非常棒的特性，即对检测与利用的自动化处理（数据库指纹、访问底层文件系统、执行命令）
     
     </summary>
     
@@ -1051,7 +1079,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第五篇，这一篇将具体介绍 Red Hat Liunx 下 SAMBA 服务的安全配置。所谓 SAMBA 就是建立 Liunx 和 Windows 之间的共享，使 Windows 能够访问 Liunx 下共享出来的文件
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第五篇，这一篇将具体介绍 Red Hat Liunx 下 SAMBA 服务的安全配置。所谓 SAMBA 就是建立 Liunx 和 Windows 之间的共享，使 Windows 能够访问 Liunx 下共享出来的文件
     
     </summary>
     
@@ -1077,7 +1105,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第四篇，这一篇将具体介绍 Red Hat Liunx 下 APACHE 服务的安全配置。所谓 APACHE 就是一个 WEB 服务器，为 WEB 网页提供服务
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第四篇，这一篇将具体介绍 Red Hat Liunx 下 APACHE 服务的安全配置。所谓 APACHE 就是一个 WEB 服务器，为 WEB 网页提供服务
     
     </summary>
     
@@ -1103,7 +1131,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第三篇，这一篇将具体介绍 Red Hat Liunx 下 FTP 服务的安全配置。确切的说，应该叫它 vsFTP，就是文件的上传和下载服务，主要的功能是在服务器与客户端之间进行文件的传输
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第三篇，这一篇将具体介绍 Red Hat Liunx 下 FTP 服务的安全配置。确切的说，应该叫它 vsFTP，就是文件的上传和下载服务，主要的功能是在服务器与客户端之间进行文件的传输
     
     </summary>
     
@@ -1129,7 +1157,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第二篇，这一篇将具体介绍 Red Hat Liunx 下 SSH 服务的安全配置。所谓 SSH 就是加密的数据传输，但是使用其的默认配置并不是安全的，所以还需要对其进行详细的配置
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第二篇，这一篇将具体介绍 Red Hat Liunx 下 SSH 服务的安全配置。所谓 SSH 就是加密的数据传输，但是使用其的默认配置并不是安全的，所以还需要对其进行详细的配置
     
     </summary>
     
@@ -1155,7 +1183,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Liunx 的学习笔记已经推出有一段时间了，现继续推出在 Liunx 中 SAMBA 服务、SSH 服务、FTP 服务、APACHE 服务、DNS 服务的安全配置。本文就先介绍这几个服务的相关内容
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Liunx 的学习笔记已经推出有一段时间了，现继续推出在 Liunx 中 SAMBA 服务、SSH 服务、FTP 服务、APACHE 服务、DNS 服务的安全配置。本文就先介绍这几个服务的相关内容
     
     </summary>
     
@@ -1179,7 +1207,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第五篇，这一篇将介绍 Liunx 的基础操作。很多人觉得 Liunx 非常难学，但不其然，只要掌握一些基础的命令操作，Liunx 还是非常好上手的
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第五篇，这一篇将介绍 Liunx 的基础操作。很多人觉得 Liunx 非常难学，但不其然，只要掌握一些基础的命令操作，Liunx 还是非常好上手的
     
     </summary>
     
@@ -1201,7 +1229,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;当申请到一个 C 类网络地址时，很多时候需要对其子网划分，那么一个高效简便的子网划分方法由此而生
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;当申请到一个 C 类网络地址时，很多时候需要对其子网划分，那么一个高效简便的子网划分方法由此而生
     
     </summary>
     
@@ -1221,7 +1249,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第四篇，本篇将介绍正则表达式。在做文字处理或编写程序时，用到查找、替换等功能，使用正则表达式能够简单快捷的完成目标。简单而言，正则表达式通过一些特殊符号的帮助，使用户可以轻松快捷的完成查找、删除、替换等处理程序
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第四篇，本篇将介绍正则表达式。在做文字处理或编写程序时，用到查找、替换等功能，使用正则表达式能够简单快捷的完成目标。简单而言，正则表达式通过一些特殊符号的帮助，使用户可以轻松快捷的完成查找、删除、替换等处理程序
     
     </summary>
     
@@ -1245,7 +1273,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第三篇，这一篇将介绍在 Liunx 下压缩解压文件或目录常用命令。压缩文件及目录可以大大增加磁盘的利用率
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第三篇，这一篇将介绍在 Liunx 下压缩解压文件或目录常用命令。压缩文件及目录可以大大增加磁盘的利用率
     
     </summary>
     
@@ -1267,7 +1295,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;很多不太懂正则的童鞋，在遇到需要用正则校验数据时，往往是在网上去找很久，结果找来的还是不很符合要求。所以我把开发中常用的一些正则表达式整理了一下，包括校验数字、字符、一些特殊的需求等等
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;很多不太懂正则的童鞋，在遇到需要用正则校验数据时，往往是在网上去找很久，结果找来的还是不很符合要求。所以我把开发中常用的一些正则表达式整理了一下，包括校验数字、字符、一些特殊的需求等等
     
     </summary>
     
@@ -1289,7 +1317,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第二篇，这一篇将介绍 vim 的使用技巧。vim 是一款终端编辑器，是由 vi 演变而来的，它与 vi 最大的区别是，vim 拥有代码高亮，其他操作都是共用的
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第二篇，这一篇将介绍 vim 的使用技巧。vim 是一款终端编辑器，是由 vi 演变而来的，它与 vi 最大的区别是，vim 拥有代码高亮，其他操作都是共用的
     
     </summary>
     
@@ -1309,7 +1337,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;接触了 Liunx 也有一段时间了，也算对 Liunx 有一定的了解，在这里将陆续的推出 Liunx 的学习笔记系列，做个记录，方便以后忘记有处可循。Liunx 是以文件系统为主的，所以 Liunx 下的每一个目录都有其各自的作用，则本篇将介绍 Liunx 的各个目录结构及其说明
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;接触了 Liunx 也有一段时间了，也算对 Liunx 有一定的了解，在这里将陆续的推出 Liunx 的学习笔记系列，做个记录，方便以后忘记有处可循。Liunx 是以文件系统为主的，所以 Liunx 下的每一个目录都有其各自的作用，则本篇将介绍 Liunx 的各个目录结构及其说明
     
     </summary>
     
@@ -1329,16 +1357,16 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;最近发现了一个可以用 HTML+CSS3 就能做出一份优美的 PPT 的 JavaScript 框架（reveal.js），但是我并没有找到该框架的中文帮助文档，所以在这里将提供中文帮助文档（本人的英文水平并不是很好，所以客官们凑合着看，顺便添加一些相关内容）
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;最近发现了一个可以用 HTML+CSS3 就能做出一份优美的 PPT 的 JavaScript 框架（reveal.js），但是我并没有找到该框架的中文帮助文档，所以在这里将提供中文帮助文档（本人的英文水平并不是很好，所以客官们凑合着看，顺便添加一些相关内容）
     
     </summary>
     
       <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
-    
       <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
     
       <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
     
@@ -1357,7 +1385,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;package.json 是 Node.js 应用中比较重要的部分，它定义了项目的依赖关系，这里将介绍该文件各个配置项的作用
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;package.json 是 Node.js 应用中比较重要的部分，它定义了项目的依赖关系，这里将介绍该文件各个配置项的作用
     
     </summary>
     
@@ -1377,7 +1405,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;主要介绍 npm 中的各个选项的作用以及其区别。npm 依赖于 Node.js，童鞋们要注意你的系统是否有 Node.js 环境
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;主要介绍 npm 中的各个选项的作用以及其区别。npm 依赖于 Node.js，童鞋们要注意你的系统是否有 Node.js 环境
     
     </summary>
     
@@ -1399,7 +1427,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;一个优秀的前端开发人员，在书写 CSS 时必定要注意的重点，而不是随意的书写 CSS，这样会给自己还有他人带来困扰
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;一个优秀的前端开发人员，在书写 CSS 时必定要注意的重点，而不是随意的书写 CSS，这样会给自己还有他人带来困扰
     
     </summary>
     
@@ -1421,7 +1449,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录 HTML5 通用的移动端和 PC 端头部标签，即 meta 标签
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录 HTML5 通用的移动端和 PC 端头部标签，即 meta 标签
     
     </summary>
     
@@ -1443,7 +1471,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;提供 jQuery 所有版本的下载链接和 CDN 链接
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;提供 jQuery 所有版本的下载链接和 CDN 链接
     
     </summary>
     
@@ -1465,7 +1493,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录常用而不易于记忆的 css 自定义代码
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录常用而不易于记忆的 css 自定义代码
     
     </summary>
     
@@ -1489,7 +1517,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;列出 TCP/UDP 协议常见的端口号占用情况，以助于分析该服务器开放了哪些端口号，或者程序占用了哪些端口号
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;列出 TCP/UDP 协议常见的端口号占用情况，以助于分析该服务器开放了哪些端口号，或者程序占用了哪些端口号
     
     </summary>
     
@@ -1500,13 +1528,13 @@
     
       <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
     
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
       <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
     
       <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
     
       <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
-    
-      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
     
   </entry>
   
@@ -1519,7 +1547,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;BOM (Browser Object Model) 是指浏览器对象模型，是用于描述这种对象与对象之间层次关系的模型
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;BOM (Browser Object Model) 是指浏览器对象模型，是用于描述这种对象与对象之间层次关系的模型
     
     </summary>
     
@@ -1541,7 +1569,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;现已进入了 HTML5 时代，这些知识在前端开发人员眼里也就变得更加重要
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;现已进入了 HTML5 时代，这些知识在前端开发人员眼里也就变得更加重要
     
     </summary>
     
@@ -1565,7 +1593,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;解决移动端网页的自适应，让开发变得更加简洁
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;解决移动端网页的自适应，让开发变得更加简洁
     
     </summary>
     
@@ -1576,9 +1604,9 @@
     
       <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
     
-      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
-    
       <category term="Moblie" scheme="https://vxhly.github.io/tags/Moblie/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
     
   </entry>
   
@@ -1591,7 +1619,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录 Windows 常见应用的运行快捷命令，以下记录的命令默认为 win+R 组合键调出的窗口，非命令提示符窗口
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录 Windows 常见应用的运行快捷命令，以下记录的命令默认为 win+R 组合键调出的窗口，非命令提示符窗口
     
     </summary>
     
@@ -1615,7 +1643,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Flex 布局，可以简便、完整、响应式地实现各种页面布局，目前，它已经得到了所有浏览器的支持
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Flex 布局，可以简便、完整、响应式地实现各种页面布局，目前，它已经得到了所有浏览器的支持
     
     </summary>
     
@@ -1641,7 +1669,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;一个简单而实用的控制台命令，用来调试 JavaScript 代码的不合理性
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;一个简单而实用的控制台命令，用来调试 JavaScript 代码的不合理性
     
     </summary>
     
@@ -1663,7 +1691,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;简单的窍门的集合，用来帮助你 jQuery 代码的进阶
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;简单的窍门的集合，用来帮助你 jQuery 代码的进阶
     
     </summary>
     
@@ -1687,7 +1715,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;通过 JavaScript 原生方法，获取 URL 所带的请求参数备用
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;通过 JavaScript 原生方法，获取 URL 所带的请求参数备用
     
     </summary>
     
@@ -1709,7 +1737,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;以下介绍的编辑器是跨平台，无论是 Windows，还是 Liunx，甚至是 Mac，都可以成为程序员称手的利器
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;以下介绍的编辑器是跨平台，无论是 Windows，还是 Liunx，甚至是 Mac，都可以成为程序员称手的利器
     
     </summary>
     
@@ -1731,20 +1759,20 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;作为前端开发人员，最佳的调试环境便是浏览器自带的开发者工具，此文则介绍 Chrome 浏览器的开发者工具的使用方法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;作为前端开发人员，最佳的调试环境便是浏览器自带的开发者工具，此文则介绍 Chrome 浏览器的开发者工具的使用方法
     
     </summary>
     
       <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
     
     
-      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
-    
       <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
     
-      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
     
       <category term="Debug" scheme="https://vxhly.github.io/tags/Debug/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
     
   </entry>
   
@@ -1757,7 +1785,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Emmet 的前身是大名鼎鼎的 Zen coding。如果你从事 Web 前端开发的话，对该插件一定不会陌生。它使用仿 CSS 选择器的语法来代码，大大提高了 HTML/CSS 代码编写的速度
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Emmet 的前身是大名鼎鼎的 Zen coding。如果你从事 Web 前端开发的话，对该插件一定不会陌生。它使用仿 CSS 选择器的语法来代码，大大提高了 HTML/CSS 代码编写的速度
     
     </summary>
     
@@ -1779,7 +1807,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Hexo 是一个快速，简单而高效的静态博客框架，本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Hexo 是一个快速，简单而高效的静态博客框架，本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客
     
     </summary>
     
@@ -1801,7 +1829,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录 windows 下常用的 CMD 命令
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;记录 windows 下常用的 CMD 命令
     
     </summary>
     
@@ -1823,7 +1851,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Ubuntu 默认不开启 root 账户的，所以有需开启 root 账户的按照以下做法即可，切换 root 账户后 chromium 浏览器不能使用
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Ubuntu 默认不开启 root 账户的，所以有需开启 root 账户的按照以下做法即可，切换 root 账户后 chromium 浏览器不能使用
     
     </summary>
     
@@ -1843,7 +1871,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;为 JS 中的 Math 对象新增生成不重复随机数方法
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;为 JS 中的 Math 对象新增生成不重复随机数方法
     
     </summary>
     
@@ -1865,7 +1893,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;基于已经安装双系统，或是只有 Ubuntu 系统，在虚拟机下不存在此问题
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;基于已经安装双系统，或是只有 Ubuntu 系统，在虚拟机下不存在此问题
     
     </summary>
     
@@ -1887,7 +1915,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;翻墙，主要用于 npm 的代理。没有 vpn 服务器不要紧，肯花点小钱就可以搞定（访问 &lt;a href=&quot;//www.gaotizi.com/aff.php?aff=133&quot;&gt;高梯子&lt;/a&gt;）
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;翻墙，主要用于 npm 的代理。没有 vpn 服务器不要紧，肯花点小钱就可以搞定（访问 &lt;a href=&quot;//www.gaotizi.com/aff.php?aff=133&quot;&gt;高梯子&lt;/a&gt;）
     
     </summary>
     
@@ -1911,7 +1939,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:00 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理
+      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理
     
     </summary>
     
@@ -1933,7 +1961,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Tue Dec 05 2017 21:05:01 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;安装 Node.js 的最佳方式是使用 nvm。nvm 最开始是在 &lt;code&gt;Mac OS&lt;/code&gt; 下开发的，所以 &lt;code&gt;Mac OS&lt;/code&gt; 下同样使用 nvm 安装 Node.js
+      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;安装 Node.js 的最佳方式是使用 nvm。nvm 最开始是在 &lt;code&gt;Mac OS&lt;/code&gt; 下开发的，所以 &lt;code&gt;Mac OS&lt;/code&gt; 下同样使用 nvm 安装 Node.js
     
     </summary>
     

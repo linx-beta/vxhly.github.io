@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2017/12/video-tutorial/</loc>
+    <lastmod>2017-12-10T09:38:45.907Z</lastmod>
+    <data>
+        <display>
+        <title>【发福利】视频教程</title>
+        <pubTime>2017-12-10T09:09:06.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Security</tag>
+         
+        <tag>HTML5</tag>
+         
+        <tag>Node.js</tag>
+         
+        <tag>MySQL</tag>
+         
+         
+           
+             
+              <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/</loc>
+    <lastmod>2017-12-10T07:52:29.135Z</lastmod>
+    <data>
+        <display>
+        <title>Vue.js 填坑笔记</title>
+        <pubTime>2017-09-11T08:55:20.000Z</pubTime>
+        
+        <tag>Vue.js</tag>
+         
+        <tag>Node.js</tag>
+         
+         
+           
+             
+              <breadCrumb title="node.js" url="https://vxhly.github.io/categories/node-js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2017/11/fill-the-pie-with-vuejs-elementUI/</loc>
     <lastmod>2017-12-02T07:38:38.298Z</lastmod>
     <data>
@@ -45,28 +95,6 @@
            
              
               <breadCrumb title="liunx" url="https://vxhly.github.io/categories/liunx/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2017/09/fill-the-pit-with-vuejs/</loc>
-    <lastmod>2017-11-18T10:27:54.628Z</lastmod>
-    <data>
-        <display>
-        <title>Vue.js 填坑笔记</title>
-        <pubTime>2017-09-11T08:55:20.000Z</pubTime>
-        
-        <tag>Vue.js</tag>
-         
-        <tag>Node.js</tag>
-         
-         
-           
-             
-              <breadCrumb title="node.js" url="https://vxhly.github.io/categories/node-js/"/>
           
         </display>
     </data>
@@ -125,9 +153,9 @@
         
         <tag>Liunx</tag>
          
-        <tag>Network</tag>
-         
         <tag>Pentest</tag>
+         
+        <tag>Network</tag>
          
          
            
@@ -153,11 +181,11 @@
          
         <tag>Pentest</tag>
          
+        <tag>MySQL</tag>
+         
         <tag>WEB</tag>
          
         <tag>PHP</tag>
-         
-        <tag>MySQL</tag>
          
         <tag>Python</tag>
          
@@ -628,13 +656,13 @@
         <title>关于 Chrome 浏览器的调试方法</title>
         <pubTime>2016-08-05T10:24:29.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
         <tag>JavaScript</tag>
          
-        <tag>HTML5</tag>
+        <tag>CSS</tag>
          
         <tag>Debug</tag>
+         
+        <tag>HTML5</tag>
          
          
            
@@ -1038,9 +1066,9 @@
          
         <tag>Security</tag>
          
-        <tag>Protocol</tag>
-         
         <tag>Pentest</tag>
+         
+        <tag>Protocol</tag>
          
          
            
@@ -1084,9 +1112,9 @@
         <title>reveal.js（HTML 演示文稿）中文文档</title>
         <pubTime>2016-09-03T05:49:17.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
         <tag>JavaScript</tag>
+         
+        <tag>CSS</tag>
          
         <tag>HTML5</tag>
          
@@ -1287,6 +1315,28 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2016/10/some-suggest-for-writing-css/</loc>
+    <lastmod>2017-08-24T11:53:50.801Z</lastmod>
+    <data>
+        <display>
+        <title>编写 CSS 代码的一些建议</title>
+        <pubTime>2016-10-22T14:28:14.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>Criterion</tag>
+         
+         
+           
+             
+              <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2016/10/user-and-file-permissions/</loc>
     <lastmod>2017-08-24T11:53:50.801Z</lastmod>
     <data>
@@ -1304,28 +1354,6 @@
            
              
               <breadCrumb title="liunx" url="https://vxhly.github.io/categories/liunx/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2016/10/some-suggest-for-writing-css/</loc>
-    <lastmod>2017-08-24T11:53:50.801Z</lastmod>
-    <data>
-        <display>
-        <title>编写 CSS 代码的一些建议</title>
-        <pubTime>2016-10-22T14:28:14.000Z</pubTime>
-        
-        <tag>CSS</tag>
-         
-        <tag>Criterion</tag>
-         
-         
-           
-             
-              <breadCrumb title="design" url="https://vxhly.github.io/categories/design/"/>
           
         </display>
     </data>
@@ -1370,9 +1398,9 @@
          
         <tag>Security</tag>
          
-        <tag>Protocol</tag>
-         
         <tag>Pentest</tag>
+         
+        <tag>Protocol</tag>
          
          
            
@@ -1558,9 +1586,9 @@
          
         <tag>Layout</tag>
          
-        <tag>jQuery</tag>
-         
         <tag>Moblie</tag>
+         
+        <tag>jQuery</tag>
          
          
            
@@ -1648,13 +1676,13 @@
          
         <tag>Security</tag>
          
+        <tag>Pentest</tag>
+         
         <tag>Network</tag>
          
         <tag>Windows</tag>
          
         <tag>Protocol</tag>
-         
-        <tag>Pentest</tag>
          
          
            
@@ -1898,9 +1926,9 @@
         <title>常见的文件头和文件尾</title>
         <pubTime>2016-11-23T02:05:44.000Z</pubTime>
         
-        <tag>Windows</tag>
-         
         <tag>Pentest</tag>
+         
+        <tag>Windows</tag>
          
          
            
