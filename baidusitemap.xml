@@ -4,6 +4,43 @@
 
     
   <url>
+    <loc>https://vxhly.github.io/2016/07/git-push-setting/</loc>
+    <lastmod>2017-12-15T04:24:31.921Z</lastmod>
+    <data>
+        <display>
+        <title>Git 远程推送配置</title>
+        <pubTime>2016-07-31T08:09:21.000Z</pubTime>
+        
+        <tag>Liunx</tag>
+         
+        <tag>Protocol</tag>
+         
+         
+           
+             
+              <breadCrumb title="manual" url="https://vxhly.github.io/categories/manual/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://vxhly.github.io/2017/11/learning-es6/</loc>
+    <lastmod>2017-12-10T12:21:31.662Z</lastmod>
+    <data>
+        <display>
+        <title>ES6 学习笔记</title>
+        <pubTime>2017-11-17T13:35:51.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://vxhly.github.io/2017/12/video-tutorial/</loc>
     <lastmod>2017-12-10T09:38:45.907Z</lastmod>
     <data>
@@ -96,21 +133,6 @@
              
               <breadCrumb title="liunx" url="https://vxhly.github.io/categories/liunx/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2017/11/learning-es6/</loc>
-    <lastmod>2017-11-17T16:08:22.283Z</lastmod>
-    <data>
-        <display>
-        <title>ES6 学习笔记</title>
-        <pubTime>2017-11-17T13:35:51.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -571,28 +593,6 @@
         <pubTime>2016-09-30T11:36:02.000Z</pubTime>
         
         <tag>Code</tag>
-         
-         
-           
-             
-              <breadCrumb title="manual" url="https://vxhly.github.io/categories/manual/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://vxhly.github.io/2016/07/git-push-setting/</loc>
-    <lastmod>2017-09-03T14:23:56.281Z</lastmod>
-    <data>
-        <display>
-        <title>Git 远程推送配置</title>
-        <pubTime>2016-07-31T08:09:21.000Z</pubTime>
-        
-        <tag>Liunx</tag>
-         
-        <tag>Protocol</tag>
          
          
            

@@ -73,11 +73,11 @@
     <link href="https://vxhly.github.io/2017/11/learning-es6/"/>
     <id>https://vxhly.github.io/2017/11/learning-es6/</id>
     <published>2017-11-17T13:35:51.000Z</published>
-    <updated>2017-11-17T16:08:22.283Z</updated>
+    <updated>2017-12-10T12:21:31.662Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Sun Dec 10 2017 18:13:12 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点，下面的例子没有先后之分，也是很简单的例子，想了解更多的直接戳 &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECMAScript 6 入门&lt;/a&gt;
+      &lt;!-- build time:Fri Dec 15 2017 12:26:09 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点，下面的例子没有先后之分，也是很简单的例子，想了解更多的直接戳 &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECMAScript 6 入门&lt;/a&gt;
     
     </summary>
     
@@ -1935,11 +1935,11 @@
     <link href="https://vxhly.github.io/2016/07/git-push-setting/"/>
     <id>https://vxhly.github.io/2016/07/git-push-setting/</id>
     <published>2016-07-31T08:09:21.000Z</published>
-    <updated>2017-09-03T14:23:56.281Z</updated>
+    <updated>2017-12-15T04:24:31.921Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Sun Dec 10 2017 18:13:11 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理
+      &lt;!-- build time:Fri Dec 15 2017 12:26:09 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理
     
     </summary>
     
