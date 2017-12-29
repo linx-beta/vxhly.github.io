@@ -77,8 +77,8 @@
       </categories>
       <tags>
         <tag>Liunx</tag>
-        <tag>Command</tag>
         <tag>Security</tag>
+        <tag>Command</tag>
       </tags>
   </entry>
   <entry>
@@ -160,8 +160,8 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>Criterion</tag>
         <tag>HTML5</tag>
+        <tag>Criterion</tag>
       </tags>
   </entry>
   <entry>
@@ -199,9 +199,9 @@
       </categories>
       <tags>
         <tag>Liunx</tag>
-        <tag>Command</tag>
         <tag>Security</tag>
         <tag>Pentest</tag>
+        <tag>Command</tag>
       </tags>
   </entry>
   <entry>
@@ -499,8 +499,8 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-        <tag>Criterion</tag>
         <tag>HTML5</tag>
+        <tag>Criterion</tag>
       </tags>
   </entry>
   <entry>
@@ -729,8 +729,8 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>CSS</tag>
-        <tag>HTML5</tag>
         <tag>Code</tag>
+        <tag>HTML5</tag>
         <tag>Node.js</tag>
       </tags>
   </entry>
@@ -801,8 +801,8 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
         <tag>Layout</tag>
+        <tag>CSS</tag>
         <tag>Code</tag>
       </tags>
   </entry>
@@ -842,9 +842,9 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>HTML5</tag>
         <tag>Layout</tag>
         <tag>Code</tag>
+        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
@@ -857,8 +857,8 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>Layout</tag>
-        <tag>Moblie</tag>
         <tag>jQuery</tag>
+        <tag>Moblie</tag>
       </tags>
   </entry>
   <entry>
@@ -869,9 +869,9 @@
         <category>windows</category>
       </categories>
       <tags>
-        <tag>Command</tag>
         <tag>Security</tag>
         <tag>Pentest</tag>
+        <tag>Command</tag>
       </tags>
   </entry>
   <entry>
@@ -882,10 +882,10 @@
         <category>manual</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
-        <tag>HTML5</tag>
         <tag>Layout</tag>
+        <tag>CSS</tag>
         <tag>Code</tag>
+        <tag>HTML5</tag>
       </tags>
   </entry>
   <entry>
@@ -947,8 +947,8 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>CSS</tag>
-        <tag>Debug</tag>
         <tag>HTML5</tag>
+        <tag>Debug</tag>
       </tags>
   </entry>
   <entry>
@@ -983,8 +983,8 @@
         <category>windows</category>
       </categories>
       <tags>
-        <tag>Command</tag>
         <tag>Security</tag>
+        <tag>Command</tag>
       </tags>
   </entry>
   <entry>
@@ -1038,7 +1038,7 @@
   <entry>
     <title><![CDATA[Git 远程推送配置]]></title>
     <url>%2F2016%2F07%2Fgit-push-setting%2F</url>
-    <content type="text"><![CDATA[Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理安装 Git如果你的系统还没有 Git，请通过以下命令安装sudo apt-get install git 创建帐号创建你的 GitHub 帐号，或者 Git@OSC 帐号GitHub 链接Git@OSC 链接liunx 创建 SSH 密钥ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot; 添加 public key查看你的 public key，并把它添加到您的账户中如 GitHub key 如 Git@OSC key使用以下命令查看cat /home/youname/.ssh/id_rsa.pub 测试验证是否成功ssh -T git@github.com 或ssh -T git@git.oschina.net 返回你在 GitHub 或 Git@OSC 上注册的用户名代表成功。GitHub 或 Git@OSC 上创建项目GitHub 链接Git@OSC 链接本地配置请尽量保持你的名字和你的邮箱和 GitHub 或 Git@OSC 的注册一致。git config --global user.name &quot;your name&quot; git config --global user.email &quot;your email&quot; 进入项目目录，初始化git init 添加项目至本地仓库git add . 提交并备注git commit -m &quot;first commit&quot; git remote add origin git@github.com:[youName]/[appName].git git push -u origin master 解决冲突git pull origin master 强制覆盖本地代码（更新本地源）git fetch --all 创建一个新的标签并提交git tag -a v1.0.0 -m &quot;test@1.0.0&quot; git push origin --tags 查看本地标签git tag 删除远程 taggit push origin --delete tag [tagname] git tag -d [tagname] # 删除本地 tag git push origin :refs/tags/[tagname] 获取远程 taggit fetch origin tag [tagname] git 分支管理查看远程分支git branch -a 查看本地分支git branch 创建本地分支git branch [branchName] 删除远程分支git push origin --delete [branchName] # or git push origin :[branchName] 本地分支推送到远程分支git push origin [branchName] 切换分支git checkout [branchName] git 中配置 autocrlf换行符源文件中是换行符是 LF如果你的源文件中是换行符是 LF，而 autocrlf=true， 此时 Git add . 就会遇到 fatal: LF would be replaced by CRLF 的错误。有两个解决办法：将你的源文件中的LF转为CRLF即可【推荐】将autocrlf 设置为 false源文件中是换行符是 CRLF如果你的源文件中是换行符是 CRLF，而 autocrlf=input， 此时 Git add . 也会遇到 fatal: CRLF would be replaced by LF 的错误。有两个解决办法：将你源文件中的CRLF转为LF【推荐】将autocrlf 设置为true 或者 falsecore.autocrlfGit 可以在你提交时自动地把行结束符 CRLF 转换成 LF，而在签出代码时把 LF 转换成 CRLF。用 core.autocrlf 来打开此项功能，如果是在 Windows 系统上，把它设置成 true，这样当签出代码时，LF 会被转换成 CRLF：git config --global core.autocrlf true Linux 或 Mac 系统使用 LF 作为行结束符，因此你不想 Git 在签出文件时进行自动的转换；当一个以 CRLF 为行结束符的文件不小心被引入时你肯定想进行修正，把 core.autocrlf 设置成 input 来告诉 Git 在提交时把 CRLF 转换成 LF，签出时不转换：git config --global core.autocrlf input 这样会在 Windows 系统上的签出文件中保留 CRLF，会在 Mac 和 Linux 系统上，包括仓库中保留LF。如果你是 Windows 程序员，且正在开发仅运行在 Windows 上的项目，可以设置 false 取消此功能，把回车符记录在库中：git config --global core.autocrlf false 建议在 Mac/Liunx 上设置 autocrlf = input，在 Windows 上设置 autocrlf = true（默认值）。Windows：（true） 提交时，将 CRLF 转成 LF 再提交；切出时，自动将 LF 转为 CRLF;MAC/Linux: (input) 提交时，将 CRLF 转成 LF 再提交；切出时，保持LF即可这样即可保证仓库中永远都是 LF. 而且在 Windows 工作空间都是 CRLF，在 Mac/linux 工作空间都是 LF]]></content>
+    <content type="text"><![CDATA[Git 是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理安装 Git如果你的系统还没有 Git，请通过以下命令安装sudo apt-get install git 创建帐号创建你的 GitHub 帐号，或者 Git@OSC 帐号GitHub 链接Git@OSC 链接liunx 创建 SSH 密钥ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot; 添加 public key查看你的 public key，并把它添加到您的账户中如 GitHub key 如 Git@OSC key使用以下命令查看cat /home/youname/.ssh/id_rsa.pub 测试验证是否成功ssh -T git@github.com 或ssh -T git@git.oschina.net 返回你在 GitHub 或 Git@OSC 上注册的用户名代表成功。GitHub 或 Git@OSC 上创建项目GitHub 链接Git@OSC 链接本地配置请尽量保持你的名字和你的邮箱和 GitHub 或 Git@OSC 的注册一致。git config --global user.name &quot;your name&quot; git config --global user.email &quot;your email&quot; 进入项目目录，初始化git init 添加项目至本地仓库git add . 提交并备注git commit -m &quot;first commit&quot; git remote add origin git@github.com:[youName]/[appName].git git push -u origin master 解决冲突git pull origin master 强制覆盖本地代码（更新本地源）git fetch --all 创建一个新的标签并提交git tag -a v1.0.0 -m &quot;test@1.0.0&quot; git push origin --tags 查看本地标签git tag 删除远程 taggit push origin --delete tag [tagname] git tag -d [tagname] # 删除本地 tag git push origin :refs/tags/[tagname] 获取远程 taggit fetch origin tag [tagname] 修改 remotegit remote set-url origin git@[URL]:[userName]/[projectName] # or git remote rm origin git remote add origin git@[URL]:[userName]/[projectName].git git 分支管理查看远程分支git branch -a 查看本地分支git branch 创建本地分支git branch [branchName] 删除远程分支git push origin --delete [branchName] # or git push origin :[branchName] 本地分支推送到远程分支git push origin [branchName] 切换分支git checkout [branchName] git 中配置 autocrlf换行符源文件中是换行符是 LF如果你的源文件中是换行符是 LF，而 autocrlf=true， 此时 Git add . 就会遇到 fatal: LF would be replaced by CRLF 的错误。有两个解决办法：将你的源文件中的LF转为CRLF即可【推荐】将autocrlf 设置为 false源文件中是换行符是 CRLF如果你的源文件中是换行符是 CRLF，而 autocrlf=input， 此时 Git add . 也会遇到 fatal: CRLF would be replaced by LF 的错误。有两个解决办法：将你源文件中的CRLF转为LF【推荐】将autocrlf 设置为true 或者 falsecore.autocrlfGit 可以在你提交时自动地把行结束符 CRLF 转换成 LF，而在签出代码时把 LF 转换成 CRLF。用 core.autocrlf 来打开此项功能，如果是在 Windows 系统上，把它设置成 true，这样当签出代码时，LF 会被转换成 CRLF：git config --global core.autocrlf true Linux 或 Mac 系统使用 LF 作为行结束符，因此你不想 Git 在签出文件时进行自动的转换；当一个以 CRLF 为行结束符的文件不小心被引入时你肯定想进行修正，把 core.autocrlf 设置成 input 来告诉 Git 在提交时把 CRLF 转换成 LF，签出时不转换：git config --global core.autocrlf input 这样会在 Windows 系统上的签出文件中保留 CRLF，会在 Mac 和 Linux 系统上，包括仓库中保留LF。如果你是 Windows 程序员，且正在开发仅运行在 Windows 上的项目，可以设置 false 取消此功能，把回车符记录在库中：git config --global core.autocrlf false 建议在 Mac/Liunx 上设置 autocrlf = input，在 Windows 上设置 autocrlf = true（默认值）。Windows：（true） 提交时，将 CRLF 转成 LF 再提交；切出时，自动将 LF 转为 CRLF;MAC/Linux: (input) 提交时，将 CRLF 转成 LF 再提交；切出时，保持LF即可这样即可保证仓库中永远都是 LF. 而且在 Windows 工作空间都是 CRLF，在 Mac/linux 工作空间都是 LF]]></content>
       <categories>
         <category>manual</category>
       </categories>
